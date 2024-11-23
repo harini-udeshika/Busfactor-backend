@@ -4,9 +4,12 @@ from flask import send_from_directory
 import requests
 import os
 import time
+from dotenv import load_dotenv
+
 from flask_socketio import SocketIO, emit  # Don't rename SocketIO
 from generate_graphs import generateGraphSet
 from rapidfuzz import fuzz
+load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -18,7 +21,11 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # GitHub token and base directory
-token = "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"
+token = os.getenv("GITHUB_TOKEN")
+
+if token is None:
+    raise ValueError("GITHUB_TOKEN is not set in the .env file.")
+
 BASE_IMAGE_DIRECTORY = 'C:/Users/DELL/Documents/bus_factor_graph/backend/graphs'
 
 
