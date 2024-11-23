@@ -4,10 +4,13 @@ from flask import send_from_directory
 import requests
 import os
 import time
+from dotenv import load_dotenv
+
 from flask_socketio import SocketIO, emit  # Don't rename SocketIO
 from generate_graphs import generateGraphSet
 from rapidfuzz import fuzz
-from dotenv import load_dotenv
+
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -19,11 +22,9 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # GitHub token and base directory
+
 load_dotenv()
 token =os.getenv('GITHUB_TOKEN')
-
-
-
 
 @app.route("/repo_data", methods=["POST"])
 def get_repo_data():
