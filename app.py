@@ -7,6 +7,7 @@ import time
 from flask_socketio import SocketIO, emit  # Don't rename SocketIO
 from generate_graphs import generateGraphSet
 from rapidfuzz import fuzz
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -18,8 +19,10 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # GitHub token and base directory
-token = "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"
-BASE_IMAGE_DIRECTORY = 'C:/Users/DELL/Documents/bus_factor_graph/backend/graphs'
+load_dotenv()
+token =os.getenv('GITHUB_TOKEN')
+
+
 
 
 @app.route("/repo_data", methods=["POST"])
@@ -140,11 +143,6 @@ def generate_graphs():
     except Exception as e:
         send_progress(f"Error: {str(e)}")
         return jsonify({"error": str(e)}), 500
-
-@app.route('/images/<repo_name>/<filename>')
-def serve_image(repo_name, filename):
-    directory = os.path.join(BASE_IMAGE_DIRECTORY, repo_name)
-    return send_from_directory(directory, filename)
 
 if __name__ == "__main__":
     socketio.run(app, debug=True)
