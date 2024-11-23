@@ -1,8 +1,6 @@
 import git
 import math
 import networkx as nx
-import matplotlib
-import matplotlib.pyplot as plt
 import tempfile
 import shutil
 import re
@@ -15,15 +13,15 @@ from networkx.algorithms import community as nx_community
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import time
-matplotlib.use('agg')
+from dotenv import load_dotenv
+
 
 from graph_to_json import graph_to_json
 
 def generateGraphSet(repo_url,send_progress):
     # Set the local save directory for generated images
     base_save_dir = "C:/Users/DELL/Documents/bus_factor_graph/backend/graphs"
-    os.makedirs(base_save_dir, exist_ok=True)
-
+   
     # Extract repository name from URL
     repo_name = (
         repo_url.split("/")[-2] + "/" + repo_url.split("/")[-1].replace(".git", "")
@@ -33,13 +31,23 @@ def generateGraphSet(repo_url,send_progress):
     os.makedirs(repo_dir, exist_ok=True)
 
     # GitHub access token (replace with your token)
-    GITHUB_TOKEN = "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"
+    GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+
+    if GITHUB_TOKEN:
+        print("Token fetched successfully.")
+    else:
+        print("Token not found. Ensure it's set as an environment variable.")
+  
+    load_dotenv()
     g = Github(GITHUB_TOKEN)
 
     # Step 1: Clone the repository into a temporary directory
     send_progress("Cloning repository...")
     temp_dir = tempfile.mkdtemp()
-    repo = git.Repo.clone_from(repo_url, temp_dir,bare=True)
+    
+    auth_repo_url = repo_url.replace("https://", f"https://{GITHUB_TOKEN}@")
+    repo = git.Repo.clone_from(auth_repo_url, temp_dir, bare=True)
+    
     send_progress("Repository cloned!")
     # Step 2: Fetch all contributors for the project
     github_repo = g.get_repo(repo_name)
