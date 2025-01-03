@@ -138,7 +138,7 @@ def generate_graphs():
         send_progress("Starting graph generation...")
         graphs = generateGraphSet(repo_url, send_progress)
         send_progress("Graph generation complete!")
-        print('graphs')
+        #print('graphs')
         print(graphs)
         return jsonify(graphs)
     except Exception as e:
