@@ -18,36 +18,52 @@ from dotenv import load_dotenv
 
 from graph_to_json import graph_to_json
 
-def generateGraphSet(repo_url,send_progress):
-    # Set the local save directory for generated images
-    base_save_dir = "C:/Users/DELL/Documents/bus_factor_graph/backend/graphs"
-   
+
+def add_file_sizes(repo, filtered_unique_files):
+    file_sizes = {}
+
+    for contributor, files in filtered_unique_files.items():
+        contributor_files = {}
+        for file in files:
+            try:
+                # Use the latest commit to get the file size
+                file_blob = repo.tree()[file]
+                content = file_blob.data_stream.read().decode("utf-8")
+                loc = content.count("\n") + 1  # Count lines
+                contributor_files[file] = loc
+            except Exception as e:
+                print(f"Error processing file {file}: {e}")
+                contributor_files[file] = None  # Handle inaccessible files gracefully
+        file_sizes[contributor] = contributor_files
+
+    return file_sizes
+
+
+def generateGraphSet(repo_url, send_progress):
+
     # Extract repository name from URL
     repo_name = (
         repo_url.split("/")[-2] + "/" + repo_url.split("/")[-1].replace(".git", "")
     )
 
-    repo_dir = os.path.join(base_save_dir, repo_name.replace("/", "_"))
-    os.makedirs(repo_dir, exist_ok=True)
-
     # GitHub access token (replace with your token)
-    GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+    GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
     if GITHUB_TOKEN:
         print("Token fetched successfully.")
     else:
         print("Token not found. Ensure it's set as an environment variable.")
-  
+
     load_dotenv()
     g = Github(GITHUB_TOKEN)
 
     # Step 1: Clone the repository into a temporary directory
     send_progress("Cloning repository...")
     temp_dir = tempfile.mkdtemp()
-    
+
     auth_repo_url = repo_url.replace("https://", f"https://{GITHUB_TOKEN}@")
     repo = git.Repo.clone_from(auth_repo_url, temp_dir, bare=True)
-    
+
     send_progress("Repository cloned!")
     # Step 2: Fetch all contributors for the project
     github_repo = g.get_repo(repo_name)
@@ -57,19 +73,19 @@ def generateGraphSet(repo_url,send_progress):
 
     send_progress("Fetch all contributors for the project...")
     # Populate a dictionary with all contributors, storing their type and normalizing their username
-    
+
     contributors = github_repo.get_contributors()
-    contributors_list = list(contributors) 
-    i=0
-    tot=len(contributors_list)
+    contributors_list = list(contributors)
+    i = 0
+    tot = len(contributors_list)
     for contributor in contributors:
-        i+=1
-        percentage=math.ceil((i/tot)*100)
+        i += 1
+        percentage = math.ceil((i / tot) * 100)
         send_progress(f"Fetch all contributors for the project...{percentage}%")
         username = contributor.login
         contributor_data[username] = {
             "type": contributor.type,
-            "normalized_name": re.sub(r"[^a-zA-Z0-9]", "", username).lower()
+            "normalized_name": re.sub(r"[^a-zA-Z0-9]", "", username).lower(),
         }
 
         # Map email/name to username if email/name is available
@@ -77,8 +93,7 @@ def generateGraphSet(repo_url,send_progress):
             email_to_username[contributor.email] = username
         elif contributor.name:
             name_to_username[contributor.name] = username
-   
-    
+
     # Helper function to normalize usernames and check if a user is a bot
     def get_normalized_username(username):
         return re.sub(r"[^a-zA-Z0-9]", "", username).lower()
@@ -93,8 +108,7 @@ def generateGraphSet(repo_url,send_progress):
         if "bot" in username.lower():
             return True
         return False
-  
-    
+
     # Step 3: Determine cutoff date (1.5 years before the most recent commit)
     most_recent_commit = next(repo.iter_commits())
     cutoff_date = most_recent_commit.committed_datetime - timedelta(days=547)
@@ -103,43 +117,57 @@ def generateGraphSet(repo_url,send_progress):
     # Step 4: Load all commits in memory for faster processing and calculate LOC and file diversity
     commits_data = []
     loc_per_contributor = defaultdict(int)  # Lines of code changed by each contributor
-    unique_files_per_contributor = defaultdict(set)  # Unique files each contributor has modified
+    unique_files_per_contributor = defaultdict(
+        set
+    )  # Unique files each contributor has modified
     commits_list = list(repo.iter_commits())
     tot = len(commits_list)
     j = 0
     for commit in commits_list:
-        j+=1
-        percentage=math.ceil((j/tot)*100)
+        j += 1
+        percentage = math.ceil((j / tot) * 100)
         send_progress(f"Calculate LOC and file diversity...{percentage}%")
         if commit.committed_datetime < cutoff_date:
             break  # Only consider recent commits
 
-        author_username = email_to_username.get(commit.author.email) if email_to_username.get(commit.author.email) else name_to_username.get(commit.author.name)
+        author_username = (
+            email_to_username.get(commit.author.email)
+            if email_to_username.get(commit.author.email)
+            else name_to_username.get(commit.author.name)
+        )
 
         if not author_username:
             author_username = commit.author.name
 
         # Normalize username
         normalized_username = get_normalized_username(author_username)
-        
+
         # Track lines of code changed and unique files modified
-        total_lines_changed = commit.stats.total['insertions'] + commit.stats.total['deletions']  # Total lines changed (insertions + deletions)
+        total_lines_changed = (
+            commit.stats.total["insertions"] + commit.stats.total["deletions"]
+        )  # Total lines changed (insertions + deletions)
         loc_per_contributor[normalized_username] += total_lines_changed
-        unique_files_per_contributor[normalized_username].update(commit.stats.files.keys())
-        
-        commits_data.append({
-            "datetime": commit.committed_datetime,
-            "author_name": author_username,
-            "author_email": commit.author.email,
-            "files": list(commit.stats.files.keys())
-        })
-    send_progress("Generating graphs")    
-    
+        unique_files_per_contributor[normalized_username].update(
+            commit.stats.files.keys()
+        )
+
+        commits_data.append(
+            {
+                "datetime": commit.committed_datetime,
+                "author_name": author_username,
+                "author_email": commit.author.email,
+                "files": list(commit.stats.files.keys()),
+            }
+        )
+    send_progress("Generating graphs")
+
     # Initialize the network and contributor tracking
     G = nx.Graph()
     contributor_map = defaultdict(set)  # Map normalized usernames to actual usernames
-    file_contributors = defaultdict(set)  # Track contributors per file for edge creation
-   
+    file_contributors = defaultdict(
+        set
+    )  # Track contributors per file for edge creation
+
     send_progress("Processing commits...")
     # Step 5: Process commits to identify contributors and group duplicates
     for commit in commits_data:
@@ -152,7 +180,9 @@ def generateGraphSet(repo_url,send_progress):
 
         # Normalize username to group duplicates
         normalized_username = get_normalized_username(username)
-        contributor_map[normalized_username].add((username, email))  # Track all variations of each contributor
+        contributor_map[normalized_username].add(
+            (username, email)
+        )  # Track all variations of each contributor
 
         # Track contributors who modified each file
         for file in commit["files"]:
@@ -186,22 +216,28 @@ def generateGraphSet(repo_url,send_progress):
 
     for contributor in G.nodes():
         norm_name = get_normalized_username(contributor)
-        
+
         # Get the total LOC and unique file count for this contributor
         total_loc = loc_per_contributor[norm_name]
         file_count = len(unique_files_per_contributor[norm_name])
 
         # Calculate custom centrality (adjust weighting as needed)
-        custom_centrality[contributor] = degree_centrality[contributor] + \
-                                        (0.5 * total_loc / max(loc_per_contributor.values())) + \
-                                        (0.5 * file_count / max(len(files) for files in unique_files_per_contributor.values()))   
-    
-    
+        custom_centrality[contributor] = (
+            degree_centrality[contributor]
+            + (0.5 * total_loc / max(loc_per_contributor.values()))
+            + (
+                0.5
+                * file_count
+                / max(len(files) for files in unique_files_per_contributor.values())
+            )
+        )
+
     # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[Key Developers]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
     # Use custom centrality calculated earlier
-    sorted_nodes = sorted(custom_centrality.items(), key=lambda item: item[1], reverse=True)
+    sorted_nodes = sorted(
+        custom_centrality.items(), key=lambda item: item[1], reverse=True
+    )
 
     # Define the threshold percentage for top contributors
     threshold_percentage = 0.3
@@ -215,27 +251,59 @@ def generateGraphSet(repo_url,send_progress):
         top_k_nodes.append(node)
         if cumulative_sum >= threshold_percentage * total_centrality_sum:
             break
-        
-    send_progress("Graphs ready!")    
+
+    send_progress("Graphs ready!")
     # Create JSON for full network and key collaborators network
     full_network_data = graph_to_json(G, custom_centrality)
-    
+
     # Add a 'class' attribute to nodes in the full network graph
     for node in G.nodes():
         if node in top_k_nodes:
-            G.nodes[node]['class'] = 1  # Top collaborators
+            G.nodes[node]["class"] = 1  # Top collaborators
         else:
-            G.nodes[node]['class'] = 2  # Others
-    
+            G.nodes[node]["class"] = 2  # Others
+
     key_collab_data = graph_to_json(G, custom_centrality)
 
+    # Convert defaultdict to regular dict for JSON serialization
+    unique_files_per_contributor = {
+        key: list(value) for key, value in unique_files_per_contributor.items()
+    }
+    loc_per_contributor = dict(loc_per_contributor)
+
+    # get unique_files_per_contributor
+    # Normalize cases for comparison
+    filtered_unique_files = {
+        node: unique_files_per_contributor[get_normalized_username(node)]
+        for node in top_k_nodes
+        if get_normalized_username(node) in unique_files_per_contributor
+    }
+
+
+    print(top_k_nodes)
+    print(filtered_unique_files.keys())
+    print(unique_files_per_contributor.keys())
+    # print("Dictionary keys:", list(unique_files_per_contributor.keys()))
+
+
+    # print("Top K nodes:", top_k_nodes)
+    # for key in unique_files_per_contributor:
+    #     if key in top_k_nodes:
+    #         print(f"Matched key: {key}")
+    #     else:
+    #         print(f"Unmatched key: {key}")
+    file_sizes = add_file_sizes(repo, filtered_unique_files)
     # Save data to file or return it directly
     graphs = {
         "network_graph": full_network_data,
         "key_collab": key_collab_data,
+        "unique_files_per_contributor": unique_files_per_contributor,
+        "loc_per_contributor": loc_per_contributor,
+        "filtered_unique_files": file_sizes,
     }
-    print(graphs)
-   
+    # print(graphs)
+    # print(unique_files_per_contributor)
+    # print(loc_per_contributor)
     repo.close()
     repo = None
 
@@ -243,7 +311,7 @@ def generateGraphSet(repo_url,send_progress):
     def remove_readonly(func, path, _):
         os.chmod(path, 0o777)
         func(path)
-    
+
     # Attempt to delete the temporary directory with retries
     try:
         shutil.rmtree(temp_dir, onerror=remove_readonly)
@@ -252,4 +320,3 @@ def generateGraphSet(repo_url,send_progress):
         shutil.rmtree(temp_dir, onerror=remove_readonly)
     # os.remove(temp_dir)
     return graphs
-
