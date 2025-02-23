@@ -38,6 +38,25 @@ def add_file_sizes(repo, filtered_unique_files):
 
     return file_sizes
 
+def calculate_contribution_percentages(all_files_with_sizes, files_per_contributor_with_sizes):
+    """
+    Modifies files_per_contributor_with_sizes by replacing file sizes with the percentage contribution
+    of each contributor for each file, based on the total file size from all_files_with_sizes.
+    """
+    for contributor, files in files_per_contributor_with_sizes.items():
+        for file_path, lines_changed in files.items():
+            total_size = all_files_with_sizes.get(file_path, 0)  # Get full file size
+            
+            if total_size > 0:
+                # Calculate percentage contribution
+                contribution_percentage = (lines_changed / total_size) * 100
+            else:
+                # Avoid division by zero; assume 0% if file size is missing
+                contribution_percentage = 0
+            
+            # Update the dictionary with the percentage
+            files_per_contributor_with_sizes[contributor][file_path] = round(contribution_percentage, 2)
+
 
 def generateGraphSet(repo_url, send_progress):
 
@@ -120,6 +139,8 @@ def generateGraphSet(repo_url, send_progress):
     unique_files_per_contributor = defaultdict(
         set
     )  # Unique files each contributor has modified
+    files_per_contributor_with_sizes = defaultdict(lambda: defaultdict(int)) #files per contributor with sizes
+    all_files_with_sizes = {} #keep track of all files modified
     commits_list = list(repo.iter_commits())
     tot = len(commits_list)
     j = 0
@@ -150,7 +171,15 @@ def generateGraphSet(repo_url, send_progress):
         unique_files_per_contributor[normalized_username].update(
             commit.stats.files.keys()
         )
-
+        # Update all_fileswith file sizes
+        for file_path, file_stats in commit.stats.files.items():
+            file_size = file_stats.get("lines", 0)  # Get the number of lines changed in the file
+            if file_path in all_files_with_sizes:
+                all_files_with_sizes[file_path] += file_size  # Aggregate file size if already present
+            else:
+                all_files_with_sizes[file_path] = file_size  # Initialize with file size
+            files_per_contributor_with_sizes[normalized_username][file_path] += file_size
+            
         commits_data.append(
             {
                 "datetime": commit.committed_datetime,
@@ -265,13 +294,20 @@ def generateGraphSet(repo_url, send_progress):
 
     key_collab_data = graph_to_json(G, custom_centrality)
 
+    # calculatre contribution percentages
+    calculate_contribution_percentages(all_files_with_sizes, files_per_contributor_with_sizes)
     # Convert defaultdict to regular dict for JSON serialization
     unique_files_per_contributor = {
         key: list(value) for key, value in unique_files_per_contributor.items()
     }
+    
+    files_per_contributor_with_sizes= {
+    contributor: dict(files) for contributor, files in files_per_contributor_with_sizes.items()
+    }
+
     loc_per_contributor = dict(loc_per_contributor)
 
-    # get unique_files_per_contributor
+    # get unique_files_per_contributor (key contributors)
     # Normalize cases for comparison
     filtered_unique_files = {
         node: unique_files_per_contributor[get_normalized_username(node)]
@@ -279,31 +315,29 @@ def generateGraphSet(repo_url, send_progress):
         if get_normalized_username(node) in unique_files_per_contributor
     }
 
+    filtered_unique_files_with_file_sizes = add_file_sizes(repo, filtered_unique_files)
 
-    print(top_k_nodes)
-    print(filtered_unique_files.keys())
-    print(unique_files_per_contributor.keys())
-    # print("Dictionary keys:", list(unique_files_per_contributor.keys()))
+    
+    files_per_contributor_with_sizes = {
+        node: files_per_contributor_with_sizes.get(get_normalized_username(node), {})
+        for node in top_k_nodes
+        if get_normalized_username(node) in files_per_contributor_with_sizes
+    }
 
-
-    # print("Top K nodes:", top_k_nodes)
-    # for key in unique_files_per_contributor:
-    #     if key in top_k_nodes:
-    #         print(f"Matched key: {key}")
-    #     else:
-    #         print(f"Unmatched key: {key}")
-    file_sizes = add_file_sizes(repo, filtered_unique_files)
     # Save data to file or return it directly
     graphs = {
         "network_graph": full_network_data,
         "key_collab": key_collab_data,
         "unique_files_per_contributor": unique_files_per_contributor,
         "loc_per_contributor": loc_per_contributor,
-        "filtered_unique_files": file_sizes,
+        "filtered_unique_files": filtered_unique_files_with_file_sizes,
+        "all_files_with_sizes": all_files_with_sizes,
+        "files_per_contributor_with_percentages": files_per_contributor_with_sizes,
     }
     # print(graphs)
-    # print(unique_files_per_contributor)
-    # print(loc_per_contributor)
+    print(f"unique_files_per_contributor: {unique_files_per_contributor}")
+    print(f"files_per_contributor with percentages: {files_per_contributor_with_sizes}")
+    print(f"all_files_with_sizes: {all_files_with_sizes}")
     repo.close()
     repo = None
 
