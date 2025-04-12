@@ -17,7 +17,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 
 # Enable CORS
-CORS(app, resources={r"/*": {"origins": "*"}})
+# CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, supports_credentials=True)
+socketio = SocketIO(app, cors_allowed_origins="http://localhost:3000")
+
 
 # Initialize SocketIO
 socketio = SocketIO(app, cors_allowed_origins="*")

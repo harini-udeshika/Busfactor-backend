@@ -1,0 +1,908 @@
+2025-04-09 09:26:44,881 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 09:26:44,881 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-09 09:26:44,881 [INFO]  * Restarting with stat
+2025-04-09 09:26:45,182 [WARNING]  * Debugger is active!
+2025-04-09 09:26:45,189 [INFO]  * Debugger PIN: 453-818-523
+2025-04-09 09:26:55,245 [INFO] 127.0.0.1 - - [09/Apr/2025 09:26:55] "GET /search?value=ma HTTP/1.1" 200 -
+2025-04-09 09:26:58,096 [INFO] 127.0.0.1 - - [09/Apr/2025 09:26:58] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-09 09:26:58,099 [INFO] GitHub token fetched successfully.
+2025-04-09 09:27:09,235 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 6, 'dinukaamarasinghe': 1, 'asithamarasekara': 1}
+2025-04-09 09:27:09,236 [INFO] Contributor: koulanurag | Normalized: koulanurag | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-09 09:27:09,239 [INFO] Unique files per contributor: {'koulanurag': ['README.md', 'setup.py', '.github/workflows/python-package.yml', '.github/workflows/python-publish.yml', 'examples/colab_example.ipynb']}
+2025-04-09 09:27:09,240 [INFO] Files per contributor (with percentages): {'koulanurag': {'.github/workflows/python-package.yml': 100.0, 'README.md': 100.0, 'setup.py': 100.0, 'examples/colab_example.ipynb': 100.0, '.github/workflows/python-publish.yml': 100.0}}
+2025-04-09 09:27:09,240 [INFO] All files with sizes: {'.github/workflows/python-package.yml': 35, 'README.md': 51, 'setup.py': 20, 'examples/colab_example.ipynb': 308, '.github/workflows/python-publish.yml': 2}
+2025-04-09 09:27:09,257 [INFO] 127.0.0.1 - - [09/Apr/2025 09:27:09] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-09 09:27:09,275 [INFO] 127.0.0.1 - - [09/Apr/2025 09:27:09] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:27:09,280 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:42:39,685 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-09 09:42:39,859 [INFO]  * Restarting with stat
+2025-04-09 09:42:40,518 [WARNING]  * Debugger is active!
+2025-04-09 09:42:40,524 [INFO]  * Debugger PIN: 453-818-523
+2025-04-09 09:42:42,542 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-09 09:42:42,598 [INFO]  * Restarting with stat
+2025-04-09 09:42:42,910 [WARNING]  * Debugger is active!
+2025-04-09 09:42:42,915 [INFO]  * Debugger PIN: 453-818-523
+2025-04-09 09:42:45,954 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-09 09:42:46,056 [INFO]  * Restarting with stat
+2025-04-09 09:42:46,396 [WARNING]  * Debugger is active!
+2025-04-09 09:42:46,401 [INFO]  * Debugger PIN: 453-818-523
+2025-04-09 09:42:58,854 [INFO] 127.0.0.1 - - [09/Apr/2025 09:42:58] "GET /search?value=ma HTTP/1.1" 200 -
+2025-04-09 09:43:06,428 [INFO] 127.0.0.1 - - [09/Apr/2025 09:43:06] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-09 09:43:06,432 [INFO] GitHub token fetched successfully.
+2025-04-09 09:43:10,718 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 6, 'dinukaamarasinghe': 1, 'asithamarasekara': 1}
+2025-04-09 09:43:10,718 [INFO] Contributor: freddiewalchwmf25 | Normalized: freddiewalchwmf25 | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-09 09:43:10,718 [INFO] Added JIRA-only node: pasanmalindu | Jira Score: 6 | Custom Centrality: 9000.00
+2025-04-09 09:43:10,718 [INFO] Added JIRA-only node: dinukaamarasinghe | Jira Score: 1 | Custom Centrality: 1500.00
+2025-04-09 09:43:10,718 [INFO] Added JIRA-only node: asithamarasekara | Jira Score: 1 | Custom Centrality: 1500.00
+2025-04-09 09:43:10,719 [INFO] Unique files per contributor: {'freddiewalchwmf25': ['README.md']}
+2025-04-09 09:43:10,719 [INFO] Files per contributor (with percentages): {}
+2025-04-09 09:43:10,719 [INFO] All files with sizes: {'README.md': 162}
+2025-04-09 09:43:10,723 [INFO] 127.0.0.1 - - [09/Apr/2025 09:43:10] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-09 09:43:10,740 [INFO] 127.0.0.1 - - [09/Apr/2025 09:43:10] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:43:10,743 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:45:08,811 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-09 09:45:08,908 [INFO]  * Restarting with stat
+2025-04-09 09:45:09,458 [WARNING]  * Debugger is active!
+2025-04-09 09:45:09,463 [INFO]  * Debugger PIN: 453-818-523
+2025-04-09 09:45:15,517 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-09 09:45:15,591 [INFO]  * Restarting with stat
+2025-04-09 09:45:16,020 [WARNING]  * Debugger is active!
+2025-04-09 09:45:16,025 [INFO]  * Debugger PIN: 453-818-523
+2025-04-09 09:45:27,608 [INFO] 127.0.0.1 - - [09/Apr/2025 09:45:27] "GET /search?value=ma HTTP/1.1" 200 -
+2025-04-09 09:45:32,614 [INFO] 127.0.0.1 - - [09/Apr/2025 09:45:32] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-09 09:45:32,617 [INFO] GitHub token fetched successfully.
+2025-04-09 09:45:50,875 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 6, 'dinukaamarasinghe': 1, 'asithamarasekara': 1}
+2025-04-09 09:45:50,876 [INFO] Contributor: macro | Normalized: macro | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-09 09:45:50,877 [INFO] Added JIRA-only node: pasanmalindu | Jira Score: 6 | Custom Centrality: 1.20
+2025-04-09 09:45:50,877 [INFO] Added JIRA-only node: dinukaamarasinghe | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-09 09:45:50,878 [INFO] Added JIRA-only node: asithamarasekara | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-09 09:45:50,896 [ERROR] Error processing file document/resource/re_mall_app_show.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-04-09 09:45:50,898 [ERROR] Error processing file document/resource/mall_admin_show.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2025-04-09 09:45:50,902 [ERROR] Error processing file document/resource/re_mall_system_arch.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-04-09 09:45:50,916 [ERROR] Error processing file document/resource/re_mall_dev_flow.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-04-09 09:45:50,918 [ERROR] Error processing file document/resource/qrcode_for_macrozheng_258.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-04-09 09:45:50,925 [INFO] Unique files per contributor: {'macro': ['mall-portal/src/main/java/com/macro/mall/portal/component/OrderTimeOutCancelTask.java', 'mall-portal/src/main/java/com/macro/mall/portal/config/RabbitMqConfig.java', 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionSessionService.java', 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendSubjectService.java', 'mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeParam.java', 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeNewProductService.java', 'mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java', 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeBrandService.java', 'mall-portal/src/main/resources/dao/PortalOrderDao.xml', 'mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryParam.java', 'mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminCacheServiceImpl.java', 'mall-common/src/main/java/com/macro/mall/common/config/BaseSwaggerConfig.java', 'document/resource/re_mall_app_show.jpg', 'document/resource/mall_admin_show.png', 'mall-admin/src/main/java/com/macro/mall/service/UmsAdminCacheService.java', 'mall-search/src/main/java/com/macro/mall/search/service/EsProductService.java', 'mall-common/src/main/java/com/macro/mall/common/config/BaseRedisConfig.java', 'document/resource/re_mall_system_arch.jpg', 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionService.java', 'mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java', 'mall-portal/src/main/java/com/macro/mall/portal/service/HomeService.java', 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendProductService.java', 'mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java', 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/MemberAttentionServiceImpl.java', 'mall-admin/src/main/java/com/macro/mall/service/UmsAdminService.java', 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCouponServiceImpl.java', 'mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java', 'mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java', 'mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java', 'mall-portal/src/main/java/com/macro/mall/portal/dao/PortalOrderDao.java', 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionProductRelationService.java', 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderServiceImpl.java', 'document/docker/docker-compose-env.yml', 'document/resource/re_mall_dev_flow.jpg', 'mall-admin/src/main/java/com/macro/mall/service/PmsProductService.java', 'document/resource/qrcode_for_macrozheng_258.jpg', 'mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java', 'mall-admin/src/main/java/com/macro/mall/service/PmsProductAttributeService.java', 'LICENSE', 'mall-portal/src/main/java/com/macro/mall/portal/service/MemberAttentionService.java', 'mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java', 'mall-portal/src/main/java/com/macro/mall/portal/config/JacksonConfig.java', 'mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductServiceImpl.java', 'pom.xml', 'mall-admin/src/main/java/com/macro/mall/service/PmsSkuStockService.java', 'README.md', 'mall-admin/src/main/java/com/macro/mall/service/OmsOrderService.java', 'mall-portal/src/main/java/com/macro/mall/portal/component/CancelOrderReceiver.java']}
+2025-04-09 09:45:50,926 [INFO] Files per contributor (with percentages): {'macro': {'mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendSubjectService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendProductService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeNewProductService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeBrandService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionProductRelationService.java': 100.0, 'README.md': 100.0, 'LICENSE': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionSessionService.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderServiceImpl.java': 100.0, 'pom.xml': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/service/MemberAttentionService.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/service/HomeService.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCouponServiceImpl.java': 100.0, 'mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/config/JacksonConfig.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/component/OrderTimeOutCancelTask.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/config/RabbitMqConfig.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/UmsAdminService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductServiceImpl.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/dao/PortalOrderDao.java': 100.0, 'mall-portal/src/main/resources/dao/PortalOrderDao.xml': 100.0, 'mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryParam.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/component/CancelOrderReceiver.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeParam.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/PmsSkuStockService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/PmsProductService.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/PmsProductAttributeService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/OmsOrderService.java': 100.0, 'mall-common/src/main/java/com/macro/mall/common/config/BaseRedisConfig.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/UmsAdminCacheService.java': 100.0, 'mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminCacheServiceImpl.java': 100.0, 'mall-common/src/main/java/com/macro/mall/common/config/BaseSwaggerConfig.java': 100.0, 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/MemberAttentionServiceImpl.java': 100.0, 'document/resource/mall_admin_show.png': 0, 'document/resource/qrcode_for_macrozheng_258.jpg': 0, 'document/resource/re_mall_app_show.jpg': 0, 'document/resource/re_mall_dev_flow.jpg': 0, 'document/resource/re_mall_system_arch.jpg': 0, 'mall-search/src/main/java/com/macro/mall/search/service/EsProductService.java': 100.0, 'document/docker/docker-compose-env.yml': 100.0}}
+2025-04-09 09:45:50,926 [INFO] All files with sizes: {'mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendSubjectService.java': 10, 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendProductService.java': 10, 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeNewProductService.java': 10, 'mall-admin/src/main/java/com/macro/mall/service/SmsHomeBrandService.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionService.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionProductRelationService.java': 4, 'README.md': 39, 'LICENSE': 4, 'mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionSessionService.java': 4, 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderServiceImpl.java': 38, 'pom.xml': 14, 'mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java': 6, 'mall-portal/src/main/java/com/macro/mall/portal/service/MemberAttentionService.java': 4, 'mall-portal/src/main/java/com/macro/mall/portal/service/HomeService.java': 2, 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCouponServiceImpl.java': 6, 'mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java': 8, 'mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java': 10, 'mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java': 2, 'mall-portal/src/main/java/com/macro/mall/portal/config/JacksonConfig.java': 19, 'mall-portal/src/main/java/com/macro/mall/portal/component/OrderTimeOutCancelTask.java': 2, 'mall-portal/src/main/java/com/macro/mall/portal/config/RabbitMqConfig.java': 2, 'mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java': 3, 'mall-admin/src/main/java/com/macro/mall/service/UmsAdminService.java': 6, 'mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java': 11, 'mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductServiceImpl.java': 2, 'mall-portal/src/main/java/com/macro/mall/portal/dao/PortalOrderDao.java': 14, 'mall-portal/src/main/resources/dao/PortalOrderDao.xml': 23, 'mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java': 4, 'mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryParam.java': 4, 'mall-portal/src/main/java/com/macro/mall/portal/component/CancelOrderReceiver.java': 2, 'mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeParam.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/PmsSkuStockService.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/PmsProductService.java': 4, 'mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/PmsProductAttributeService.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/OmsOrderService.java': 2, 'mall-common/src/main/java/com/macro/mall/common/config/BaseRedisConfig.java': 7, 'mall-admin/src/main/java/com/macro/mall/service/UmsAdminCacheService.java': 2, 'mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminCacheServiceImpl.java': 2, 'mall-common/src/main/java/com/macro/mall/common/config/BaseSwaggerConfig.java': 2, 'mall-portal/src/main/java/com/macro/mall/portal/service/impl/MemberAttentionServiceImpl.java': 1, 'document/resource/mall_admin_show.png': 0, 'document/resource/qrcode_for_macrozheng_258.jpg': 0, 'document/resource/re_mall_app_show.jpg': 0, 'document/resource/re_mall_dev_flow.jpg': 0, 'document/resource/re_mall_system_arch.jpg': 0, 'mall-search/src/main/java/com/macro/mall/search/service/EsProductService.java': 6, 'document/docker/docker-compose-env.yml': 2}
+2025-04-09 09:45:50,936 [INFO] 127.0.0.1 - - [09/Apr/2025 09:45:50] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-09 09:45:50,953 [INFO] 127.0.0.1 - - [09/Apr/2025 09:45:50] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:45:50,957 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,123 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,130 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,130 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,131 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,131 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,131 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,132 [INFO] 127.0.0.1 - - [09/Apr/2025 09:56:46] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 09:56:46,138 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,138 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,139 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,139 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,140 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,141 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 09:56:46,142 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,721 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,726 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,726 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,727 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,727 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,718 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,727 [INFO] 127.0.0.1 - - [09/Apr/2025 12:36:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 12:36:27,759 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,759 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,762 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,763 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,763 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,764 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 12:36:27,765 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,791 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,793 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,788 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,793 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,795 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,795 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,795 [INFO] 127.0.0.1 - - [09/Apr/2025 13:22:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 13:22:37,811 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,813 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,813 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,814 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,815 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,816 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 13:22:37,816 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,656 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,660 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,664 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,666 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,672 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,672 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,672 [INFO] 127.0.0.1 - - [09/Apr/2025 14:01:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 14:01:57,673 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,673 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,673 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,673 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,674 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,674 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 14:01:57,674 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,255 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,258 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,259 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,260 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,263 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,263 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,268 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,268 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,269 [INFO] 127.0.0.1 - - [09/Apr/2025 16:54:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 16:54:33,273 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,274 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,275 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,276 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 16:54:33,277 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,664 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,668 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,669 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,669 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,670 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,670 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,671 [INFO] 127.0.0.1 - - [09/Apr/2025 17:24:16] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 17:24:16,674 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,675 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,675 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,676 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,677 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,677 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 17:24:16,677 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,332 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,337 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,338 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,338 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,345 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,351 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,352 [INFO] 127.0.0.1 - - [09/Apr/2025 18:21:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 18:21:33,356 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,357 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,357 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,358 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,358 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,358 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 18:21:33,358 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,299 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,304 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,296 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,304 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,304 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,305 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,305 [INFO] 127.0.0.1 - - [09/Apr/2025 19:44:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 19:44:58,320 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,321 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,322 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,323 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,323 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,324 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 19:44:58,324 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,575 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,573 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,578 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,578 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,578 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,578 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,582 [INFO] 127.0.0.1 - - [09/Apr/2025 20:20:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:20:27,583 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,584 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,585 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,586 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,586 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,587 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:20:27,588 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-09 20:54:04,884 [INFO] 127.0.0.1 - - [09/Apr/2025 20:54:04] "GET /search?value=h2o HTTP/1.1" 200 -
+2025-04-09 20:54:06,475 [INFO] 127.0.0.1 - - [09/Apr/2025 20:54:06] "GET /search?value=h2ogpt HTTP/1.1" 200 -
+2025-04-09 20:54:07,892 [INFO] 127.0.0.1 - - [09/Apr/2025 20:54:07] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-09 20:54:07,895 [INFO] GitHub token fetched successfully.
+2025-04-09 20:58:31,233 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 26, 'lwerenlweren': 2, 'chathurindaranasinghe': 4, 'mathanrajsharma': 3, 'jonathanmckinney': 2, 'tloentloen': 1, 'achrafmer': 5, 'marek': 2, 'arnocandel': 6, 'asithamarasekara': 1}
+2025-04-09 20:58:31,243 [INFO] Contributor: ChathurindaRanasinghe | Normalized: chathurindaranasinghe | Jira Score: 4 | Updated Centrality: 20.21
+2025-04-09 20:58:31,247 [INFO] Contributor: Jonathan C. McKinney | Normalized: jonathancmckinney | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-09 20:58:31,250 [INFO] Contributor: pseudotensor | Normalized: pseudotensor | Jira Score: 0 | Updated Centrality: 1.47
+2025-04-09 20:58:31,252 [INFO] Contributor: svilupp | Normalized: svilupp | Jira Score: 0 | Updated Centrality: 0.08
+2025-04-09 20:58:31,298 [INFO] Contributor: fatihozturkh2o | Normalized: fatihozturkh2o | Jira Score: 0 | Updated Centrality: 0.17
+2025-04-09 20:58:31,301 [INFO] Contributor: Sivakajan-tech | Normalized: sivakajantech | Jira Score: 0 | Updated Centrality: 0.19
+2025-04-09 20:58:31,302 [INFO] Contributor: achraf-mer | Normalized: achrafmer | Jira Score: 5 | Updated Centrality: 25.96
+2025-04-09 20:58:31,302 [INFO] Contributor: Achraf Merzouki | Normalized: achrafmerzouki | Jira Score: 0 | Updated Centrality: 0.62
+2025-04-09 20:58:31,303 [INFO] Contributor: EshamAaqib | Normalized: eshamaaqib | Jira Score: 0 | Updated Centrality: 0.31
+2025-04-09 20:58:31,303 [INFO] Contributor: antoninadert | Normalized: antoninadert | Jira Score: 0 | Updated Centrality: 0.28
+2025-04-09 20:58:31,303 [INFO] Contributor: arnocandel | Normalized: arnocandel | Jira Score: 6 | Updated Centrality: 30.59
+2025-04-09 20:58:31,303 [INFO] Contributor: Fuyucch1 | Normalized: fuyucch1 | Jira Score: 0 | Updated Centrality: 0.11
+2025-04-09 20:58:31,303 [INFO] Contributor: Zain | Normalized: zain | Jira Score: 0 | Updated Centrality: 0.48
+2025-04-09 20:58:31,303 [INFO] Contributor: RobinLiu | Normalized: robinliu | Jira Score: 0 | Updated Centrality: 0.31
+2025-04-09 20:58:31,303 [INFO] Contributor: robinliubin | Normalized: robinliubin | Jira Score: 0 | Updated Centrality: 0.31
+2025-04-09 20:58:31,304 [INFO] Contributor: Zain Haq | Normalized: zainhaq | Jira Score: 0 | Updated Centrality: 0.80
+2025-04-09 20:58:31,304 [INFO] Contributor: Anush | Normalized: anush | Jira Score: 0 | Updated Centrality: 0.84
+2025-04-09 20:58:31,304 [INFO] Contributor: Anush008 | Normalized: anush008 | Jira Score: 0 | Updated Centrality: 0.36
+2025-04-09 20:58:31,304 [INFO] Contributor: Mathanraj-Sharma | Normalized: mathanrajsharma | Jira Score: 3 | Updated Centrality: 15.52
+2025-04-09 20:58:31,304 [INFO] Contributor: Darshan-Malaviya | Normalized: darshanmalaviya | Jira Score: 0 | Updated Centrality: 0.17
+2025-04-09 20:58:31,305 [INFO] Contributor: Blacksuan19 | Normalized: blacksuan19 | Jira Score: 0 | Updated Centrality: 0.33
+2025-04-09 20:58:31,305 [INFO] Contributor: Abubakar Yagoub | Normalized: abubakaryagoub | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-09 20:58:31,305 [INFO] Contributor: us8945 | Normalized: us8945 | Jira Score: 0 | Updated Centrality: 0.20
+2025-04-09 20:58:31,305 [INFO] Contributor: Xephinaiyah | Normalized: xephinaiyah | Jira Score: 0 | Updated Centrality: 0.24
+2025-04-09 20:58:31,305 [INFO] Contributor: daanknoope | Normalized: daanknoope | Jira Score: 0 | Updated Centrality: 0.24
+2025-04-09 20:58:31,305 [INFO] Contributor: MSZ-MGS | Normalized: mszmgs | Jira Score: 0 | Updated Centrality: 0.22
+2025-04-09 20:58:31,305 [INFO] Contributor: overaneout | Normalized: overaneout | Jira Score: 0 | Updated Centrality: 0.87
+2025-04-09 20:58:31,305 [INFO] Contributor: this | Normalized: this | Jira Score: 0 | Updated Centrality: 0.18
+2025-04-09 20:58:31,307 [INFO] Contributor: ozahavi | Normalized: ozahavi | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-09 20:58:31,307 [INFO] Contributor: surenH2oai | Normalized: surenh2oai | Jira Score: 0 | Updated Centrality: 0.16
+2025-04-09 20:58:31,307 [INFO] Contributor: lweren | Normalized: lweren | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-09 20:58:31,308 [INFO] Contributor: weren | Normalized: weren | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-09 20:58:31,308 [INFO] Contributor: AniketP04 | Normalized: aniketp04 | Jira Score: 0 | Updated Centrality: 0.06
+2025-04-09 20:58:31,308 [INFO] Contributor: tomkraljevic | Normalized: tomkraljevic | Jira Score: 0 | Updated Centrality: 0.22
+2025-04-09 20:58:31,308 [INFO] Contributor: squidwardthetentacles | Normalized: squidwardthetentacles | Jira Score: 0 | Updated Centrality: 0.14
+2025-04-09 20:58:31,308 [INFO] Contributor: hemenkapadia | Normalized: hemenkapadia | Jira Score: 0 | Updated Centrality: 0.05
+2025-04-09 20:58:31,308 [INFO] Contributor: jamesbraza | Normalized: jamesbraza | Jira Score: 0 | Updated Centrality: 0.36
+2025-04-09 20:58:31,308 [INFO] Contributor: William Lam | Normalized: williamlam | Jira Score: 0 | Updated Centrality: 0.22
+2025-04-09 20:58:31,308 [INFO] Added JIRA-only node: pasanmalindu | Jira Score: 26 | Custom Centrality: 5.20
+2025-04-09 20:58:31,308 [INFO] Added JIRA-only node: lwerenlweren | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-09 20:58:31,308 [INFO] Added JIRA-only node: jonathanmckinney | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-09 20:58:31,308 [INFO] Added JIRA-only node: tloentloen | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-09 20:58:31,308 [INFO] Added JIRA-only node: marek | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-09 20:58:31,309 [INFO] Added JIRA-only node: asithamarasekara | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-09 20:58:31,353 [ERROR] Error processing file h2ogpt-0.1.0-124.tgz: "Blob or Tree named 'h2ogpt-0.1.0-124.tgz' not found"
+2025-04-09 20:58:31,356 [ERROR] Error processing file docs/h2o-qr.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2025-04-09 20:58:31,371 [ERROR] Error processing file client/Makefile: "Blob or Tree named 'client' not found"
+2025-04-09 20:58:31,390 [ERROR] Error processing file client/poetry.lock: "Blob or Tree named 'client' not found"
+2025-04-09 20:58:31,410 [ERROR] Error processing file client/h2ogpt_client/_utils.py: "Blob or Tree named 'client' not found"
+2025-04-09 20:58:31,447 [ERROR] Error processing file docs/aws_sagemaker_endpoint_setup.pdf: 'utf-8' codec can't decode byte 0xd3 in position 10: invalid continuation byte
+2025-04-09 20:58:31,452 [ERROR] Error processing file client/pyproject.toml: "Blob or Tree named 'client' not found"
+2025-04-09 20:58:31,455 [ERROR] Error processing file src/chromamig.py: "Blob or Tree named 'chromamig.py' not found"
+2025-04-09 20:58:31,463 [ERROR] Error processing file client/h2ogpt_client/_core.py: "Blob or Tree named 'client' not found"
+2025-04-09 20:58:31,470 [ERROR] Error processing file src/serpapi.py: "Blob or Tree named 'serpapi.py' not found"
+2025-04-09 20:58:31,477 [ERROR] Error processing file h2ogpt-0.1.0-124.tgz: "Blob or Tree named 'h2ogpt-0.1.0-124.tgz' not found"
+2025-04-09 20:58:31,487 [INFO] Unique files per contributor: {'chathurindaranasinghe': ['cloud/packer/startup-scripts/run_vllm.sh', 'client/Makefile', 'client/README.md', '.github/workflows/python-package-publish.yml', 'cloud/packer/startup-scripts/run_h2ogpt.sh', 'cloud/packer/startup-scripts/h2ogpt.service', 'cloud/packer/startup-scripts/run_nginx.sh', 'cloud/packer/install_h2ogpt.sh', 'cloud/packer/setup_environment.sh', '.github/workflows/snyk-scan.yml', 'cloud/packer/h2oai-h2ogpt-4096-llama2-13b-chat.sh', 'cloud/packer/startup-scripts/vllm.service', 'cloud/packer/startup-scripts/temp.conf', 'cloud/packer/startup-scripts/h2ogpt_nginx.service', 'cloud/packer/h2ogpt-gcp.json', 'cloud/packer/h2ogpt-azure.json'], 'jonathancmckinney': ['docs/ui_8.png', 'client/Makefile', 'h2ogpt/spkemb', 'tests/test_long_context.py', 'models/vicuna.jpeg', 'models/modelling_RW_falcon40b.py', 'docs/aws_sagemaker_endpoint_setup.pdf', 'benchmarks/llm_gpu_benchmark_text-generation-inference.html', 'src/chromamig.py', 'src/gradio_themes.py', 'iterators/timeout_iterator.py', 'openai_server/agent_tools/wolfram_query.py', 'client/h2ogpt_client/_completion.py', 'src/evaluate_params.py', 'openai_server/autogen_streaming.py', 'tests/test_prompter.py', 'benchmarks/perf.md', 'docs/ollama_max_seq_len.png', 'models/male.wav', 'models/makevllm.sh', 'client/poetry.lock', 'docs/run_patches.sh', 'src/prompter.py', 'openai_server/agent_tools/aider_code_generation.py', 'benchmarks/llm_gpu_benchmark.py', 'models/anthropic.png', 'docs/xtt.patch', 'tests/test_langchain_units.py', 'tests/test_tokenizer.py', 'src/image_utils.py', 'src/eval.py', 'openai_server/agent_tools/common/utils.py', 'spkemb/cmu_us_awb_arctic-wav-arctic_a0002.npy', 'docs/ui_9.png', 'src/make_db.py', 'reqs_optional/requirements_optional_faiss.txt', 'tests/test_langchain_simple.py', 'src/gradio_funcs.py', 'openai_server/agent_tools/bing_search.py', 'openai_server/agent_tools/news_query.py', 'src/langchain_mistralai/chat_models.py', 'client/h2ogpt_client/_utils.py', 'docs/ollama_use.png', 'tests/porsche.mp3.zip', 'src/stt.py', 'models/pirate_by_coqui.wav', 'openai_server/agent_tools/ask_question_about_documents.py', 'docs/pytubefix.patch', 'tests/test_ui.py', 'src/enums.py', 'helm/h2ogpt-chart/templates/config-map.yaml', 'h2ogpt/generate.py', 'win_run_app.py', 'src/h2oai_pipeline.py', 'docs/README_CLIENT.md', 'benchmarks/rag_benchmark.md', 'tests/test_eval.py', 'models/longalpaca.png', 'src/langchain_openai_local.py', 'reqs_optional/requirements_optional_gpu_only.txt', 'client/h2ogpt_client/_models.py', 'helm/h2ogpt-chart/templates/service.yaml', 'src/sst.py', 'version.txt', 'docs/build_windows_gpu.sh', 'tests/sample.eml', 'models/google.png', 'src/function_server.py', 'openai_server/autogen_server.py', 'models/modelling_RW_falcon7b.py', 'README.md', 'src/vision/stable_diffusion_xl.py', 'notebooks/h2oGPT_api_examples.ipynb', 'openai_server/test_autogen_utils.py', 'docker_build_script_ubuntu.sh', 'src/sagemaker.py', 'docs/linux_install.sh', 'models/h2oai.png', 'tests/table_as_image.docx', 'models/anthropic.jpeg', 'tests/test_pipeline.py', 'tests/1paul_graham.txt', 'openai_server/agent_tools/download_youtube_video.py', 'docs/openwebui2.png', 'reqs_optional/requirements_optional_agents.txt', 'docs/google.patch', 'openai_server/openai_client.py', 'openai_server/test_conversion.py', 'h2ogpt/models', 'docker-compose-vllm.yml', 'openai_server/agent_tools/image_query.py', 'tests/memory_hog_script.py', 'openai_server/cogvlm2_server/requirements.txt', 'src/utils_sys.py', 'tests/gridnumbers.gif', 'windows_installer.cfg', 'models/llava.png', 'src/vision/__init__.py', 'docs/README_CPU.md', 'docs/openai.patch', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'h2ogpt/src', 'docs/h2oGPT_GPU.ipynb', 'src/utils_procs.py', 'src/vision/sdxl_turbo.py', 'tests/test_eval_models.py', 'docs/h2o-qr.png', 'openai_server/test_openai_server.py', 'docs/README_LINUX.md', 'reqs_optional/requirements_optional_flashattention.txt', 'h2ogpt/metrics', 'openai_server/agent_tools/download_one_web_image.py', 'reqs_optional/requirements_optional_doctr.txt', 'tests/utils.py', 'src/db_utils.py', 'reqs_optional/requirements_optional_training.txt', 'openai_server/agent_tools/audio_transcription.py', 'openai_server/agent_tools/mermaid_renderer.py', 'reqs_optional/requirements_optional_wikiprocessing.txt', 'tests/test_animated_gif.gif', 'docs/README_WINDOWS.md', 'tests/test_sentence_parsing.py', 'Makefile', 'h2ogpt/gradio_utils', 'docs/ollama_setup.png', 'tests/screenshot.png', 'src/tts_sentence_parsing.py', 'docs/linux_install_full.sh', 'src/gradio_runner.py', 'docs/ui_9c.png', 'models/lama.jpeg', 'docs/setup_docker_linux.sh', 'client/h2ogpt_client/__init__.py', 'models/gpu_mem_track.py', 'openai_server/agent_tools/papers_query.py', 'openai_server/server_start.py', 'src/cli.py', 'h2ogpt/openai_server', 'helm/h2ogpt-chart/templates/_helpers.tpl', 'reqs_optional/requirements_optional_image.txt', 'src/vision/playv2.py', 'asr1.py', 'src/pandas_agent_langchain.py', 'src/pre-commit', 'docs/ui_9b.png', 'docs/FINETUNE.md', 'docs/README_offline.md', 'docs/Dockerfile.delta2', 'src/vision/utils_vision.py', 'docs/README_GPU.md', 'src/vision/extract_movie.py', 'src/function_client.py', 'docs/README_DOCKER.md', 'openai_server/agent_backend.py', 'models/openai.png', 'client/tests/test_client.py', 'openai_server/agent_prompting.py', 'openai_server/chat_history_render.py', 'requirements.txt', 'models/openchat.png', '.env', 'reqs_optional/requirements_optional_langchain.urls.txt', 'src/langchain_openai.py', 'dev_installers/mac/README.md', 'src/vision/flux.py', 'helm/h2ogpt-chart/Chart.yaml', 'models/test_scrape1.py', 'reqs_optional/requirements_optional_gpt4all.txt', 'benchmarks/llm_gpu_benchmarks.json', 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec', 'openai_server/agent_tools/google_search.py', 'docs/windows_freezelist.txt', 'tests/test_requirements.py', 'client/tests/__init__.py', 'asr2.py', 'docs/trans.patch', 'models/predict_aquila.py', 'openai_server/agent_utils.py', 'openai_server/function_server.py', 'dev_installers/mac/build_mac_installer.sh', 'src/model_utils.py', 'models/hf-logo.png', 'tests/test_utils.py', 'src/serpapi.py', 'tests/test_speech.wav', 'models/female.wav', 'spaces/chatbot/repo_to_spaces.sh', 'openai_server/agent_tools/download_web_video.py', 'src/prepare_offline.py', 'docs/trans2.patch', '.github/workflows/python-package-publish.yml', 'docs/Dockerfile.internvl', 'helm/h2ogpt-chart/values.yaml', 'openai_server/autogen_utils.py', 'src/vision/sdxl.py', 'src/image_doctr.py', 'tests/receipt.jpg', 'tests/test_vision.py', 'docs/README_LangChain.md', 'openai_server/agent_tools/semantic_scholar_query.py', 'client/h2ogpt_client/_server.py', 'openai_server/autogen_2agent_backend.py', 'spkemb/cmu_us_ksp_arctic-wav-arctic_b0087.npy', 'reqs_optional/requirements_optional_faiss_cpu.txt', 'tests/ocr2.png', 'Dockerfile', 'client/poetry.toml', 'tests/test_client_calls.py', 'models/wizard.jpg', 'docs/autogen2.patch', 'src/create_data.py', 'reqs_optional/requirements_optional_langchain.txt', 'asr3.py', 'gradio_utils/google_auth.py', 'openai_server/agent_tools/query_to_web_image.py', 'setup.py', 'docs/windows_install.bat', 'src/client_test.py', '.gitattributes', 'tests/test_openai_server.py', 'src/export_hf_checkpoint.py', 'tests/test_perf_benchmarks.py', 'tests/ocr1.png', 'docs/README_MACOS.md', 'docs/FAQ.md', 'src/stopping.py', 'tests/test_inference_servers.py', 'client/h2ogpt_client/_core.py', 'docs/ui_1.png', 'docker-compose-cpu.yml', 'docs/voice_clone.png', 'client/.gitignore', 'src/tts_utils.py', 'src/gpt4all_llm.py', 'tests/test_manual_test.py', 'docs/README_WHEEL.md', 'openai_server/autogen.py', 'openai_server/agent_tools/scholar_papers_query.py', 'docs/INSTALL.md', 'src/version.py', 'openai_server/cogvlm2_server/cogvlm2.py', 'openai_server/backend.py', 'tests/2403.09629.pdf', 'tests/revenue.png', 'tests/test_cli.py', 'src/tts.py', 'openai_server/agent_tools/ask_question_about_image.py', 'src/utils_langchain.py', 'openai_server/agent_tools/image_generation.py', 'openai_server/test_backend_utils.py', 'openai_server/server.py', 'spkemb/cmu_us_clb_arctic-wav-arctic_a0144.npy', 'tests/test_tts.py', 'reqs_optional/requirements_optional_cpu_only.txt', 'src/utils.py', 'helm/h2ogpt-chart/templates/deployment.yaml', 'client/h2ogpt_client/_gradio_client.py', 'openai_server/agent_tools/driverless_ai_data_science.py', 'spaces/demo/h2oai_pipeline.py', 'openai_server/__init__.py', 'reqs_optional/requirements_optional_langchain.metrics.txt', 'spkemb/cmu_us_bdl_arctic-wav-arctic_a0009.npy', 'gradio_utils/css.py', 'tests/videotest.mp4', 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'openai_server/autogen_multi_agent_backend.py', 'openai_server/test_prompt_caching.py', 'docs/README_Agents.md', 'client/tests/conftest.py', 'tests/test_client_readme.py', 'tests/dental.png', 'client/README.md', 'models/human.jpg', 'openai_server/log.py', 'src/audio_langchain.py', 'gradio_utils/prompt_form.py', 'gradio_utils/grclient.py', 'docker-compose.yml', 'src/output_parser.py', 'reqs_optional/requirements_optional_audio.txt', 'benchmarks/llm_gpu_benchmark_transformers.html', 'docs/README_InferenceServers.md', 'openai_server/agent_tools/convert_document_to_text.py', 'reqs_optional/reqs_constraints.txt', 'tests/fastfood.jpg', 'src/image_pix2struct.py', 'h2ogpt/__init__.py', 'openai_server/cogvlm2.py', 'models/lama2.jpeg', 'models/mistralai.png', 'docs/README_ui.md', 'tests/jon.png', 'models/yi.svg', 'openai_server/autogen_backend.py', 'docs/README_quickstart.md', 'src/read_wiki_full.py', 'src/gen.py', 'src/prompter_utils.py', 'docs/ui_6.png', 'docs/chat_view.png', 'src/h2o_serpapi.py', 'docs/README_SerpAPI.md', 'client/pyproject.toml', 'docs/autogen.patch', 'docs/openwebui1.png', 'docs/ui_2.png', 'tests/ocr3.png', 'src/tts_coqui.py', 'docs/h2oGPT_CPU.ipynb', 'h2ogpt/iterators', 'models/human.png', 'src/gpt_langchain.py', 'src/llm_exllama.py', 'generate.py', 'spkemb/cmu_us_rms_arctic-wav-arctic_b0353.npy', 'spkemb/cmu_us_slt_arctic-wav-arctic_a0508.npy', 'openai_server/backend_utils.py', 'openai_server/agent_tools/wolfram.py', 'models/meta.png', 'tests/rotate-ex2.png', 'gradio_utils/yield_utils.py', 'asr.py', 'openai_server/agent_tools/wolfram_alpha_math_science_query.py', 'openai_server/autogen_agents.py', 'reqs_optional/requirements_optional_langchain.gpllike.txt', 'src/loaders.py', 'src/image_captions.py', 'finetune.py'], 'pseudotensor': ['client/Makefile', 'requirements.txt', 'src/utils.py', 'openai_server/test_autogen_utils.py', 'helm/h2ogpt-chart/templates/deployment.yaml', 'docker_build_script_ubuntu.sh', 'src/sagemaker.py', 'docs/linux_install.sh', '.env', 'reqs_optional/requirements_optional_langchain.urls.txt', 'src/langchain_openai.py', 'client/h2ogpt_client/_gradio_client.py', 'dev_installers/mac/README.md', 'src/vision/flux.py', 'models/h2oai.png', 'openai_server/__init__.py', 'reqs_optional/requirements_optional_gpt4all.txt', 'models/anthropic.jpeg', 'models/modelling_RW_falcon40b.py', 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec', 'openai_server/agent_tools/google_search.py', 'spkemb/cmu_us_bdl_arctic-wav-arctic_a0009.npy', 'gradio_utils/css.py', 'tests/videotest.mp4', 'reqs_optional/requirements_optional_agents.txt', 'docs/windows_freezelist.txt', 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'client/tests/__init__.py', 'src/chromamig.py', 'src/gradio_themes.py', 'models/predict_aquila.py', 'openai_server/agent_utils.py', 'openai_server/function_server.py', 'openai_server/autogen_multi_agent_backend.py', 'openai_server/openai_client.py', 'openai_server/test_conversion.py', 'src/model_utils.py', 'dev_installers/mac/build_mac_installer.sh', 'models/hf-logo.png', 'docker-compose-vllm.yml', 'iterators/timeout_iterator.py', 'openai_server/agent_tools/image_query.py', 'tests/test_utils.py', 'tests/test_speech.wav', 'src/serpapi.py', 'tests/memory_hog_script.py', 'client/tests/conftest.py', 'openai_server/agent_tools/wolfram_query.py', 'models/female.wav', 'tests/test_client_readme.py', 'openai_server/cogvlm2_server/requirements.txt', 'client/h2ogpt_client/_completion.py', 'tests/gridnumbers.gif', 'windows_installer.cfg', 'src/evaluate_params.py', 'client/tests/test_client.py', 'openai_server/autogen_streaming.py', 'models/llava.png', 'src/prepare_offline.py', 'docs/trans2.patch', 'tests/test_prompter.py', 'client/README.md', 'helm/h2ogpt-chart/values.yaml', 'src/vision/__init__.py', 'openai_server/log.py', 'models/makevllm.sh', 'src/audio_langchain.py', 'models/human.jpg', 'client/poetry.lock', 'gradio_utils/prompt_form.py', 'models/male.wav', 'docs/README_CPU.md', 'docs/run_patches.sh', 'docs/openai.patch', 'openai_server/autogen_utils.py', 'gradio_utils/grclient.py', 'src/vision/sdxl.py', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'docs/h2oGPT_GPU.ipynb', 'src/image_doctr.py', 'src/prompter.py', 'src/output_parser.py', 'reqs_optional/requirements_optional_audio.txt', 'tests/receipt.jpg', 'openai_server/agent_tools/aider_code_generation.py', 'tests/test_vision.py', 'docs/README_LangChain.md', 'docs/README_InferenceServers.md', 'src/vision/sdxl_turbo.py', 'reqs_optional/reqs_constraints.txt', 'client/h2ogpt_client/_server.py', 'tests/fastfood.jpg', 'tests/test_eval_models.py', 'openai_server/autogen_2agent_backend.py', 'models/anthropic.png', 'spkemb/cmu_us_ksp_arctic-wav-arctic_b0087.npy', 'src/image_pix2struct.py', 'tests/test_langchain_units.py', 'docs/h2o-qr.png', 'tests/test_tokenizer.py', 'models/lama2.jpeg', 'src/image_utils.py', 'openai_server/test_openai_server.py', 'docs/README_LINUX.md', 'src/eval.py', 'spkemb/cmu_us_awb_arctic-wav-arctic_a0002.npy', 'reqs_optional/requirements_optional_flashattention.txt', 'Dockerfile', 'openai_server/agent_tools/download_one_web_image.py', 'docs/README_ui.md', 'client/poetry.toml', 'reqs_optional/requirements_optional_doctr.txt', 'tests/test_client_calls.py', 'tests/utils.py', 'src/db_utils.py', 'src/make_db.py', 'finetune.py', 'openai_server/agent_tools/audio_transcription.py', 'openai_server/autogen_backend.py', 'src/create_data.py', 'reqs_optional/requirements_optional_langchain.txt', 'tests/test_langchain_simple.py', 'tests/test_animated_gif.gif', 'src/gradio_funcs.py', 'openai_server/agent_tools/bing_search.py', 'docs/README_WINDOWS.md', 'src/read_wiki_full.py', 'openai_server/agent_tools/news_query.py', 'src/gen.py', 'src/prompter_utils.py', 'gradio_utils/google_auth.py', 'openai_server/agent_tools/query_to_web_image.py', 'tests/test_sentence_parsing.py', 'src/langchain_mistralai/chat_models.py', 'setup.py', 'docs/windows_install.bat', 'Makefile', 'src/client_test.py', '.gitattributes', 'tests/test_openai_server.py', 'client/h2ogpt_client/_utils.py', 'src/export_hf_checkpoint.py', 'src/stt.py', 'tests/screenshot.png', 'tests/porsche.mp3.zip', 'client/pyproject.toml', 'tests/test_perf_benchmarks.py', 'docs/autogen.patch', 'models/pirate_by_coqui.wav', 'docs/README_MACOS.md', 'src/tts_sentence_parsing.py', 'docs/FAQ.md', 'src/gradio_runner.py', 'src/enums.py', 'src/stopping.py', 'tests/test_inference_servers.py', 'client/h2ogpt_client/_core.py', 'src/tts_coqui.py', 'win_run_app.py', 'models/lama.jpeg', 'client/h2ogpt_client/__init__.py', 'docs/h2oGPT_CPU.ipynb', 'models/gpu_mem_track.py', 'src/h2oai_pipeline.py', 'docs/README_CLIENT.md', 'src/gpt_langchain.py', 'src/vision/stable_diffusion_xl.py', 'src/llm_exllama.py', 'docs/voice_clone.png', 'openai_server/agent_tools/papers_query.py', 'openai_server/server_start.py', 'client/.gitignore', 'src/cli.py', 'tests/test_eval.py', 'spkemb/cmu_us_rms_arctic-wav-arctic_b0353.npy', 'spkemb/cmu_us_slt_arctic-wav-arctic_a0508.npy', 'openai_server/backend_utils.py', 'openai_server/agent_tools/wolfram.py', 'src/tts_utils.py', 'src/gpt4all_llm.py', 'reqs_optional/requirements_optional_image.txt', 'src/vision/playv2.py', 'tests/test_manual_test.py', 'tests/rotate-ex2.png', 'src/pandas_agent_langchain.py', 'client/h2ogpt_client/_models.py', 'src/pre-commit', 'helm/h2ogpt-chart/templates/service.yaml', 'docs/README_offline.md', 'src/version.py', 'openai_server/cogvlm2_server/cogvlm2.py', 'openai_server/backend.py', 'tests/2403.09629.pdf', 'gradio_utils/yield_utils.py', 'docs/build_windows_gpu.sh', 'openai_server/autogen_agents.py', 'reqs_optional/requirements_optional_langchain.gpllike.txt', 'tests/test_cli.py', 'models/google.png', 'src/tts.py', 'src/vision/utils_vision.py', 'src/function_server.py', 'src/loaders.py', 'openai_server/agent_tools/image_generation.py', 'openai_server/test_backend_utils.py', 'src/utils_langchain.py', 'docs/README_GPU.md', 'src/function_client.py', 'src/vision/extract_movie.py', 'docs/README_DOCKER.md', 'openai_server/agent_backend.py', 'models/modelling_RW_falcon7b.py', 'models/openai.png', 'openai_server/server.py', 'spkemb/cmu_us_clb_arctic-wav-arctic_a0144.npy', 'src/image_captions.py', 'README.md', 'openai_server/agent_prompting.py', 'tests/test_tts.py', 'openai_server/chat_history_render.py'], 'svilupp': ['openai_server/agent_prompting.py'], 'fatihozturkh2o': ['openai_server/backend.py', 'openai_server/agent_tools/audio_transcription.py', 'openai_server/backend_utils.py', 'openai_server/autogen_2agent_backend.py', 'openai_server/agent_tools/ask_question_about_image.py', 'openai_server/agent_tools/image_query.py', 'openai_server/agent_tools/image_generation.py', 'openai_server/autogen_agents.py', 'openai_server/autogen_utils.py', 'openai_server/agent_tools/download_one_web_image.py', 'openai_server/agent_utils.py', 'openai_server/server.py', 'openai_server/autogen_multi_agent_backend.py', 'openai_server/agent_tools/image_downloader.py', 'openai_server/agent_prompting.py', 'openai_server/chat_history_render.py'], 'sivakajantech': ['src/utils.py'], 'achrafmer': ['client/Makefile', 'tests/test_prompter.py', '.github/workflows/python-package-publish.yml', 'requirements.txt', 'src/utils.py', 'reqs_optional/requirements_optional_langchain.txt', 'helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/deployment.yaml', 'docker_build_script_ubuntu.sh', '.env', 'src/sagemaker.py', 'tests/test_langchain_simple.py', 'client/poetry.lock', 'docs/README_CPU.md', 'src/gpt4all_llm.py', 'tests/test_metrics.py', 'tests/test_manual_test.py', 'helm/h2ogpt-chart/Chart.yaml', 'docs/README_WINDOWS.md', 'src/gen.py', 'src/make_db.py', 'tests/test_pipeline.py', 'Makefile', 'docker-compose.yml', 'helm/h2ogpt-chart/templates/service.yaml', 'client/h2ogpt_client/_utils.py', 'docs/README_offline.md', 'src/client_test.py', 'src/output_parser.py', 'src/prompter.py', 'docs/aws_sagemaker_endpoint_setup.pdf', 'docs/README_InferenceServers.md', 'docs/README_LangChain.md', 'client/pyproject.toml', 'tests/test_perf_benchmarks.py', 'gradio_utils/css.py', 'reqs_optional/requirements_optional_agents.txt', 'src/chromamig.py', 'docs/FAQ.md', 'src/gradio_themes.py', 'tests/test_langchain_units.py', 'src/gradio_runner.py', 'src/enums.py', 'src/stopping.py', 'tests/test_inference_servers.py', 'client/h2ogpt_client/_core.py', 'helm/h2ogpt-chart/templates/config-map.yaml', 'docs/README_LINUX.md', 'src/eval.py', 'docker-compose-vllm.yml', 'docs/README_GPU.md', 'src/h2oai_pipeline.py', 'Dockerfile', 'src/serpapi.py', 'docs/README_CLIENT.md', 'docker-compose-cpu.yml', 'src/utils_langchain.py', 'spaces/chatbot/repo_to_spaces.sh', 'src/gpt_langchain.py', 'tests/test_utils.py', 'docs/README_DOCKER.md', 'h2ogpt-0.1.0-124.tgz', '.dockerignore', 'src/db_utils.py', 'src/evaluate_params.py', 'tests/test_client_calls.py', 'README.md', 'tests/utils.py', 'src/cli.py', 'tests/test_eval.py', 'src/prepare_offline.py'], 'achrafmerzouki': ['docker-compose-vllm.yml', 'src/gen.py', 'docs/README_GPU.md', 'Dockerfile', 'helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/deployment.yaml', '.env', 'docs/FAQ.md', 'docker-compose-cpu.yml', 'docker_build_script_ubuntu.sh', 'docs/README_DOCKER.md', 'Makefile', 'helm/h2ogpt-chart/templates/service.yaml', 'docker-compose.yml', '.dockerignore', 'tests/test_inference_servers.py', 'helm/h2ogpt-chart/templates/config-map.yaml'], 'eshamaaqib': ['helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'h2ogpt-0.1.0-124.tgz', 'h2ogpt-0.1.0-249.tgz', 'helm/h2ogpt-chart/templates/service.yaml', 'helm/h2ogpt-chart/Chart.yaml', 'h2ogpt-0.1.0-108.tgz', 'helm/h2ogpt-chart/templates/config-map.yaml'], 'antoninadert': ['reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'requirements.txt', 'reqs_optional/reqs_constraints.txt', 'docs/README_MACOS.md'], 'arnocandel': ['src/gen.py', 'requirements.txt', 'reqs_optional/requirements_optional_langchain.txt', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'gradio_utils/grclient.py', 'src/gpt_langchain.py', 'h2ogpt-0.1.0-124.tgz', 'docs/h2o-qr.png', 'src/gradio_runner.py', 'src/enums.py', 'helm/h2ogpt-chart/Chart.yaml', 'helm/h2ogpt-chart/templates/config-map.yaml', 'reqs_optional/reqs_constraints.txt'], 'fuyucch1': ['docs/README_DOCKER.md'], 'zain': ['docs/LINKS.md', 'docs/README_GPU.md', 'docs/README_MACOS.md', 'docs/README_CLIENT.md', 'docs/README_ui.md', 'docs/FAQ.md', 'docs/FINETUNE.md', 'docs/INSTALL.md', 'docs/README_offline.md', 'docs/README_CPU.md', 'docs/README_WINDOWS.md', 'README.md', 'docs/README_LangChain.md', 'docs/README_LINUX.md'], 'robinliu': ['helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/templates/service.yaml', 'helm/h2ogpt-chart/templates/_helpers.tpl', 'helm/h2ogpt-chart/templates/config-map.yaml'], 'robinliubin': ['helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/templates/service.yaml', 'helm/h2ogpt-chart/templates/_helpers.tpl', 'helm/h2ogpt-chart/templates/config-map.yaml'], 'zainhaq': ['client/Makefile', 'client/README.md', 'openai_server/backend_utils.py', 'src/utils.py', 'reqs_optional/requirements_optional_langchain.txt', 'docs/linux_install.sh', 'client/h2ogpt_client/_gradio_client.py', 'client/poetry.lock', 'docs/README_CPU.md', 'src/gpt4all_llm.py', 'docs/README_WINDOWS.md', 'src/gen.py', 'reqs_optional/requirements_optional_gpu_only.txt', 'client/h2ogpt_client/_models.py', 'gradio_utils/grclient.py', 'src/client_test.py', 'src/prompter.py', 'docs/FINETUNE.md', 'docs/README_offline.md', 'docs/INSTALL.md', 'tests/test_vision.py', 'docs/README_LangChain.md', 'client/pyproject.toml', 'tests/test_perf_benchmarks.py', 'client/h2ogpt_client/_server.py', 'gradio_utils/css.py', 'openai_server/backend.py', 'docs/README_MACOS.md', 'client/tests/__init__.py', 'docs/FAQ.md', 'docs/linux_install_full.sh', 'src/gradio_runner.py', 'src/enums.py', 'client/h2ogpt_client/_core.py', 'src/vision/utils_vision.py', 'src/image_utils.py', 'docs/LINKS.md', 'docs/README_LINUX.md', 'client/h2ogpt_client/__init__.py', 'src/eval.py', 'src/utils_langchain.py', 'src/h2oai_pipeline.py', 'docs/README_GPU.md', 'docs/README_CLIENT.md', 'client/tests/conftest.py', 'docs/README_ui.md', 'src/gpt_langchain.py', 'client/poetry.toml', 'client/h2ogpt_client/_completion.py', 'openai_server/server.py', 'src/evaluate_params.py', 'client/tests/test_client.py', 'README.md', 'tests/test_client_calls.py', 'client/.gitignore', 'src/cli.py', 'tests/test_eval.py'], 'anush': ['client/Makefile', 'client/README.md', 'openai_server/backend_utils.py', 'requirements.txt', 'src/utils.py', 'reqs_optional/requirements_optional_langchain.txt', 'src/tts_utils.py', 'docs/linux_install.sh', 'src/audio_langchain.py', 'client/h2ogpt_client/_gradio_client.py', 'client/poetry.lock', 'gradio_utils/prompt_form.py', 'docs/run_patches.sh', 'src/gpt4all_llm.py', 'src/gen.py', 'tests/test_long_context.py', 'reqs_optional/requirements_optional_gpu_only.txt', 'client/h2ogpt_client/_models.py', 'tests/test_pipeline.py', 'gradio_utils/grclient.py', 'src/client_test.py', 'src/prompter.py', 'reqs_optional/requirements_optional_audio.txt', 'tests/test_vision.py', 'docs/README_InferenceServers.md', 'client/pyproject.toml', 'tests/test_perf_benchmarks.py', 'client/h2ogpt_client/_server.py', 'gradio_utils/css.py', 'docs/build_windows_gpu.sh', 'openai_server/backend.py', 'reqs_optional/reqs_constraints.txt', 'docs/windows_freezelist.txt', 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'client/tests/__init__.py', 'tests/test_ui.py', 'tests/test_requirements.py', 'docs/FAQ.md', 'tests/test_langchain_units.py', 'src/gradio_runner.py', 'src/enums.py', 'openai_server/test_conversion.py', 'client/h2ogpt_client/_core.py', 'src/vision/utils_vision.py', 'tests/test_inference_servers.py', 'src/image_utils.py', 'docs/setup_docker_linux.sh', 'docs/README_LINUX.md', 'client/h2ogpt_client/__init__.py', 'src/eval.py', 'tests/test_tts.py', 'src/utils_langchain.py', 'src/h2oai_pipeline.py', 'docs/README_CLIENT.md', 'client/tests/conftest.py', 'docs/README_ui.md', 'src/gpt_langchain.py', 'client/poetry.toml', 'client/h2ogpt_client/_completion.py', 'openai_server/server.py', 'src/evaluate_params.py', 'client/tests/test_client.py', 'README.md', 'tests/test_client_calls.py', 'client/.gitignore', 'src/cli.py', 'tests/test_eval.py', 'windows_installer.cfg'], 'snykbot': ['reqs_optional/requirements_optional_langchain.txt'], 'anush008': ['src/gen.py', 'docs/windows_freezelist.txt', 'reqs_optional/requirements_optional_langchain.txt', 'src/gpt_langchain.py', 'src/enums.py', 'windows_installer.cfg', 'src/make_db.py', 'docs/README_LangChain.md'], 'mathanrajsharma': ['requirements.txt', 'src/utils.py', 'src/vision/__init__.py', 'docs/linux_install.sh', 'dev_installers/mac/README.md', 'src/gen.py', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec', 'setup.py', 'docs/README_InferenceServers.md', 'reqs_optional/reqs_constraints.txt', 'docs/README_MACOS.md', 'tests/test_langchain_units.py', 'dev_installers/mac/build_mac_installer.sh', '.gitignore', 'docs/README_CLIENT.md', 'src/gpt_langchain.py', 'dev_installers/mac/mac_run_app.py', 'README.md'], 'darshanmalaviya': ['gradio_utils/css.py', 'gradio_utils/prompt_form.py'], 'blacksuan19': ['src/gen.py', 'src/gradio_runner.py'], 'abubakaryagoub': ['src/gradio_runner.py', 'docs/FAQ.md'], 'us8945': ['notebooks/h2oGPT_api_examples.ipynb', 'docs/README_CLIENT.md'], 'xephinaiyah': ['src/gpt_langchain.py'], 'daanknoope': ['docs/FAQ.md'], 'mszmgs': ['README.md'], 'overaneout': ['client/README.md', 'src/utils.py', 'docker_build_script_ubuntu.sh', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'client/h2ogpt_client/_gradio_client.py', 'gradio_utils/prompt_form.py', 'dev_installers/mac/README.md', 'src/gpt4all_llm.py', 'docs/README_WINDOWS.md', 'helm/h2ogpt-chart/Chart.yaml', 'src/gen.py', 'src/make_db.py', 'client/h2ogpt_client/_models.py', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'gradio_utils/grclient.py', 'setup.py', 'client/h2ogpt_client/_utils.py', 'src/client_test.py', 'helm/h2ogpt-chart/templates/service.yaml', 'src/prompter.py', 'docs/README_InferenceServers.md', 'tests/test_perf_benchmarks.py', 'client/h2ogpt_client/_server.py', 'docs/build_windows_gpu.sh', 'docs/README_MACOS.md', 'docs/FAQ.md', 'tests/test_langchain_units.py', 'docs/h2o-qr.png', 'src/enums.py', 'src/gradio_runner.py', 'client/h2ogpt_client/_core.py', 'dev_installers/mac/build_mac_installer.sh', 'helm/h2ogpt-chart/templates/config-map.yaml', 'docs/README_LINUX.md', 'client/h2ogpt_client/__init__.py', 'src/eval.py', 'src/loaders.py', '.gitignore', 'src/h2oai_pipeline.py', 'dev_installers/mac/mac_run_app.py', 'src/gpt_langchain.py', 'tests/test_client_readme.py', 'client/h2ogpt_client/_completion.py', 'tests/test_client_calls.py', 'src/evaluate_params.py', 'client/tests/test_client.py', 'README.md', 'windows_installer.cfg', 'src/cli.py', 'tests/test_eval.py'], 'this': ['client/h2ogpt_client/_server.py', 'client/h2ogpt_client/_models.py', 'client/tests/conftest.py', 'client/tests/test_client.py', 'client/h2ogpt_client/_utils.py', 'client/h2ogpt_client/_gradio_client.py', 'client/h2ogpt_client/_completion.py', 'client/h2ogpt_client/_core.py', 'client/h2ogpt_client/__init__.py'], 'ozahavi': ['helm/h2ogpt-chart/templates/service.yaml', 'helm/h2ogpt-chart/values.yaml'], 'surenh2oai': ['client/README.md'], 'lweren': ['helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml'], 'weren': ['helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/_helpers.tpl'], 'aniketp04': ['models/modelling_RW_falcon7b.py', 'iterators/timeout_iterator.py', 'models/modelling_RW_falcon40b.py', 'models/gpu_mem_track.py'], 'tomkraljevic': ['requirements.txt', 'Makefile'], 'squidwardthetentacles': ['docs/README_ui.md'], 'hemenkapadia': ['benchmarks/llm_gpu_benchmarks.json', 'benchmarks/perf.md', 'benchmarks/llm_gpu_benchmark_transformers.html', 'benchmarks/llm_gpu_benchmark_text-generation-inference.html', 'benchmarks/llm_gpu_benchmark.py'], 'jamesbraza': ['docs/README_WINDOWS.md', 'src/gen.py', 'docs/README_CPU.md', 'docs/README_LINUX.md'], 'williamlam': ['docs/README_LINUX.md']}
+2025-04-09 20:58:31,489 [INFO] Files per contributor (with percentages): {'arnocandel': {'helm/h2ogpt-chart/templates/deployment.yaml': 1.88, 'helm/h2ogpt-chart/values.yaml': 2.91, 'src/gen.py': 0.13, 'reqs_optional/reqs_constraints.txt': 1.6, 'reqs_optional/requirements_optional_langchain.txt': 0.39, 'requirements.txt': 1.15, 'gradio_utils/grclient.py': 0.01, 'src/gpt_langchain.py': 0.03, 'docs/h2o-qr.png': 0, 'src/gradio_runner.py': 0.01, 'h2ogpt-0.1.0-124.tgz': 0, 'helm/h2ogpt-chart/Chart.yaml': 5.56, 'helm/h2ogpt-chart/templates/config-map.yaml': 2.88, 'src/enums.py': 0.16}, 'achraf-mer': {'Makefile': 30.56, 'docs/FAQ.md': 1.15, 'docs/README_DOCKER.md': 1.52, 'docs/README_GPU.md': 0.74, 'helm/h2ogpt-chart/values.yaml': 13.3, 'tests/test_inference_servers.py': 7.88, 'helm/h2ogpt-chart/templates/config-map.yaml': 33.65, 'helm/h2ogpt-chart/templates/deployment.yaml': 16.53, 'helm/h2ogpt-chart/templates/service.yaml': 17.89, 'src/gen.py': 2.31, 'docker_build_script_ubuntu.sh': 2.89, '.env': 29.03, 'docker-compose-cpu.yml': 24.71, 'docker-compose-vllm.yml': 25.55, 'docker-compose.yml': 25.52, 'docs/README_offline.md': 13.97, 'h2ogpt-0.1.0-124.tgz': 0, 'helm/h2ogpt-chart/Chart.yaml': 16.67, '.dockerignore': 66.67, '.github/workflows/python-package-publish.yml': 33.33, 'Dockerfile': 12.5, 'README.md': 0.48, 'client/Makefile': 1.0, 'client/h2ogpt_client/_core.py': 4.28, 'client/h2ogpt_client/_utils.py': 3.3, 'client/poetry.lock': 0.14, 'client/pyproject.toml': 0.9, 'docs/README_CLIENT.md': 1.15, 'docs/README_CPU.md': 3.33, 'docs/README_InferenceServers.md': 2.08, 'docs/README_LINUX.md': 0.82, 'docs/README_LangChain.md': 1.08, 'docs/README_WINDOWS.md': 0.13, 'docs/aws_sagemaker_endpoint_setup.pdf': 0, 'gradio_utils/css.py': 13.78, 'reqs_optional/requirements_optional_agents.txt': 0.49, 'reqs_optional/requirements_optional_langchain.txt': 1.08, 'requirements.txt': 0.14, 'spaces/chatbot/repo_to_spaces.sh': 25.93, 'src/chromamig.py': 25.0, 'src/cli.py': 3.38, 'src/client_test.py': 12.74, 'src/db_utils.py': 6.12, 'src/enums.py': 1.18, 'src/eval.py': 3.03, 'src/evaluate_params.py': 1.06, 'src/gpt4all_llm.py': 0.58, 'src/gpt_langchain.py': 5.0, 'src/gradio_runner.py': 3.67, 'src/gradio_themes.py': 87.1, 'src/h2oai_pipeline.py': 8.8, 'src/make_db.py': 8.96, 'src/output_parser.py': 34.88, 'src/prepare_offline.py': 17.71, 'src/prompter.py': 1.54, 'src/sagemaker.py': 29.09, 'src/serpapi.py': 15.11, 'src/stopping.py': 17.43, 'src/utils.py': 4.14, 'src/utils_langchain.py': 3.07, 'tests/test_client_calls.py': 3.73, 'tests/test_eval.py': 2.19, 'tests/test_langchain_simple.py': 18.18, 'tests/test_langchain_units.py': 8.23, 'tests/test_manual_test.py': 3.85, 'tests/test_metrics.py': 100.0, 'tests/test_perf_benchmarks.py': 5.88, 'tests/test_pipeline.py': 15.38, 'tests/test_prompter.py': 6.45, 'tests/test_utils.py': 4.14, 'tests/utils.py': 33.33}}
+2025-04-09 20:58:31,490 [INFO] All files with sizes: {'.github/workflows/snyk-scan.yml': 76, 'openai_server/agent_utils.py': 868, 'src/version.py': 2980, 'openai_server/agent_prompting.py': 3169, 'src/stopping.py': 637, 'docs/linux_install.sh': 3005, 'openai_server/backend.py': 4026, 'src/prompter.py': 6302, 'reqs_optional/reqs_constraints.txt': 500, 'openai_server/autogen_2agent_backend.py': 876, 'openai_server/autogen_multi_agent_backend.py': 887, 'openai_server/backend_utils.py': 1822, 'openai_server/autogen_utils.py': 3207, 'requirements.txt': 1389, 'openai_server/agent_tools/driverless_ai_data_science.py': 664, 'reqs_optional/requirements_optional_agents.txt': 204, 'src/gpt_langchain.py': 37040, 'src/langchain_openai.py': 595, 'src/langchain_openai_local.py': 195, 'src/enums.py': 2552, 'openai_server/agent_tools/audio_transcription.py': 229, 'src/gen.py': 31342, 'openai_server/agent_tools/scholar_papers_query.py': 187, 'openai_server/agent_tools/bing_search.py': 202, 'openai_server/agent_tools/google_search.py': 419, 'openai_server/agent_tools/news_query.py': 163, 'openai_server/agent_tools/papers_query.py': 537, 'docs/Dockerfile.delta2': 103, 'openai_server/agent_tools/convert_document_to_text.py': 456, 'openai_server/agent_tools/download_web_video.py': 123, 'openai_server/server.py': 4259, 'openai_server/agent_tools/aider_code_generation.py': 322, 'openai_server/openai_client.py': 1496, 'openai_server/agent_tools/ask_question_about_documents.py': 596, 'reqs_optional/requirements_optional_audio.txt': 146, 'src/model_utils.py': 5824, 'openai_server/agent_tools/ask_question_about_image.py': 399, 'docs/run_patches.sh': 200, 'reqs_optional/requirements_optional_image.txt': 47, 'src/vision/extract_movie.py': 268, 'src/utils_langchain.py': 2863, 'openai_server/agent_tools/image_generation.py': 741, 'openai_server/agent_tools/query_to_web_image.py': 94, 'openai_server/autogen_agents.py': 880, 'src/utils.py': 7061, 'tests/memory_hog_script.py': 52, 'tests/test_utils.py': 4058, 'src/gradio_runner.py': 27411, 'gradio_utils/grclient.py': 15342, 'src/cli.py': 739, 'src/client_test.py': 824, 'src/eval.py': 925, 'src/evaluate_params.py': 850, 'tests/test_eval.py': 638, 'Makefile': 432, 'src/gradio_funcs.py': 4369, 'openai_server/agent_tools/common/utils.py': 84, 'src/image_doctr.py': 349, 'src/function_client.py': 216, 'src/vision/utils_vision.py': 3671, 'openai_server/agent_tools/wolfram_alpha_math_science_query.py': 106, 'openai_server/agent_tools/wolfram_query.py': 336, 'docs/FAQ.md': 8370, 'src/function_server.py': 610, 'openai_server/agent_tools/download_one_web_image.py': 263, 'openai_server/agent_tools/download_youtube_video.py': 60, 'openai_server/chat_history_render.py': 373, 'Dockerfile': 80, 'docker_build_script_ubuntu.sh': 1209, 'helm/h2ogpt-chart/templates/deployment.yaml': 2130, 'helm/h2ogpt-chart/templates/service.yaml': 190, 'helm/h2ogpt-chart/values.yaml': 722, 'openai_server/agent_tools/mermaid_renderer.py': 251, 'openai_server/server_start.py': 721, 'reqs_optional/requirements_optional_langchain.txt': 1023, 'openai_server/agent_tools/image_query.py': 667, 'openai_server/agent_tools/image_downloader.py': 148, 'docs/windows_install.bat': 795, 'reqs_optional/requirements_optional_gpu_only.txt': 69, 'src/loaders.py': 300, 'openai_server/test_prompt_caching.py': 193, 'openai_server/autogen_streaming.py': 298, 'openai_server/test_openai_server.py': 1979, 'src/vision/flux.py': 169, 'src/vision/playv2.py': 203, 'src/vision/sdxl_turbo.py': 188, 'src/vision/stable_diffusion_xl.py': 402, 'src/stt.py': 551, 'README.md': 1668, 'src/vision/sdxl.py': 420, 'tests/test_vision.py': 664, 'openai_server/test_autogen_utils.py': 786, 'gradio_utils/yield_utils.py': 30, 'openai_server/agent_backend.py': 4679, 'reqs_optional/requirements_optional_langchain.gpllike.txt': 27, 'openai_server/test_backend_utils.py': 214, 'openai_server/test_conversion.py': 1947, 'docs/autogen2.patch': 105, 'openai_server/agent_tools/semantic_scholar_query.py': 278, 'openai_server/agent_tools/wolfram.py': 321, 'docs/README_SerpAPI.md': 32, 'tests/test_client_calls.py': 19094, 'src/h2oai_pipeline.py': 693, 'docs/pytubefix.patch': 10, 'src/gpt4all_llm.py': 1038, 'tests/test_cli.py': 169, 'docs/README_DOCKER.md': 1251, 'docs/README_GPU.md': 677, 'tests/test_inference_servers.py': 838, 'docs/README_LINUX.md': 1958, 'docs/README_WHEEL.md': 317, 'docs/README_WINDOWS.md': 1490, 'docs/README_quickstart.md': 89, 'docs/linux_install_full.sh': 726, 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt': 29, 'docs/README_MACOS.md': 684, 'tests/test_langchain_units.py': 3878, 'openai_server/autogen_backend.py': 1411, 'docs/autogen.patch': 48, 'docs/openai.patch': 22, 'docs/README_LangChain.md': 836, 'src/make_db.py': 703, 'tests/test_tokenizer.py': 156, 'tests/utils.py': 222, 'openai_server/autogen_server.py': 520, 'openai_server/autogen.py': 332, 'docs/google.patch': 14, 'docs/trans2.patch': 86, 'helm/h2ogpt-chart/templates/config-map.yaml': 104, 'docker-compose-vllm.yml': 274, 'src/image_utils.py': 1472, 'src/prompter_utils.py': 149, 'tests/test_prompter.py': 1348, 'docs/Dockerfile.internvl': 52, 'docs/README_CLIENT.md': 3395, 'docs/README_InferenceServers.md': 1393, 'docs/README_ui.md': 640, 'docs/ollama_max_seq_len.png': 0, 'docs/ollama_setup.png': 0, 'docs/ollama_use.png': 0, 'docs/setup_docker_linux.sh': 198, 'docs/trans.patch': 76, 'docs/xtt.patch': 43, 'finetune.py': 44, 'gradio_utils/google_auth.py': 642, 'gradio_utils/prompt_form.py': 1823, 'src/audio_langchain.py': 1411, 'src/db_utils.py': 883, 'src/export_hf_checkpoint.py': 24, 'src/h2o_serpapi.py': 350, 'src/image_captions.py': 740, 'src/prepare_offline.py': 367, 'src/sagemaker.py': 275, 'src/serpapi.py': 1105, 'src/tts.py': 1023, 'src/tts_coqui.py': 1930, 'src/tts_sentence_parsing.py': 978, 'src/tts_utils.py': 291, 'src/vision/__init__.py': 14, 'tests/test_animated_gif.gif': 0, 'tests/test_speech.wav': 0, 'tests/videotest.mp4': 0, 'version.txt': 8, 'src/langchain_mistralai/chat_models.py': 1617, 'openai_server/cogvlm2_server/cogvlm2.py': 938, 'docs/windows_freezelist.txt': 2295, 'windows_installer.cfg': 2771, 'openai_server/cogvlm2_server/requirements.txt': 32, 'openai_server/cogvlm2.py': 790, 'openai_server/function_server.py': 2, 'tests/test_eval_models.py': 10, 'docs/README_offline.md': 630, 'docs/openwebui1.png': 0, 'docs/openwebui2.png': 0, 'src/chromamig.py': 2488, 'src/llm_exllama.py': 420, '.gitattributes': 2, 'src/pre-commit': 32, 'benchmarks/rag_benchmark.md': 7478, 'src/image_pix2struct.py': 10, 'src/read_wiki_full.py': 6, 'tests/test_long_context.py': 16, 'tests/test_perf_benchmarks.py': 34, 'tests/test_requirements.py': 163, 'tests/sample.eml': 64, 'docs/LINKS.md': 12, 'tests/2403.09629.pdf': 0, 'client/.gitignore': 840, 'client/Makefile': 299, 'client/README.md': 681, 'client/h2ogpt_client/__init__.py': 26, 'client/h2ogpt_client/_completion.py': 3671, 'client/h2ogpt_client/_core.py': 1937, 'client/h2ogpt_client/_gradio_client.py': 386, 'client/h2ogpt_client/_models.py': 222, 'client/h2ogpt_client/_server.py': 132, 'client/poetry.lock': 4328, 'client/poetry.toml': 5, 'client/pyproject.toml': 221, 'client/tests/__init__.py': 0, 'client/tests/conftest.py': 290, 'client/tests/test_client.py': 1012, 'gradio_utils/css.py': 450, '.env': 62, 'dev_installers/mac/README.md': 181, 'dev_installers/mac/build_mac_installer.sh': 470, 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec': 154, 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec': 101, 'docker-compose-cpu.yml': 85, 'docker-compose.yml': 145, 'docs/FINETUNE.md': 42, 'docs/INSTALL.md': 190, 'docs/README_Agents.md': 51, 'docs/README_CPU.md': 60, 'docs/build_windows_gpu.sh': 381, 'docs/h2o-qr.png': 0, 'docs/h2oGPT_CPU.ipynb': 84, 'docs/h2oGPT_GPU.ipynb': 84, 'docs/ui_1.png': 0, 'docs/ui_2.png': 0, 'docs/ui_6.png': 0, 'docs/ui_8.png': 0, 'docs/ui_9.png': 0, 'docs/ui_9b.png': 0, 'docs/ui_9c.png': 0, 'generate.py': 8, 'h2ogpt/__init__.py': 0, 'h2ogpt/generate.py': 3, 'h2ogpt/gradio_utils': 3, 'h2ogpt/iterators': 3, 'h2ogpt/metrics': 3, 'h2ogpt/models': 3, 'h2ogpt/openai_server': 3, 'h2ogpt/spkemb': 3, 'h2ogpt/src': 3, 'helm/h2ogpt-chart/Chart.yaml': 72, 'helm/h2ogpt-chart/templates/_helpers.tpl': 58, 'iterators/timeout_iterator.py': 41, 'models/anthropic.jpeg': 0, 'models/anthropic.png': 0, 'models/google.png': 0, 'models/llava.png': 0, 'models/longalpaca.png': 0, 'models/makevllm.sh': 93, 'models/meta.png': 0, 'models/mistralai.png': 0, 'models/modelling_RW_falcon40b.py': 3390, 'models/modelling_RW_falcon7b.py': 3363, 'models/openchat.png': 0, 'models/test_scrape1.py': 76, 'models/vicuna.jpeg': 0, 'models/wizard.jpg': 0, 'models/yi.svg': 18, 'notebooks/h2oGPT_api_examples.ipynb': 6477, 'openai_server/__init__.py': 0, 'openai_server/log.py': 42, 'reqs_optional/requirements_optional_cpu_only.txt': 9, 'reqs_optional/requirements_optional_doctr.txt': 28, 'reqs_optional/requirements_optional_faiss.txt': 21, 'reqs_optional/requirements_optional_faiss_cpu.txt': 9, 'reqs_optional/requirements_optional_gpt4all.txt': 347, 'reqs_optional/requirements_optional_langchain.metrics.txt': 6, 'reqs_optional/requirements_optional_langchain.urls.txt': 32, 'reqs_optional/requirements_optional_training.txt': 9, 'reqs_optional/requirements_optional_wikiprocessing.txt': 12, 'setup.py': 441, 'spaces/chatbot/repo_to_spaces.sh': 54, 'src/create_data.py': 8, 'src/utils_procs.py': 557, 'src/utils_sys.py': 243, 'tests/dental.png': 0, 'tests/fastfood.jpg': 0, 'tests/gridnumbers.gif': 0, 'tests/jon.png': 0, 'tests/ocr1.png': 0, 'tests/ocr2.png': 0, 'tests/ocr3.png': 0, 'tests/receipt.jpg': 0, 'tests/revenue.png': 0, 'tests/rotate-ex2.png': 0, 'tests/screenshot.png': 0, 'tests/table_as_image.docx': 0, 'tests/test_client_readme.py': 348, 'tests/test_openai_server.py': 0, 'tests/test_pipeline.py': 26, 'tests/test_tts.py': 345, 'tests/test_ui.py': 8, 'win_run_app.py': 826, 'h2ogpt-0.1.0-249.tgz': 0, 'reqs_optional/requirements_optional_flashattention.txt': 4, 'src/output_parser.py': 301, 'src/pandas_agent_langchain.py': 790, 'models/human.png': 0, 'docs/voice_clone.png': 0, 'models/female.wav': 0, 'models/h2oai.png': 0, 'models/hf-logo.png': 0, 'models/human.jpg': 0, 'models/lama.jpeg': 0, 'models/lama2.jpeg': 0, 'models/male.wav': 0, 'models/openai.png': 0, 'models/pirate_by_coqui.wav': 0, 'spkemb/cmu_us_awb_arctic-wav-arctic_a0002.npy': 0, 'spkemb/cmu_us_bdl_arctic-wav-arctic_a0009.npy': 0, 'spkemb/cmu_us_clb_arctic-wav-arctic_a0144.npy': 0, 'spkemb/cmu_us_ksp_arctic-wav-arctic_b0087.npy': 0, 'spkemb/cmu_us_rms_arctic-wav-arctic_b0353.npy': 0, 'spkemb/cmu_us_slt_arctic-wav-arctic_a0508.npy': 0, 'src/gradio_themes.py': 124, 'tests/test_langchain_simple.py': 22, 'tests/test_manual_test.py': 52, 'tests/test_sentence_parsing.py': 444, 'src/sst.py': 56, 'asr.py': 64, 'asr1.py': 42, 'asr2.py': 54, 'asr3.py': 80, 'tests/porsche.mp3.zip': 0, 'spaces/demo/h2oai_pipeline.py': 2, 'cloud/packer/h2oai-h2ogpt-4096-llama2-13b-chat.sh': 107, 'cloud/packer/h2ogpt-azure.json': 89, 'cloud/packer/h2ogpt-gcp.json': 53, 'cloud/packer/install_h2ogpt.sh': 12, 'cloud/packer/setup_environment.sh': 15, 'cloud/packer/startup-scripts/h2ogpt.service': 12, 'cloud/packer/startup-scripts/h2ogpt_nginx.service': 12, 'cloud/packer/startup-scripts/run_h2ogpt.sh': 26, 'cloud/packer/startup-scripts/run_nginx.sh': 23, 'cloud/packer/startup-scripts/run_vllm.sh': 10, 'cloud/packer/startup-scripts/temp.conf': 14, 'cloud/packer/startup-scripts/vllm.service': 12, '.gitignore': 8, 'client/h2ogpt_client/_utils.py': 182, 'dev_installers/mac/mac_run_app.py': 94, 'models/gpu_mem_track.py': 6, 'models/predict_aquila.py': 1326, 'tests/1paul_graham.txt': 704, 'docs/chat_view.png': 0, 'h2ogpt-0.1.0-124.tgz': 0, 'h2ogpt-0.1.0-108.tgz': 0, 'benchmarks/llm_gpu_benchmark.py': 369, 'benchmarks/llm_gpu_benchmark_text-generation-inference.html': 21, 'benchmarks/llm_gpu_benchmark_transformers.html': 21, 'benchmarks/llm_gpu_benchmarks.json': 8370, 'benchmarks/perf.md': 28, '.dockerignore': 12, '.github/workflows/python-package-publish.yml': 18, 'docs/aws_sagemaker_endpoint_setup.pdf': 0, 'tests/test_metrics.py': 1}
+2025-04-09 20:58:31,528 [INFO] 127.0.0.1 - - [09/Apr/2025 20:58:31] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-09 20:58:31,605 [INFO] 127.0.0.1 - - [09/Apr/2025 20:58:31] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-09 20:58:31,607 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-10 16:08:50,871 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-10 16:08:50,871 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-10 16:08:50,871 [INFO]  * Restarting with stat
+2025-04-10 16:08:51,282 [WARNING]  * Debugger is active!
+2025-04-10 16:08:51,290 [INFO]  * Debugger PIN: 453-818-523
+2025-04-10 16:09:35,183 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-10 16:09:35,183 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-10 16:09:35,183 [INFO]  * Restarting with stat
+2025-04-10 16:09:35,979 [WARNING]  * Debugger is active!
+2025-04-10 16:09:35,996 [INFO]  * Debugger PIN: 453-818-523
+2025-04-10 16:10:30,849 [INFO] 127.0.0.1 - - [10/Apr/2025 16:10:30] "GET /search?value=h HTTP/1.1" 200 -
+2025-04-10 16:10:31,091 [INFO] 127.0.0.1 - - [10/Apr/2025 16:10:31] "GET /search?value=h2oi%3D HTTP/1.1" 200 -
+2025-04-10 16:10:31,113 [INFO] 127.0.0.1 - - [10/Apr/2025 16:10:31] "GET /search?value=h2oi HTTP/1.1" 200 -
+2025-04-10 16:10:32,665 [INFO] 127.0.0.1 - - [10/Apr/2025 16:10:32] "GET /search?value=h2o HTTP/1.1" 200 -
+2025-04-10 16:11:49,159 [INFO] 127.0.0.1 - - [10/Apr/2025 16:11:49] "GET /search?value=h2 HTTP/1.1" 200 -
+2025-04-10 16:11:49,945 [INFO] 127.0.0.1 - - [10/Apr/2025 16:11:49] "GET /search?value=h2o HTTP/1.1" 200 -
+2025-04-10 16:11:54,661 [INFO] 127.0.0.1 - - [10/Apr/2025 16:11:54] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-10 16:11:54,664 [INFO] GitHub token fetched successfully.
+2025-04-10 16:16:59,105 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 26, 'lwerenlweren': 2, 'chathurindaranasinghe': 4, 'mathanrajsharma': 3, 'jonathanmckinney': 2, 'tloentloen': 1, 'achrafmer': 5, 'marek': 2, 'arnocandel': 6, 'asithamarasekara': 1}
+2025-04-10 16:16:59,106 [INFO] Contributor: ChathurindaRanasinghe | Normalized: chathurindaranasinghe | Jira Score: 4 | Updated Centrality: 20.21
+2025-04-10 16:16:59,107 [INFO] Contributor: Jonathan C. McKinney | Normalized: jonathancmckinney | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-10 16:16:59,107 [INFO] Contributor: pseudotensor | Normalized: pseudotensor | Jira Score: 0 | Updated Centrality: 1.47
+2025-04-10 16:16:59,107 [INFO] Contributor: svilupp | Normalized: svilupp | Jira Score: 0 | Updated Centrality: 0.08
+2025-04-10 16:16:59,107 [INFO] Contributor: fatihozturkh2o | Normalized: fatihozturkh2o | Jira Score: 0 | Updated Centrality: 0.17
+2025-04-10 16:16:59,107 [INFO] Contributor: Sivakajan-tech | Normalized: sivakajantech | Jira Score: 0 | Updated Centrality: 0.19
+2025-04-10 16:16:59,107 [INFO] Contributor: achraf-mer | Normalized: achrafmer | Jira Score: 5 | Updated Centrality: 25.96
+2025-04-10 16:16:59,107 [INFO] Contributor: Achraf Merzouki | Normalized: achrafmerzouki | Jira Score: 0 | Updated Centrality: 0.62
+2025-04-10 16:16:59,108 [INFO] Contributor: EshamAaqib | Normalized: eshamaaqib | Jira Score: 0 | Updated Centrality: 0.31
+2025-04-10 16:16:59,108 [INFO] Contributor: antoninadert | Normalized: antoninadert | Jira Score: 0 | Updated Centrality: 0.28
+2025-04-10 16:16:59,108 [INFO] Contributor: arnocandel | Normalized: arnocandel | Jira Score: 6 | Updated Centrality: 30.59
+2025-04-10 16:16:59,108 [INFO] Contributor: Fuyucch1 | Normalized: fuyucch1 | Jira Score: 0 | Updated Centrality: 0.11
+2025-04-10 16:16:59,108 [INFO] Contributor: Zain | Normalized: zain | Jira Score: 0 | Updated Centrality: 0.48
+2025-04-10 16:16:59,108 [INFO] Contributor: RobinLiu | Normalized: robinliu | Jira Score: 0 | Updated Centrality: 0.31
+2025-04-10 16:16:59,108 [INFO] Contributor: robinliubin | Normalized: robinliubin | Jira Score: 0 | Updated Centrality: 0.31
+2025-04-10 16:16:59,108 [INFO] Contributor: Zain Haq | Normalized: zainhaq | Jira Score: 0 | Updated Centrality: 0.80
+2025-04-10 16:16:59,108 [INFO] Contributor: Anush | Normalized: anush | Jira Score: 0 | Updated Centrality: 0.84
+2025-04-10 16:16:59,108 [INFO] Contributor: Anush008 | Normalized: anush008 | Jira Score: 0 | Updated Centrality: 0.36
+2025-04-10 16:16:59,108 [INFO] Contributor: Mathanraj-Sharma | Normalized: mathanrajsharma | Jira Score: 3 | Updated Centrality: 15.52
+2025-04-10 16:16:59,108 [INFO] Contributor: Darshan-Malaviya | Normalized: darshanmalaviya | Jira Score: 0 | Updated Centrality: 0.17
+2025-04-10 16:16:59,108 [INFO] Contributor: Blacksuan19 | Normalized: blacksuan19 | Jira Score: 0 | Updated Centrality: 0.33
+2025-04-10 16:16:59,108 [INFO] Contributor: Abubakar Yagoub | Normalized: abubakaryagoub | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-10 16:16:59,108 [INFO] Contributor: us8945 | Normalized: us8945 | Jira Score: 0 | Updated Centrality: 0.20
+2025-04-10 16:16:59,108 [INFO] Contributor: Xephinaiyah | Normalized: xephinaiyah | Jira Score: 0 | Updated Centrality: 0.24
+2025-04-10 16:16:59,109 [INFO] Contributor: daanknoope | Normalized: daanknoope | Jira Score: 0 | Updated Centrality: 0.24
+2025-04-10 16:16:59,109 [INFO] Contributor: MSZ-MGS | Normalized: mszmgs | Jira Score: 0 | Updated Centrality: 0.22
+2025-04-10 16:16:59,109 [INFO] Contributor: overaneout | Normalized: overaneout | Jira Score: 0 | Updated Centrality: 0.87
+2025-04-10 16:16:59,109 [INFO] Contributor: this | Normalized: this | Jira Score: 0 | Updated Centrality: 0.18
+2025-04-10 16:16:59,109 [INFO] Contributor: ozahavi | Normalized: ozahavi | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-10 16:16:59,109 [INFO] Contributor: surenH2oai | Normalized: surenh2oai | Jira Score: 0 | Updated Centrality: 0.16
+2025-04-10 16:16:59,109 [INFO] Contributor: lweren | Normalized: lweren | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-10 16:16:59,109 [INFO] Contributor: weren | Normalized: weren | Jira Score: 0 | Updated Centrality: 0.30
+2025-04-10 16:16:59,109 [INFO] Contributor: AniketP04 | Normalized: aniketp04 | Jira Score: 0 | Updated Centrality: 0.06
+2025-04-10 16:16:59,109 [INFO] Contributor: tomkraljevic | Normalized: tomkraljevic | Jira Score: 0 | Updated Centrality: 0.22
+2025-04-10 16:16:59,109 [INFO] Contributor: squidwardthetentacles | Normalized: squidwardthetentacles | Jira Score: 0 | Updated Centrality: 0.14
+2025-04-10 16:16:59,109 [INFO] Contributor: hemenkapadia | Normalized: hemenkapadia | Jira Score: 0 | Updated Centrality: 0.05
+2025-04-10 16:16:59,109 [INFO] Contributor: jamesbraza | Normalized: jamesbraza | Jira Score: 0 | Updated Centrality: 0.36
+2025-04-10 16:16:59,109 [INFO] Contributor: William Lam | Normalized: williamlam | Jira Score: 0 | Updated Centrality: 0.22
+2025-04-10 16:16:59,109 [INFO] Added JIRA-only node: pasanmalindu | Jira Score: 26 | Custom Centrality: 5.20
+2025-04-10 16:16:59,109 [INFO] Added JIRA-only node: lwerenlweren | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-10 16:16:59,110 [INFO] Added JIRA-only node: jonathanmckinney | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-10 16:16:59,110 [INFO] Added JIRA-only node: tloentloen | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-10 16:16:59,110 [INFO] Added JIRA-only node: marek | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-10 16:16:59,110 [INFO] Added JIRA-only node: asithamarasekara | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-10 16:16:59,116 [ERROR] Error processing file docs/h2o-qr.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2025-04-10 16:16:59,119 [ERROR] Error processing file h2ogpt-0.1.0-124.tgz: "Blob or Tree named 'h2ogpt-0.1.0-124.tgz' not found"
+2025-04-10 16:16:59,152 [ERROR] Error processing file src/serpapi.py: "Blob or Tree named 'serpapi.py' not found"
+2025-04-10 16:16:59,173 [ERROR] Error processing file docs/aws_sagemaker_endpoint_setup.pdf: 'utf-8' codec can't decode byte 0xd3 in position 10: invalid continuation byte
+2025-04-10 16:16:59,175 [ERROR] Error processing file client/h2ogpt_client/_core.py: "Blob or Tree named 'client' not found"
+2025-04-10 16:16:59,182 [ERROR] Error processing file client/h2ogpt_client/_utils.py: "Blob or Tree named 'client' not found"
+2025-04-10 16:16:59,190 [ERROR] Error processing file client/pyproject.toml: "Blob or Tree named 'client' not found"
+2025-04-10 16:16:59,197 [ERROR] Error processing file client/Makefile: "Blob or Tree named 'client' not found"
+2025-04-10 16:16:59,199 [ERROR] Error processing file client/poetry.lock: "Blob or Tree named 'client' not found"
+2025-04-10 16:16:59,200 [ERROR] Error processing file h2ogpt-0.1.0-124.tgz: "Blob or Tree named 'h2ogpt-0.1.0-124.tgz' not found"
+2025-04-10 16:16:59,200 [ERROR] Error processing file src/chromamig.py: "Blob or Tree named 'chromamig.py' not found"
+2025-04-10 16:16:59,212 [INFO] Unique files per contributor: {'chathurindaranasinghe': ['cloud/packer/startup-scripts/h2ogpt.service', 'cloud/packer/install_h2ogpt.sh', 'cloud/packer/startup-scripts/run_nginx.sh', 'cloud/packer/startup-scripts/temp.conf', 'cloud/packer/h2ogpt-azure.json', '.github/workflows/python-package-publish.yml', 'cloud/packer/startup-scripts/run_h2ogpt.sh', 'cloud/packer/h2oai-h2ogpt-4096-llama2-13b-chat.sh', 'client/Makefile', 'client/README.md', 'cloud/packer/h2ogpt-gcp.json', 'cloud/packer/setup_environment.sh', 'cloud/packer/startup-scripts/h2ogpt_nginx.service', 'cloud/packer/startup-scripts/vllm.service', '.github/workflows/snyk-scan.yml', 'cloud/packer/startup-scripts/run_vllm.sh'], 'jonathancmckinney': ['docker-compose-cpu.yml', 'src/prompter_utils.py', 'tests/test_speech.wav', 'docs/README_GPU.md', 'docs/aws_sagemaker_endpoint_setup.pdf', 'h2ogpt/metrics', 'openai_server/autogen_utils.py', 'openai_server/agent_tools/wolfram_query.py', 'src/db_utils.py', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'openai_server/backend_utils.py', 'client/h2ogpt_client/__init__.py', 'docs/ui_6.png', 'client/poetry.lock', 'src/eval.py', 'models/wizard.jpg', 'generate.py', 'docs/windows_freezelist.txt', 'openai_server/autogen_backend.py', 'openai_server/agent_tools/download_youtube_video.py', 'models/lama.jpeg', 'tests/videotest.mp4', 'src/loaders.py', 'openai_server/test_backend_utils.py', 'openai_server/autogen_2agent_backend.py', 'docs/openwebui1.png', 'src/output_parser.py', 'openai_server/server.py', 'openai_server/server_start.py', 'docker-compose.yml', 'docs/google.patch', 'models/openai.png', 'benchmarks/rag_benchmark.md', 'src/vision/playv2.py', 'openai_server/agent_tools/download_one_web_image.py', 'spkemb/cmu_us_slt_arctic-wav-arctic_a0508.npy', 'docs/README_Agents.md', 'benchmarks/llm_gpu_benchmark.py', 'docs/README_CPU.md', 'docs/windows_install.bat', 'spaces/chatbot/repo_to_spaces.sh', 'reqs_optional/requirements_optional_faiss_cpu.txt', 'openai_server/agent_tools/news_query.py', 'docs/ollama_use.png', 'src/serpapi.py', 'models/modelling_RW_falcon40b.py', 'models/google.png', 'dev_installers/mac/build_mac_installer.sh', 'iterators/timeout_iterator.py', 'tests/test_prompter.py', 'reqs_optional/requirements_optional_agents.txt', 'docs/autogen.patch', 'openai_server/agent_tools/bing_search.py', 'docs/README_LINUX.md', 'setup.py', 'client/tests/conftest.py', 'finetune.py', 'docs/README_offline.md', 'tests/ocr3.png', 'h2ogpt/gradio_utils', 'tests/test_manual_test.py', 'docs/trans2.patch', 'src/vision/flux.py', 'client/h2ogpt_client/_completion.py', 'docs/chat_view.png', 'Makefile', 'docs/ui_1.png', 'h2ogpt/iterators', 'client/README.md', 'models/llava.png', 'openai_server/cogvlm2_server/requirements.txt', 'models/test_scrape1.py', 'docs/FAQ.md', 'client/Makefile', 'tests/test_animated_gif.gif', 'docs/README_ui.md', 'version.txt', 'src/gradio_runner.py', 'tests/revenue.png', 'src/stopping.py', 'openai_server/agent_tools/query_to_web_image.py', 'asr3.py', 'asr.py', 'tests/test_utils.py', 'openai_server/agent_tools/image_query.py', 'gradio_utils/prompt_form.py', 'h2ogpt/generate.py', 'src/vision/__init__.py', 'openai_server/openai_client.py', 'docs/ollama_max_seq_len.png', 'openai_server/agent_backend.py', 'tests/test_ui.py', 'docs/linux_install_full.sh', 'docs/xtt.patch', 'src/utils_sys.py', 'tests/gridnumbers.gif', 'docs/pytubefix.patch', 'src/read_wiki_full.py', 'src/create_data.py', 'openai_server/agent_tools/ask_question_about_documents.py', 'client/h2ogpt_client/_models.py', 'openai_server/backend.py', '.github/workflows/python-package-publish.yml', 'src/h2oai_pipeline.py', 'openai_server/agent_tools/aider_code_generation.py', 'docs/README_SerpAPI.md', 'asr2.py', 'benchmarks/llm_gpu_benchmark_text-generation-inference.html', 'tests/receipt.jpg', 'src/prompter.py', 'h2ogpt/spkemb', 'docs/ui_9c.png', 'tests/test_tokenizer.py', 'docs/linux_install.sh', 'openai_server/__init__.py', 'tests/test_langchain_simple.py', 'src/h2o_serpapi.py', 'docs/README_CLIENT.md', 'Dockerfile', 'src/stt.py', 'src/prepare_offline.py', 'reqs_optional/requirements_optional_cpu_only.txt', 'models/female.wav', 'docs/README_MACOS.md', 'openai_server/test_prompt_caching.py', 'src/enums.py', 'tests/test_client_calls.py', 'src/langchain_mistralai/chat_models.py', 'reqs_optional/requirements_optional_image.txt', 'models/anthropic.png', 'h2ogpt/openai_server', 'src/evaluate_params.py', 'src/tts_sentence_parsing.py', 'models/longalpaca.png', 'reqs_optional/requirements_optional_wikiprocessing.txt', 'tests/ocr1.png', 'reqs_optional/requirements_optional_langchain.gpllike.txt', 'client/tests/test_client.py', 'tests/test_pipeline.py', 'client/h2ogpt_client/_utils.py', 'tests/table_as_image.docx', 'gradio_utils/css.py', 'models/human.jpg', 'openai_server/agent_prompting.py', 'client/pyproject.toml', 'openai_server/agent_tools/scholar_papers_query.py', '.env', 'client/poetry.toml', 'tests/ocr2.png', 'windows_installer.cfg', 'reqs_optional/reqs_constraints.txt', 'benchmarks/llm_gpu_benchmark_transformers.html', 'src/gpt4all_llm.py', 'reqs_optional/requirements_optional_flashattention.txt', 'h2ogpt/__init__.py', 'tests/test_openai_server.py', 'tests/memory_hog_script.py', 'tests/sample.eml', 'src/make_db.py', 'src/gen.py', 'notebooks/h2oGPT_api_examples.ipynb', 'openai_server/agent_tools/image_generation.py', 'src/langchain_openai.py', 'docs/README_quickstart.md', 'models/openchat.png', 'src/pre-commit', 'models/gpu_mem_track.py', 'tests/test_eval.py', 'src/audio_langchain.py', 'win_run_app.py', 'openai_server/test_conversion.py', 'docs/openwebui2.png', 'openai_server/log.py', 'tests/test_client_readme.py', 'docs/ui_2.png', 'docs/voice_clone.png', 'src/image_doctr.py', 'src/vision/extract_movie.py', 'client/h2ogpt_client/_core.py', 'src/tts.py', 'docs/ollama_setup.png', 'helm/h2ogpt-chart/templates/config-map.yaml', 'src/vision/sdxl_turbo.py', 'tests/test_inference_servers.py', 'tests/test_langchain_units.py', 'reqs_optional/requirements_optional_gpt4all.txt', 'spkemb/cmu_us_ksp_arctic-wav-arctic_b0087.npy', 'helm/h2ogpt-chart/values.yaml', 'docs/Dockerfile.internvl', 'spkemb/cmu_us_awb_arctic-wav-arctic_a0002.npy', 'benchmarks/llm_gpu_benchmarks.json', 'helm/h2ogpt-chart/templates/service.yaml', 'tests/test_long_context.py', 'docs/h2oGPT_CPU.ipynb', 'docs/build_windows_gpu.sh', 'h2ogpt/models', 'src/image_pix2struct.py', 'client/h2ogpt_client/_gradio_client.py', 'openai_server/autogen.py', 'docs/README_InferenceServers.md', 'src/model_utils.py', 'models/male.wav', 'docs/openai.patch', 'spaces/demo/h2oai_pipeline.py', 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'src/vision/utils_vision.py', 'openai_server/autogen_server.py', 'src/image_utils.py', 'docker_build_script_ubuntu.sh', 'openai_server/function_server.py', 'docs/autogen2.patch', 'spkemb/cmu_us_clb_arctic-wav-arctic_a0144.npy', 'src/utils_procs.py', 'src/langchain_openai_local.py', 'openai_server/agent_tools/wolfram.py', 'tests/rotate-ex2.png', 'openai_server/autogen_streaming.py', 'src/sst.py', 'reqs_optional/requirements_optional_langchain.metrics.txt', 'src/vision/stable_diffusion_xl.py', 'tests/test_tts.py', 'asr1.py', 'src/vision/sdxl.py', 'reqs_optional/requirements_optional_gpu_only.txt', 'gradio_utils/grclient.py', 'openai_server/agent_tools/google_search.py', 'openai_server/agent_tools/common/utils.py', 'docs/Dockerfile.delta2', 'tests/test_requirements.py', 'openai_server/agent_tools/mermaid_renderer.py', 'src/tts_utils.py', 'src/gradio_themes.py', 'tests/fastfood.jpg', 'models/vicuna.jpeg', 'openai_server/autogen_multi_agent_backend.py', 'docs/README_WHEEL.md', 'client/h2ogpt_client/_server.py', 'spkemb/cmu_us_rms_arctic-wav-arctic_b0353.npy', 'tests/test_cli.py', 'src/export_hf_checkpoint.py', 'openai_server/cogvlm2_server/cogvlm2.py', 'tests/test_vision.py', 'src/client_test.py', 'gradio_utils/google_auth.py', 'h2ogpt/src', 'openai_server/cogvlm2.py', 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec', 'models/makevllm.sh', 'reqs_optional/requirements_optional_doctr.txt', 'src/version.py', 'docs/trans.patch', 'client/tests/__init__.py', 'openai_server/agent_tools/ask_question_about_image.py', 'tests/screenshot.png', 'openai_server/agent_tools/wolfram_alpha_math_science_query.py', 'openai_server/test_openai_server.py', 'gradio_utils/yield_utils.py', 'docker-compose-vllm.yml', 'models/meta.png', 'spkemb/cmu_us_bdl_arctic-wav-arctic_a0009.npy', 'docs/setup_docker_linux.sh', 'reqs_optional/requirements_optional_langchain.txt', 'openai_server/agent_tools/download_web_video.py', 'tests/2403.09629.pdf', 'docs/run_patches.sh', 'requirements.txt', 'reqs_optional/requirements_optional_training.txt', 'openai_server/autogen_agents.py', 'openai_server/agent_utils.py', 'tests/dental.png', 'src/utils.py', 'tests/test_eval_models.py', 'src/gpt_langchain.py', 'models/mistralai.png', 'openai_server/agent_tools/papers_query.py', 'reqs_optional/requirements_optional_audio.txt', 'tests/utils.py', 'docs/README_WINDOWS.md', 'src/function_client.py', 'helm/h2ogpt-chart/templates/_helpers.tpl', 'docs/h2oGPT_GPU.ipynb', 'openai_server/test_autogen_utils.py', 'tests/1paul_graham.txt', 'docs/FINETUNE.md', 'docs/ui_8.png', 'tests/test_perf_benchmarks.py', 'models/human.png', 'openai_server/agent_tools/audio_transcription.py', 'docs/ui_9b.png', 'docs/README_LangChain.md', 'tests/porsche.mp3.zip', 'helm/h2ogpt-chart/Chart.yaml', 'models/lama2.jpeg', 'README.md', 'models/pirate_by_coqui.wav', 'reqs_optional/requirements_optional_faiss.txt', 'src/cli.py', 'src/tts_coqui.py', 'src/gradio_funcs.py', 'docs/ui_9.png', 'tests/test_sentence_parsing.py', 'models/predict_aquila.py', 'dev_installers/mac/README.md', 'docs/h2o-qr.png', 'models/h2oai.png', 'src/utils_langchain.py', 'reqs_optional/requirements_optional_langchain.urls.txt', 'docs/README_DOCKER.md', 'src/pandas_agent_langchain.py', 'models/hf-logo.png', 'openai_server/agent_tools/semantic_scholar_query.py', 'src/function_server.py', 'openai_server/agent_tools/convert_document_to_text.py', 'models/modelling_RW_falcon7b.py', 'src/sagemaker.py', 'client/.gitignore', 'openai_server/chat_history_render.py', 'docs/INSTALL.md', 'benchmarks/perf.md', '.gitattributes', 'openai_server/agent_tools/driverless_ai_data_science.py', 'src/chromamig.py', 'tests/jon.png', 'helm/h2ogpt-chart/templates/deployment.yaml', 'src/llm_exllama.py', 'models/yi.svg', 'src/image_captions.py', 'models/anthropic.jpeg'], 'pseudotensor': ['src/stopping.py', 'openai_server/agent_tools/query_to_web_image.py', 'gradio_utils/google_auth.py', 'tests/test_client_readme.py', 'src/prompter_utils.py', 'tests/test_utils.py', 'tests/test_speech.wav', 'docs/voice_clone.png', 'openai_server/agent_tools/image_query.py', 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec', 'docs/README_GPU.md', 'gradio_utils/prompt_form.py', 'src/image_doctr.py', 'src/vision/extract_movie.py', 'client/h2ogpt_client/_core.py', 'src/vision/__init__.py', 'models/makevllm.sh', 'reqs_optional/requirements_optional_doctr.txt', 'src/version.py', 'src/tts.py', 'openai_server/openai_client.py', 'openai_server/autogen_utils.py', 'openai_server/agent_tools/wolfram_query.py', 'client/tests/__init__.py', 'src/vision/sdxl_turbo.py', 'src/db_utils.py', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'openai_server/backend_utils.py', 'tests/screenshot.png', 'openai_server/test_openai_server.py', 'tests/test_inference_servers.py', 'gradio_utils/yield_utils.py', 'tests/test_langchain_units.py', 'openai_server/agent_backend.py', 'client/h2ogpt_client/__init__.py', 'docker-compose-vllm.yml', 'reqs_optional/requirements_optional_gpt4all.txt', 'tests/gridnumbers.gif', 'spkemb/cmu_us_bdl_arctic-wav-arctic_a0009.npy', 'src/read_wiki_full.py', 'src/eval.py', 'client/poetry.lock', 'src/create_data.py', 'client/h2ogpt_client/_models.py', 'spkemb/cmu_us_ksp_arctic-wav-arctic_b0087.npy', 'reqs_optional/requirements_optional_langchain.txt', 'openai_server/backend.py', 'helm/h2ogpt-chart/values.yaml', 'tests/2403.09629.pdf', 'docs/run_patches.sh', 'docs/windows_freezelist.txt', 'spkemb/cmu_us_awb_arctic-wav-arctic_a0002.npy', 'requirements.txt', 'openai_server/autogen_backend.py', 'src/h2oai_pipeline.py', 'models/lama.jpeg', 'openai_server/agent_tools/aider_code_generation.py', 'helm/h2ogpt-chart/templates/service.yaml', 'tests/videotest.mp4', 'openai_server/autogen_agents.py', 'openai_server/agent_utils.py', 'docs/h2oGPT_CPU.ipynb', 'src/loaders.py', 'openai_server/test_backend_utils.py', 'openai_server/autogen_2agent_backend.py', 'src/output_parser.py', 'openai_server/server.py', 'src/utils.py', 'docs/build_windows_gpu.sh', 'openai_server/server_start.py', 'tests/test_eval_models.py', 'src/gpt_langchain.py', 'src/prompter.py', 'tests/receipt.jpg', 'src/image_pix2struct.py', 'client/h2ogpt_client/_gradio_client.py', 'openai_server/agent_tools/papers_query.py', 'reqs_optional/requirements_optional_audio.txt', 'tests/utils.py', 'docs/README_WINDOWS.md', 'src/function_client.py', 'tests/test_tokenizer.py', 'docs/README_InferenceServers.md', 'docs/linux_install.sh', 'models/openai.png', 'src/model_utils.py', 'openai_server/__init__.py', 'tests/test_langchain_simple.py', 'src/vision/playv2.py', 'openai_server/agent_tools/download_one_web_image.py', 'docs/h2oGPT_GPU.ipynb', 'openai_server/test_autogen_utils.py', 'spkemb/cmu_us_slt_arctic-wav-arctic_a0508.npy', 'docs/README_CLIENT.md', 'Dockerfile', 'tests/test_perf_benchmarks.py', 'src/stt.py', 'models/male.wav', 'src/prepare_offline.py', 'openai_server/agent_tools/audio_transcription.py', 'docs/openai.patch', 'models/female.wav', 'docs/README_MACOS.md', 'docs/README_LangChain.md', 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'src/enums.py', 'tests/porsche.mp3.zip', 'docs/README_CPU.md', 'docs/windows_install.bat', 'tests/test_client_calls.py', 'src/vision/utils_vision.py', 'src/langchain_mistralai/chat_models.py', 'models/lama2.jpeg', 'README.md', 'reqs_optional/requirements_optional_image.txt', 'src/image_utils.py', 'models/anthropic.png', 'src/evaluate_params.py', 'docker_build_script_ubuntu.sh', 'models/pirate_by_coqui.wav', 'src/tts_sentence_parsing.py', 'openai_server/function_server.py', 'openai_server/agent_tools/news_query.py', 'reqs_optional/requirements_optional_langchain.gpllike.txt', 'src/cli.py', 'src/tts_coqui.py', 'src/serpapi.py', 'client/tests/test_client.py', 'src/gradio_funcs.py', 'models/modelling_RW_falcon40b.py', 'models/google.png', 'tests/test_sentence_parsing.py', 'dev_installers/mac/build_mac_installer.sh', 'iterators/timeout_iterator.py', 'spkemb/cmu_us_clb_arctic-wav-arctic_a0144.npy', 'client/h2ogpt_client/_utils.py', 'tests/test_prompter.py', 'models/predict_aquila.py', 'reqs_optional/requirements_optional_agents.txt', 'openai_server/agent_tools/wolfram.py', 'gradio_utils/css.py', 'dev_installers/mac/README.md', 'openai_server/agent_prompting.py', 'tests/rotate-ex2.png', 'models/human.jpg', 'client/pyproject.toml', 'docs/h2o-qr.png', 'openai_server/autogen_streaming.py', 'docs/autogen.patch', 'src/utils_langchain.py', 'models/h2oai.png', 'reqs_optional/requirements_optional_langchain.urls.txt', 'openai_server/agent_tools/bing_search.py', '.env', 'docs/README_DOCKER.md', 'docs/README_LINUX.md', 'src/vision/stable_diffusion_xl.py', 'tests/test_tts.py', 'setup.py', 'client/tests/conftest.py', 'src/vision/sdxl.py', 'client/poetry.toml', 'finetune.py', 'src/pandas_agent_langchain.py', 'docs/README_offline.md', 'windows_installer.cfg', 'reqs_optional/reqs_constraints.txt', 'openai_server/agent_tools/google_search.py', 'gradio_utils/grclient.py', 'models/hf-logo.png', 'src/gpt4all_llm.py', 'reqs_optional/requirements_optional_flashattention.txt', 'src/function_server.py', 'tests/test_manual_test.py', 'docs/trans2.patch', 'tests/test_openai_server.py', 'tests/memory_hog_script.py', 'src/tts_utils.py', 'models/modelling_RW_falcon7b.py', 'src/gradio_themes.py', 'src/vision/flux.py', 'tests/fastfood.jpg', 'src/make_db.py', 'src/gen.py', 'src/sagemaker.py', 'client/.gitignore', 'client/h2ogpt_client/_completion.py', 'openai_server/chat_history_render.py', 'Makefile', 'openai_server/autogen_multi_agent_backend.py', 'openai_server/agent_tools/image_generation.py', 'src/langchain_openai.py', 'client/README.md', 'src/pre-commit', 'models/gpu_mem_track.py', 'client/h2ogpt_client/_server.py', 'spkemb/cmu_us_rms_arctic-wav-arctic_b0353.npy', 'models/llava.png', 'openai_server/cogvlm2_server/requirements.txt', 'tests/test_eval.py', 'docs/FAQ.md', 'src/audio_langchain.py', 'tests/test_cli.py', 'client/Makefile', 'tests/test_animated_gif.gif', 'win_run_app.py', 'src/export_hf_checkpoint.py', 'src/chromamig.py', 'openai_server/test_conversion.py', '.gitattributes', 'docs/README_ui.md', 'helm/h2ogpt-chart/templates/deployment.yaml', 'openai_server/cogvlm2_server/cogvlm2.py', 'src/gradio_runner.py', 'src/image_captions.py', 'tests/test_vision.py', 'src/llm_exllama.py', 'models/anthropic.jpeg', 'src/client_test.py', 'openai_server/log.py'], 'svilupp': ['openai_server/agent_prompting.py'], 'fatihozturkh2o': ['openai_server/backend_utils.py', 'openai_server/autogen_2agent_backend.py', 'openai_server/agent_tools/ask_question_about_image.py', 'openai_server/server.py', 'openai_server/agent_prompting.py', 'openai_server/backend.py', 'openai_server/agent_tools/image_downloader.py', 'openai_server/chat_history_render.py', 'openai_server/agent_tools/image_query.py', 'openai_server/autogen_multi_agent_backend.py', 'openai_server/agent_tools/image_generation.py', 'openai_server/autogen_utils.py', 'openai_server/agent_tools/download_one_web_image.py', 'openai_server/autogen_agents.py', 'openai_server/agent_utils.py', 'openai_server/agent_tools/audio_transcription.py'], 'sivakajantech': ['src/utils.py'], 'achrafmer': ['src/output_parser.py', 'src/stopping.py', 'docker-compose-cpu.yml', 'tests/test_metrics.py', 'docker_build_script_ubuntu.sh', 'src/evaluate_params.py', 'src/utils.py', 'tests/test_manual_test.py', 'tests/test_utils.py', 'src/gpt_langchain.py', 'src/prompter.py', 'src/cli.py', 'docker-compose.yml', 'docs/README_GPU.md', 'src/serpapi.py', 'src/gradio_themes.py', 'tests/utils.py', 'docs/README_WINDOWS.md', 'docs/aws_sagemaker_endpoint_setup.pdf', 'docs/README_InferenceServers.md', 'client/h2ogpt_client/_core.py', 'src/make_db.py', 'src/gen.py', 'src/sagemaker.py', 'tests/test_pipeline.py', 'client/h2ogpt_client/_utils.py', 'tests/test_prompter.py', 'Makefile', 'helm/h2ogpt-chart/templates/config-map.yaml', 'tests/test_langchain_simple.py', 'gradio_utils/css.py', 'reqs_optional/requirements_optional_agents.txt', 'src/db_utils.py', 'client/pyproject.toml', 'tests/test_inference_servers.py', 'src/utils_langchain.py', 'tests/test_langchain_units.py', '.env', 'docker-compose-vllm.yml', 'docs/README_DOCKER.md', 'docs/README_CLIENT.md', 'Dockerfile', 'tests/test_eval.py', 'docs/FAQ.md', 'docs/README_LINUX.md', 'client/Makefile', 'tests/test_perf_benchmarks.py', 'src/prepare_offline.py', '.dockerignore', 'client/poetry.lock', 'src/eval.py', 'h2ogpt-0.1.0-124.tgz', 'src/chromamig.py', 'reqs_optional/requirements_optional_langchain.txt', 'docs/README_LangChain.md', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', '.github/workflows/python-package-publish.yml', 'docs/README_offline.md', 'docs/README_CPU.md', 'src/enums.py', 'helm/h2ogpt-chart/Chart.yaml', 'src/gradio_runner.py', 'requirements.txt', 'src/gpt4all_llm.py', 'src/client_test.py', 'src/h2oai_pipeline.py', 'tests/test_client_calls.py', 'helm/h2ogpt-chart/templates/service.yaml', 'README.md', 'spaces/chatbot/repo_to_spaces.sh'], 'achrafmerzouki': ['tests/test_inference_servers.py', 'docker-compose-cpu.yml', 'src/gen.py', 'docker_build_script_ubuntu.sh', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'docker-compose-vllm.yml', '.env', 'docs/README_DOCKER.md', 'Makefile', 'Dockerfile', 'docs/FAQ.md', 'helm/h2ogpt-chart/templates/config-map.yaml', 'docs/README_GPU.md', 'docker-compose.yml', 'helm/h2ogpt-chart/templates/service.yaml', '.dockerignore'], 'eshamaaqib': ['h2ogpt-0.1.0-124.tgz', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'h2ogpt-0.1.0-108.tgz', 'h2ogpt-0.1.0-249.tgz', 'helm/h2ogpt-chart/Chart.yaml', 'helm/h2ogpt-chart/templates/config-map.yaml', 'helm/h2ogpt-chart/templates/service.yaml'], 'antoninadert': ['reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'docs/README_MACOS.md', 'requirements.txt', 'reqs_optional/reqs_constraints.txt'], 'arnocandel': ['docs/h2o-qr.png', 'h2ogpt-0.1.0-124.tgz', 'reqs_optional/requirements_optional_langchain.txt', 'src/gen.py', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'src/enums.py', 'src/gpt_langchain.py', 'reqs_optional/reqs_constraints.txt', 'gradio_utils/grclient.py', 'src/gradio_runner.py', 'requirements.txt', 'helm/h2ogpt-chart/Chart.yaml', 'helm/h2ogpt-chart/templates/config-map.yaml'], 'fuyucch1': ['docs/README_DOCKER.md'], 'zain': ['docs/README_MACOS.md', 'docs/LINKS.md', 'docs/README_ui.md', 'docs/README_LangChain.md', 'docs/README_CPU.md', 'docs/README_offline.md', 'docs/FINETUNE.md', 'docs/README_CLIENT.md', 'docs/FAQ.md', 'docs/README_LINUX.md', 'docs/INSTALL.md', 'docs/README_GPU.md', 'README.md', 'docs/README_WINDOWS.md'], 'robinliu': ['helm/h2ogpt-chart/templates/_helpers.tpl', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/config-map.yaml', 'helm/h2ogpt-chart/templates/service.yaml'], 'robinliubin': ['helm/h2ogpt-chart/templates/_helpers.tpl', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/config-map.yaml', 'helm/h2ogpt-chart/templates/service.yaml'], 'zainhaq': ['openai_server/server.py', 'src/evaluate_params.py', 'src/utils.py', 'src/gpt_langchain.py', 'src/prompter.py', 'client/h2ogpt_client/_gradio_client.py', 'src/cli.py', 'client/tests/test_client.py', 'docs/README_GPU.md', 'docs/README_WINDOWS.md', 'client/h2ogpt_client/_core.py', 'src/gen.py', 'docs/linux_install.sh', 'client/h2ogpt_client/_completion.py', 'client/.gitignore', 'docs/INSTALL.md', 'client/tests/__init__.py', 'client/README.md', 'gradio_utils/css.py', 'client/pyproject.toml', 'openai_server/backend_utils.py', 'client/h2ogpt_client/_server.py', 'src/utils_langchain.py', 'client/h2ogpt_client/__init__.py', 'docs/README_CLIENT.md', 'tests/test_eval.py', 'docs/FINETUNE.md', 'tests/test_perf_benchmarks.py', 'docs/linux_install_full.sh', 'docs/FAQ.md', 'docs/README_LINUX.md', 'client/Makefile', 'client/poetry.lock', 'src/eval.py', 'client/h2ogpt_client/_models.py', 'docs/LINKS.md', 'client/tests/conftest.py', 'docs/README_ui.md', 'reqs_optional/requirements_optional_langchain.txt', 'client/poetry.toml', 'docs/README_MACOS.md', 'docs/README_LangChain.md', 'openai_server/backend.py', 'src/enums.py', 'reqs_optional/requirements_optional_gpu_only.txt', 'docs/README_offline.md', 'docs/README_CPU.md', 'gradio_utils/grclient.py', 'src/gradio_runner.py', 'tests/test_vision.py', 'tests/test_client_calls.py', 'src/gpt4all_llm.py', 'src/client_test.py', 'src/h2oai_pipeline.py', 'src/vision/utils_vision.py', 'README.md', 'src/image_utils.py'], 'anush': ['openai_server/server.py', 'src/evaluate_params.py', 'docs/build_windows_gpu.sh', 'src/utils.py', 'src/gpt_langchain.py', 'src/prompter.py', 'tests/test_requirements.py', 'client/h2ogpt_client/_gradio_client.py', 'reqs_optional/requirements_optional_audio.txt', 'src/cli.py', 'client/tests/test_client.py', 'gradio_utils/prompt_form.py', 'src/tts_utils.py', 'docs/README_InferenceServers.md', 'client/h2ogpt_client/_core.py', 'src/gen.py', 'docs/linux_install.sh', 'client/h2ogpt_client/_completion.py', 'client/.gitignore', 'tests/test_pipeline.py', 'client/tests/__init__.py', 'client/README.md', 'gradio_utils/css.py', 'client/pyproject.toml', 'openai_server/backend_utils.py', 'client/h2ogpt_client/_server.py', 'src/utils_langchain.py', 'tests/test_inference_servers.py', 'tests/test_langchain_units.py', 'client/h2ogpt_client/__init__.py', 'docs/README_CLIENT.md', 'tests/test_eval.py', 'tests/test_perf_benchmarks.py', 'tests/test_ui.py', 'docs/FAQ.md', 'src/audio_langchain.py', 'client/Makefile', 'docs/README_LINUX.md', 'docs/setup_docker_linux.sh', 'client/poetry.lock', 'src/eval.py', 'tests/test_tts.py', 'client/h2ogpt_client/_models.py', 'client/tests/conftest.py', 'docs/README_ui.md', 'reqs_optional/requirements_optional_langchain.txt', 'client/poetry.toml', 'openai_server/test_conversion.py', 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt', 'openai_server/backend.py', 'reqs_optional/requirements_optional_gpu_only.txt', 'src/enums.py', 'docs/run_patches.sh', 'docs/windows_freezelist.txt', 'windows_installer.cfg', 'gradio_utils/grclient.py', 'src/gradio_runner.py', 'tests/test_vision.py', 'tests/test_client_calls.py', 'src/gpt4all_llm.py', 'src/client_test.py', 'src/h2oai_pipeline.py', 'src/vision/utils_vision.py', 'reqs_optional/reqs_constraints.txt', 'requirements.txt', 'README.md', 'tests/test_long_context.py', 'src/image_utils.py'], 'snykbot': ['reqs_optional/requirements_optional_langchain.txt'], 'anush008': ['src/make_db.py', 'reqs_optional/requirements_optional_langchain.txt', 'docs/README_LangChain.md', 'src/gen.py', 'src/enums.py', 'docs/windows_freezelist.txt', 'src/gpt_langchain.py', 'windows_installer.cfg'], 'mathanrajsharma': ['src/utils.py', 'src/gpt_langchain.py', 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec', 'dev_installers/mac/build_mac_installer.sh', 'docs/README_InferenceServers.md', 'src/vision/__init__.py', 'src/gen.py', 'docs/linux_install.sh', 'dev_installers/mac/mac_run_app.py', 'dev_installers/mac/README.md', '.gitignore', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'tests/test_langchain_units.py', 'docs/README_CLIENT.md', 'setup.py', 'docs/README_MACOS.md', 'reqs_optional/reqs_constraints.txt', 'requirements.txt', 'README.md'], 'darshanmalaviya': ['gradio_utils/css.py', 'gradio_utils/prompt_form.py'], 'blacksuan19': ['src/gen.py', 'src/gradio_runner.py'], 'abubakaryagoub': ['docs/FAQ.md', 'src/gradio_runner.py'], 'us8945': ['docs/README_CLIENT.md', 'notebooks/h2oGPT_api_examples.ipynb'], 'xephinaiyah': ['src/gpt_langchain.py'], 'daanknoope': ['docs/FAQ.md'], 'mszmgs': ['README.md'], 'overaneout': ['src/loaders.py', 'tests/test_client_readme.py', 'docker_build_script_ubuntu.sh', 'src/evaluate_params.py', 'docs/build_windows_gpu.sh', 'src/utils.py', 'src/gpt_langchain.py', 'src/prompter.py', 'client/h2ogpt_client/_gradio_client.py', 'src/cli.py', 'client/tests/test_client.py', 'gradio_utils/prompt_form.py', 'docs/README_WINDOWS.md', 'dev_installers/mac/build_mac_installer.sh', 'docs/README_InferenceServers.md', 'client/h2ogpt_client/_core.py', 'src/make_db.py', 'src/gen.py', 'client/h2ogpt_client/_completion.py', 'client/h2ogpt_client/_utils.py', 'dev_installers/mac/mac_run_app.py', 'helm/h2ogpt-chart/templates/config-map.yaml', 'client/README.md', 'dev_installers/mac/README.md', '.gitignore', 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec', 'docs/h2o-qr.png', 'client/h2ogpt_client/_server.py', 'tests/test_langchain_units.py', 'client/h2ogpt_client/__init__.py', 'tests/test_eval.py', 'tests/test_perf_benchmarks.py', 'docs/FAQ.md', 'docs/README_LINUX.md', 'src/eval.py', 'setup.py', 'client/h2ogpt_client/_models.py', 'docs/README_MACOS.md', 'helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'src/enums.py', 'windows_installer.cfg', 'gradio_utils/grclient.py', 'helm/h2ogpt-chart/Chart.yaml', 'src/gradio_runner.py', 'tests/test_client_calls.py', 'src/gpt4all_llm.py', 'src/client_test.py', 'src/h2oai_pipeline.py', 'helm/h2ogpt-chart/templates/service.yaml', 'README.md'], 'this': ['client/h2ogpt_client/_models.py', 'client/h2ogpt_client/_server.py', 'client/h2ogpt_client/_core.py', 'client/tests/conftest.py', 'client/h2ogpt_client/_completion.py', 'client/h2ogpt_client/__init__.py', 'client/h2ogpt_client/_utils.py', 'client/h2ogpt_client/_gradio_client.py', 'client/tests/test_client.py'], 'ozahavi': ['helm/h2ogpt-chart/templates/service.yaml', 'helm/h2ogpt-chart/values.yaml'], 'surenh2oai': ['client/README.md'], 'lweren': ['helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml'], 'weren': ['helm/h2ogpt-chart/templates/deployment.yaml', 'helm/h2ogpt-chart/values.yaml', 'helm/h2ogpt-chart/templates/_helpers.tpl'], 'aniketp04': ['iterators/timeout_iterator.py', 'models/modelling_RW_falcon7b.py', 'models/modelling_RW_falcon40b.py', 'models/gpu_mem_track.py'], 'tomkraljevic': ['requirements.txt', 'Makefile'], 'squidwardthetentacles': ['docs/README_ui.md'], 'hemenkapadia': ['benchmarks/llm_gpu_benchmark_text-generation-inference.html', 'benchmarks/perf.md', 'benchmarks/llm_gpu_benchmark_transformers.html', 'benchmarks/llm_gpu_benchmarks.json', 'benchmarks/llm_gpu_benchmark.py'], 'jamesbraza': ['docs/README_CPU.md', 'docs/README_LINUX.md', 'src/gen.py', 'docs/README_WINDOWS.md'], 'williamlam': ['docs/README_LINUX.md']}
+2025-04-10 16:16:59,213 [INFO] Files per contributor (with percentages): {'arnocandel': {'helm/h2ogpt-chart/templates/deployment.yaml': 1.88, 'helm/h2ogpt-chart/values.yaml': 2.91, 'src/gen.py': 0.13, 'reqs_optional/reqs_constraints.txt': 1.6, 'reqs_optional/requirements_optional_langchain.txt': 0.39, 'requirements.txt': 1.15, 'gradio_utils/grclient.py': 0.01, 'src/gpt_langchain.py': 0.03, 'docs/h2o-qr.png': 0, 'src/gradio_runner.py': 0.01, 'h2ogpt-0.1.0-124.tgz': 0, 'helm/h2ogpt-chart/Chart.yaml': 5.56, 'helm/h2ogpt-chart/templates/config-map.yaml': 2.88, 'src/enums.py': 0.16}, 'achraf-mer': {'Makefile': 30.56, 'docs/FAQ.md': 1.15, 'docs/README_DOCKER.md': 1.52, 'docs/README_GPU.md': 0.74, 'helm/h2ogpt-chart/values.yaml': 13.3, 'tests/test_inference_servers.py': 7.88, 'helm/h2ogpt-chart/templates/config-map.yaml': 33.65, 'helm/h2ogpt-chart/templates/deployment.yaml': 16.53, 'helm/h2ogpt-chart/templates/service.yaml': 17.89, 'src/gen.py': 2.31, 'docker_build_script_ubuntu.sh': 2.89, '.env': 29.03, 'docker-compose-cpu.yml': 24.71, 'docker-compose-vllm.yml': 25.55, 'docker-compose.yml': 25.52, 'docs/README_offline.md': 13.97, 'h2ogpt-0.1.0-124.tgz': 0, 'helm/h2ogpt-chart/Chart.yaml': 16.67, '.dockerignore': 66.67, '.github/workflows/python-package-publish.yml': 33.33, 'Dockerfile': 12.5, 'README.md': 0.48, 'client/Makefile': 1.0, 'client/h2ogpt_client/_core.py': 4.28, 'client/h2ogpt_client/_utils.py': 3.3, 'client/poetry.lock': 0.14, 'client/pyproject.toml': 0.9, 'docs/README_CLIENT.md': 1.15, 'docs/README_CPU.md': 3.33, 'docs/README_InferenceServers.md': 2.08, 'docs/README_LINUX.md': 0.82, 'docs/README_LangChain.md': 1.08, 'docs/README_WINDOWS.md': 0.13, 'docs/aws_sagemaker_endpoint_setup.pdf': 0, 'gradio_utils/css.py': 13.78, 'reqs_optional/requirements_optional_agents.txt': 0.49, 'reqs_optional/requirements_optional_langchain.txt': 1.08, 'requirements.txt': 0.14, 'spaces/chatbot/repo_to_spaces.sh': 25.93, 'src/chromamig.py': 25.0, 'src/cli.py': 3.38, 'src/client_test.py': 12.74, 'src/db_utils.py': 6.12, 'src/enums.py': 1.18, 'src/eval.py': 3.03, 'src/evaluate_params.py': 1.06, 'src/gpt4all_llm.py': 0.58, 'src/gpt_langchain.py': 5.0, 'src/gradio_runner.py': 3.67, 'src/gradio_themes.py': 87.1, 'src/h2oai_pipeline.py': 8.8, 'src/make_db.py': 8.96, 'src/output_parser.py': 34.88, 'src/prepare_offline.py': 17.71, 'src/prompter.py': 1.54, 'src/sagemaker.py': 29.09, 'src/serpapi.py': 15.11, 'src/stopping.py': 17.43, 'src/utils.py': 4.14, 'src/utils_langchain.py': 3.07, 'tests/test_client_calls.py': 3.73, 'tests/test_eval.py': 2.19, 'tests/test_langchain_simple.py': 18.18, 'tests/test_langchain_units.py': 8.23, 'tests/test_manual_test.py': 3.85, 'tests/test_metrics.py': 100.0, 'tests/test_perf_benchmarks.py': 5.88, 'tests/test_pipeline.py': 15.38, 'tests/test_prompter.py': 6.45, 'tests/test_utils.py': 4.14, 'tests/utils.py': 33.33}}
+2025-04-10 16:16:59,213 [INFO] All files with sizes: {'.github/workflows/snyk-scan.yml': 76, 'openai_server/agent_utils.py': 868, 'src/version.py': 2980, 'openai_server/agent_prompting.py': 3169, 'src/stopping.py': 637, 'docs/linux_install.sh': 3005, 'openai_server/backend.py': 4026, 'src/prompter.py': 6302, 'reqs_optional/reqs_constraints.txt': 500, 'openai_server/autogen_2agent_backend.py': 876, 'openai_server/autogen_multi_agent_backend.py': 887, 'openai_server/backend_utils.py': 1822, 'openai_server/autogen_utils.py': 3207, 'requirements.txt': 1389, 'openai_server/agent_tools/driverless_ai_data_science.py': 664, 'reqs_optional/requirements_optional_agents.txt': 204, 'src/gpt_langchain.py': 37040, 'src/langchain_openai.py': 595, 'src/langchain_openai_local.py': 195, 'src/enums.py': 2552, 'openai_server/agent_tools/audio_transcription.py': 229, 'src/gen.py': 31342, 'openai_server/agent_tools/scholar_papers_query.py': 187, 'openai_server/agent_tools/bing_search.py': 202, 'openai_server/agent_tools/google_search.py': 419, 'openai_server/agent_tools/news_query.py': 163, 'openai_server/agent_tools/papers_query.py': 537, 'docs/Dockerfile.delta2': 103, 'openai_server/agent_tools/convert_document_to_text.py': 456, 'openai_server/agent_tools/download_web_video.py': 123, 'openai_server/server.py': 4259, 'openai_server/agent_tools/aider_code_generation.py': 322, 'openai_server/openai_client.py': 1496, 'openai_server/agent_tools/ask_question_about_documents.py': 596, 'reqs_optional/requirements_optional_audio.txt': 146, 'src/model_utils.py': 5824, 'openai_server/agent_tools/ask_question_about_image.py': 399, 'docs/run_patches.sh': 200, 'reqs_optional/requirements_optional_image.txt': 47, 'src/vision/extract_movie.py': 268, 'src/utils_langchain.py': 2863, 'openai_server/agent_tools/image_generation.py': 741, 'openai_server/agent_tools/query_to_web_image.py': 94, 'openai_server/autogen_agents.py': 880, 'src/utils.py': 7061, 'tests/memory_hog_script.py': 52, 'tests/test_utils.py': 4058, 'src/gradio_runner.py': 27411, 'gradio_utils/grclient.py': 15342, 'src/cli.py': 739, 'src/client_test.py': 824, 'src/eval.py': 925, 'src/evaluate_params.py': 850, 'tests/test_eval.py': 638, 'Makefile': 432, 'src/gradio_funcs.py': 4369, 'openai_server/agent_tools/common/utils.py': 84, 'src/image_doctr.py': 349, 'src/function_client.py': 216, 'src/vision/utils_vision.py': 3671, 'openai_server/agent_tools/wolfram_alpha_math_science_query.py': 106, 'openai_server/agent_tools/wolfram_query.py': 336, 'docs/FAQ.md': 8370, 'src/function_server.py': 610, 'openai_server/agent_tools/download_one_web_image.py': 263, 'openai_server/agent_tools/download_youtube_video.py': 60, 'openai_server/chat_history_render.py': 373, 'Dockerfile': 80, 'docker_build_script_ubuntu.sh': 1209, 'helm/h2ogpt-chart/templates/deployment.yaml': 2130, 'helm/h2ogpt-chart/templates/service.yaml': 190, 'helm/h2ogpt-chart/values.yaml': 722, 'openai_server/agent_tools/mermaid_renderer.py': 251, 'openai_server/server_start.py': 721, 'reqs_optional/requirements_optional_langchain.txt': 1023, 'openai_server/agent_tools/image_query.py': 667, 'openai_server/agent_tools/image_downloader.py': 148, 'docs/windows_install.bat': 795, 'reqs_optional/requirements_optional_gpu_only.txt': 69, 'src/loaders.py': 300, 'openai_server/test_prompt_caching.py': 193, 'openai_server/autogen_streaming.py': 298, 'openai_server/test_openai_server.py': 1979, 'src/vision/flux.py': 169, 'src/vision/playv2.py': 203, 'src/vision/sdxl_turbo.py': 188, 'src/vision/stable_diffusion_xl.py': 402, 'src/stt.py': 551, 'README.md': 1668, 'src/vision/sdxl.py': 420, 'tests/test_vision.py': 664, 'openai_server/test_autogen_utils.py': 786, 'gradio_utils/yield_utils.py': 30, 'openai_server/agent_backend.py': 4679, 'reqs_optional/requirements_optional_langchain.gpllike.txt': 27, 'openai_server/test_backend_utils.py': 214, 'openai_server/test_conversion.py': 1947, 'docs/autogen2.patch': 105, 'openai_server/agent_tools/semantic_scholar_query.py': 278, 'openai_server/agent_tools/wolfram.py': 321, 'docs/README_SerpAPI.md': 32, 'tests/test_client_calls.py': 19094, 'src/h2oai_pipeline.py': 693, 'docs/pytubefix.patch': 10, 'src/gpt4all_llm.py': 1038, 'tests/test_cli.py': 169, 'docs/README_DOCKER.md': 1251, 'docs/README_GPU.md': 677, 'tests/test_inference_servers.py': 838, 'docs/README_LINUX.md': 1958, 'docs/README_WHEEL.md': 317, 'docs/README_WINDOWS.md': 1490, 'docs/README_quickstart.md': 89, 'docs/linux_install_full.sh': 726, 'reqs_optional/requirements_optional_llamacpp_gpt4all.txt': 29, 'docs/README_MACOS.md': 684, 'tests/test_langchain_units.py': 3878, 'openai_server/autogen_backend.py': 1411, 'docs/autogen.patch': 48, 'docs/openai.patch': 22, 'docs/README_LangChain.md': 836, 'src/make_db.py': 703, 'tests/test_tokenizer.py': 156, 'tests/utils.py': 222, 'openai_server/autogen_server.py': 520, 'openai_server/autogen.py': 332, 'docs/google.patch': 14, 'docs/trans2.patch': 86, 'helm/h2ogpt-chart/templates/config-map.yaml': 104, 'docker-compose-vllm.yml': 274, 'src/image_utils.py': 1472, 'src/prompter_utils.py': 149, 'tests/test_prompter.py': 1348, 'docs/Dockerfile.internvl': 52, 'docs/README_CLIENT.md': 3395, 'docs/README_InferenceServers.md': 1393, 'docs/README_ui.md': 640, 'docs/ollama_max_seq_len.png': 0, 'docs/ollama_setup.png': 0, 'docs/ollama_use.png': 0, 'docs/setup_docker_linux.sh': 198, 'docs/trans.patch': 76, 'docs/xtt.patch': 43, 'finetune.py': 44, 'gradio_utils/google_auth.py': 642, 'gradio_utils/prompt_form.py': 1823, 'src/audio_langchain.py': 1411, 'src/db_utils.py': 883, 'src/export_hf_checkpoint.py': 24, 'src/h2o_serpapi.py': 350, 'src/image_captions.py': 740, 'src/prepare_offline.py': 367, 'src/sagemaker.py': 275, 'src/serpapi.py': 1105, 'src/tts.py': 1023, 'src/tts_coqui.py': 1930, 'src/tts_sentence_parsing.py': 978, 'src/tts_utils.py': 291, 'src/vision/__init__.py': 14, 'tests/test_animated_gif.gif': 0, 'tests/test_speech.wav': 0, 'tests/videotest.mp4': 0, 'version.txt': 8, 'src/langchain_mistralai/chat_models.py': 1617, 'openai_server/cogvlm2_server/cogvlm2.py': 938, 'docs/windows_freezelist.txt': 2295, 'windows_installer.cfg': 2771, 'openai_server/cogvlm2_server/requirements.txt': 32, 'openai_server/cogvlm2.py': 790, 'openai_server/function_server.py': 2, 'tests/test_eval_models.py': 10, 'docs/README_offline.md': 630, 'docs/openwebui1.png': 0, 'docs/openwebui2.png': 0, 'src/chromamig.py': 2488, 'src/llm_exllama.py': 420, '.gitattributes': 2, 'src/pre-commit': 32, 'benchmarks/rag_benchmark.md': 7478, 'src/image_pix2struct.py': 10, 'src/read_wiki_full.py': 6, 'tests/test_long_context.py': 16, 'tests/test_perf_benchmarks.py': 34, 'tests/test_requirements.py': 163, 'tests/sample.eml': 64, 'docs/LINKS.md': 12, 'tests/2403.09629.pdf': 0, 'client/.gitignore': 840, 'client/Makefile': 299, 'client/README.md': 681, 'client/h2ogpt_client/__init__.py': 26, 'client/h2ogpt_client/_completion.py': 3671, 'client/h2ogpt_client/_core.py': 1937, 'client/h2ogpt_client/_gradio_client.py': 386, 'client/h2ogpt_client/_models.py': 222, 'client/h2ogpt_client/_server.py': 132, 'client/poetry.lock': 4328, 'client/poetry.toml': 5, 'client/pyproject.toml': 221, 'client/tests/__init__.py': 0, 'client/tests/conftest.py': 290, 'client/tests/test_client.py': 1012, 'gradio_utils/css.py': 450, '.env': 62, 'dev_installers/mac/README.md': 181, 'dev_installers/mac/build_mac_installer.sh': 470, 'dev_installers/mac/h2ogpt-osx-m1-cpu.spec': 154, 'dev_installers/mac/h2ogpt-osx-m1-gpu.spec': 101, 'docker-compose-cpu.yml': 85, 'docker-compose.yml': 145, 'docs/FINETUNE.md': 42, 'docs/INSTALL.md': 190, 'docs/README_Agents.md': 51, 'docs/README_CPU.md': 60, 'docs/build_windows_gpu.sh': 381, 'docs/h2o-qr.png': 0, 'docs/h2oGPT_CPU.ipynb': 84, 'docs/h2oGPT_GPU.ipynb': 84, 'docs/ui_1.png': 0, 'docs/ui_2.png': 0, 'docs/ui_6.png': 0, 'docs/ui_8.png': 0, 'docs/ui_9.png': 0, 'docs/ui_9b.png': 0, 'docs/ui_9c.png': 0, 'generate.py': 8, 'h2ogpt/__init__.py': 0, 'h2ogpt/generate.py': 3, 'h2ogpt/gradio_utils': 3, 'h2ogpt/iterators': 3, 'h2ogpt/metrics': 3, 'h2ogpt/models': 3, 'h2ogpt/openai_server': 3, 'h2ogpt/spkemb': 3, 'h2ogpt/src': 3, 'helm/h2ogpt-chart/Chart.yaml': 72, 'helm/h2ogpt-chart/templates/_helpers.tpl': 58, 'iterators/timeout_iterator.py': 41, 'models/anthropic.jpeg': 0, 'models/anthropic.png': 0, 'models/google.png': 0, 'models/llava.png': 0, 'models/longalpaca.png': 0, 'models/makevllm.sh': 93, 'models/meta.png': 0, 'models/mistralai.png': 0, 'models/modelling_RW_falcon40b.py': 3390, 'models/modelling_RW_falcon7b.py': 3363, 'models/openchat.png': 0, 'models/test_scrape1.py': 76, 'models/vicuna.jpeg': 0, 'models/wizard.jpg': 0, 'models/yi.svg': 18, 'notebooks/h2oGPT_api_examples.ipynb': 6477, 'openai_server/__init__.py': 0, 'openai_server/log.py': 42, 'reqs_optional/requirements_optional_cpu_only.txt': 9, 'reqs_optional/requirements_optional_doctr.txt': 28, 'reqs_optional/requirements_optional_faiss.txt': 21, 'reqs_optional/requirements_optional_faiss_cpu.txt': 9, 'reqs_optional/requirements_optional_gpt4all.txt': 347, 'reqs_optional/requirements_optional_langchain.metrics.txt': 6, 'reqs_optional/requirements_optional_langchain.urls.txt': 32, 'reqs_optional/requirements_optional_training.txt': 9, 'reqs_optional/requirements_optional_wikiprocessing.txt': 12, 'setup.py': 441, 'spaces/chatbot/repo_to_spaces.sh': 54, 'src/create_data.py': 8, 'src/utils_procs.py': 557, 'src/utils_sys.py': 243, 'tests/dental.png': 0, 'tests/fastfood.jpg': 0, 'tests/gridnumbers.gif': 0, 'tests/jon.png': 0, 'tests/ocr1.png': 0, 'tests/ocr2.png': 0, 'tests/ocr3.png': 0, 'tests/receipt.jpg': 0, 'tests/revenue.png': 0, 'tests/rotate-ex2.png': 0, 'tests/screenshot.png': 0, 'tests/table_as_image.docx': 0, 'tests/test_client_readme.py': 348, 'tests/test_openai_server.py': 0, 'tests/test_pipeline.py': 26, 'tests/test_tts.py': 345, 'tests/test_ui.py': 8, 'win_run_app.py': 826, 'h2ogpt-0.1.0-249.tgz': 0, 'reqs_optional/requirements_optional_flashattention.txt': 4, 'src/output_parser.py': 301, 'src/pandas_agent_langchain.py': 790, 'models/human.png': 0, 'docs/voice_clone.png': 0, 'models/female.wav': 0, 'models/h2oai.png': 0, 'models/hf-logo.png': 0, 'models/human.jpg': 0, 'models/lama.jpeg': 0, 'models/lama2.jpeg': 0, 'models/male.wav': 0, 'models/openai.png': 0, 'models/pirate_by_coqui.wav': 0, 'spkemb/cmu_us_awb_arctic-wav-arctic_a0002.npy': 0, 'spkemb/cmu_us_bdl_arctic-wav-arctic_a0009.npy': 0, 'spkemb/cmu_us_clb_arctic-wav-arctic_a0144.npy': 0, 'spkemb/cmu_us_ksp_arctic-wav-arctic_b0087.npy': 0, 'spkemb/cmu_us_rms_arctic-wav-arctic_b0353.npy': 0, 'spkemb/cmu_us_slt_arctic-wav-arctic_a0508.npy': 0, 'src/gradio_themes.py': 124, 'tests/test_langchain_simple.py': 22, 'tests/test_manual_test.py': 52, 'tests/test_sentence_parsing.py': 444, 'src/sst.py': 56, 'asr.py': 64, 'asr1.py': 42, 'asr2.py': 54, 'asr3.py': 80, 'tests/porsche.mp3.zip': 0, 'spaces/demo/h2oai_pipeline.py': 2, 'cloud/packer/h2oai-h2ogpt-4096-llama2-13b-chat.sh': 107, 'cloud/packer/h2ogpt-azure.json': 89, 'cloud/packer/h2ogpt-gcp.json': 53, 'cloud/packer/install_h2ogpt.sh': 12, 'cloud/packer/setup_environment.sh': 15, 'cloud/packer/startup-scripts/h2ogpt.service': 12, 'cloud/packer/startup-scripts/h2ogpt_nginx.service': 12, 'cloud/packer/startup-scripts/run_h2ogpt.sh': 26, 'cloud/packer/startup-scripts/run_nginx.sh': 23, 'cloud/packer/startup-scripts/run_vllm.sh': 10, 'cloud/packer/startup-scripts/temp.conf': 14, 'cloud/packer/startup-scripts/vllm.service': 12, '.gitignore': 8, 'client/h2ogpt_client/_utils.py': 182, 'dev_installers/mac/mac_run_app.py': 94, 'models/gpu_mem_track.py': 6, 'models/predict_aquila.py': 1326, 'tests/1paul_graham.txt': 704, 'docs/chat_view.png': 0, 'h2ogpt-0.1.0-124.tgz': 0, 'h2ogpt-0.1.0-108.tgz': 0, 'benchmarks/llm_gpu_benchmark.py': 369, 'benchmarks/llm_gpu_benchmark_text-generation-inference.html': 21, 'benchmarks/llm_gpu_benchmark_transformers.html': 21, 'benchmarks/llm_gpu_benchmarks.json': 8370, 'benchmarks/perf.md': 28, '.dockerignore': 12, '.github/workflows/python-package-publish.yml': 18, 'docs/aws_sagemaker_endpoint_setup.pdf': 0, 'tests/test_metrics.py': 1}
+2025-04-10 16:16:59,237 [INFO] 127.0.0.1 - - [10/Apr/2025 16:16:59] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-10 16:16:59,255 [INFO] 127.0.0.1 - - [10/Apr/2025 16:16:59] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-10 16:16:59,257 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-10 19:52:14,186 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-10 19:52:14,424 [INFO]  * Restarting with stat
+2025-04-10 19:52:15,202 [WARNING]  * Debugger is active!
+2025-04-10 19:52:15,211 [INFO]  * Debugger PIN: 453-818-523
+2025-04-10 19:52:22,261 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-10 19:52:22,360 [INFO]  * Restarting with stat
+2025-04-10 19:52:22,836 [WARNING]  * Debugger is active!
+2025-04-10 19:52:22,841 [INFO]  * Debugger PIN: 453-818-523
+2025-04-10 19:52:24,864 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-10 19:52:24,939 [INFO]  * Restarting with stat
+2025-04-10 19:52:25,269 [WARNING]  * Debugger is active!
+2025-04-10 19:52:25,275 [INFO]  * Debugger PIN: 453-818-523
+2025-04-10 19:52:26,294 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-10 19:52:26,374 [INFO]  * Restarting with stat
+2025-04-10 19:52:26,767 [WARNING]  * Debugger is active!
+2025-04-10 19:52:26,772 [INFO]  * Debugger PIN: 453-818-523
+2025-04-12 09:49:21,434 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-12 09:49:21,646 [INFO]  * Restarting with stat
+2025-04-12 09:49:22,448 [WARNING]  * Debugger is active!
+2025-04-12 09:49:22,463 [INFO]  * Debugger PIN: 453-818-523
