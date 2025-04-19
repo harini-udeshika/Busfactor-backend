@@ -58,7 +58,7 @@ def calculate_contribution_percentages(all_files_with_sizes, files_per_contribut
             files_per_contributor_with_sizes[contributor][file_path] = round(contribution_percentage, 2)
 
 
-def generateGraphSet(repo_url, send_progress):
+def generate_graph_set(repo_url, send_progress):
 
     # Extract repository name from URL
     repo_name = (
