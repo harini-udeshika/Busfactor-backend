@@ -16,6 +16,7 @@ import time
 from dotenv import load_dotenv
 import requests
 import logging
+import random
 
 from graph_to_json import graph_to_json
 
@@ -31,21 +32,364 @@ logging.basicConfig(
 
 # --- Jira Integration Helper Functions ---
 
+# Original function . 
+
+# def fetch_jira_issues(jira_server, project_key, auth):
+#     """
+#     Fetches issues from Jira for a given project updated in the last 1.5 years.
+#     """
+#     cutoff_date = (datetime.utcnow() - timedelta(days=547)).strftime("%Y-%m-%d")
+#     jql = f"project = {project_key} AND updated >= '{cutoff_date}'"
+#     url = f"{jira_server}/rest/api/2/search"
+#     params = {
+#         "jql": jql,
+#         "fields": "reporter,assignee,comment"
+#     }
+#     response = requests.get(url, auth=auth, params=params)
+#     response.raise_for_status()
+#     data = response.json()
+#     return data.get("issues", [])
+
+
+
+# # Simulated function for testing purposes -equal contribution test
 def fetch_jira_issues(jira_server, project_key, auth):
     """
-    Fetches issues from Jira for a given project updated in the last 1.5 years.
+    Simulated Jira Issues for 7 Contributors (Equal Contributions Scenario)
     """
-    cutoff_date = (datetime.utcnow() - timedelta(days=547)).strftime("%Y-%m-%d")
-    jql = f"project = {project_key} AND updated >= '{cutoff_date}'"
-    url = f"{jira_server}/rest/api/2/search"
-    params = {
-        "jql": jql,
-        "fields": "reporter,assignee,comment"
-    }
-    response = requests.get(url, auth=auth, params=params)
-    response.raise_for_status()
-    data = response.json()
-    return data.get("issues", [])
+    contributors = ["Alice", "Bob", "Charlie", "Dana", "Eve", "Frank", "Grace"]
+    simulated_issues = []
+
+    # Each contributor reports and assigns issues
+    for reporter in contributors:
+        for assignee in contributors:
+            if reporter != assignee:
+                simulated_issues.append({
+                    "fields": {
+                        "reporter": {"displayName": reporter},
+                        "assignee": {"displayName": assignee},
+                        "comment": {
+                            "comments": [
+                                {"author": {"displayName": random.choice(contributors)}},
+                                {"author": {"displayName": random.choice(contributors)}},
+                                {"author": {"displayName": random.choice(contributors)}},
+                            ]
+                        }
+                    }
+                })
+
+    return simulated_issues
+
+# #  skewed # --- Jira Integration ---
+# def fetch_jira_issues(jira_server, project_key, auth):
+#     """
+#     Hardcoded Jira Simulation for Skewed Contributions (7 Contributors, Charlie 9 issues)
+#     """
+
+#     simulated_issues = [
+#         # --- Alice-heavy activity ---
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Bob"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#                 {"author": {"displayName": "Alice"}},
+#                 {"author": {"displayName": "Bob"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Charlie"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#                 {"author": {"displayName": "Dana"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Eve"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#                 {"author": {"displayName": "Grace"}},
+#             ]}
+#         }},
+#         # --- Bob moderate activity ---
+#         {"fields": {
+#             "reporter": {"displayName": "Bob"},
+#             "assignee": {"displayName": "Charlie"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Bob"}},
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Bob"},
+#             "assignee": {"displayName": "Dana"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Bob"}},
+#             ]}
+#         }},
+#         # --- Charlie 9 issues ---
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Dana"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Eve"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Grace"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Alice"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Bob"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Dana"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Eve"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         # --- Very light activity by others ---
+#         {"fields": {
+#             "reporter": {"displayName": "Dana"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Dana"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Eve"},
+#             "assignee": {"displayName": "Grace"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Eve"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Frank"},
+#             "assignee": {"displayName": "Alice"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Frank"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Grace"},
+#             "assignee": {"displayName": "Bob"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Grace"}},
+#             ]}
+#         }},
+#     ]
+
+#     return simulated_issues
+
+# # Mixed activity jira
+# def fetch_jira_issues(jira_server, project_key, auth):
+#     """
+#     Hardcoded Jira Simulation for Mixed Activity (7 Contributors)
+#     Alice and Eve have 5 issues each, equal contributions
+#     """
+
+#     simulated_issues = [
+#         # --- Alice steady activity (5 issues) ---
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Bob"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#                 {"author": {"displayName": "Eve"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Charlie"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Dana"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Eve"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Alice"},
+#             "assignee": {"displayName": "Grace"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Eve"}},
+#             ]}
+#         }},
+        
+#         # --- Eve steady activity (5 issues) ---
+#         {"fields": {
+#             "reporter": {"displayName": "Eve"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Eve"}},
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Eve"},
+#             "assignee": {"displayName": "Grace"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Eve"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Eve"},
+#             "assignee": {"displayName": "Bob"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Eve"},
+#             "assignee": {"displayName": "Charlie"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Eve"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Eve"},
+#             "assignee": {"displayName": "Dana"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Alice"}},
+#             ]}
+#         }},
+        
+#         # --- Bob bursty activity ---
+#         {"fields": {
+#             "reporter": {"displayName": "Bob"},
+#             "assignee": {"displayName": "Alice"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Bob"}},
+#                 {"author": {"displayName": "Frank"}},
+#                 {"author": {"displayName": "Bob"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Bob"},
+#             "assignee": {"displayName": "Grace"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Bob"}},
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+        
+#         # --- Charlie occasional large activity ---
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Frank"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Charlie"},
+#             "assignee": {"displayName": "Bob"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Charlie"}},
+#             ]}
+#         }},
+        
+#         # --- Dana irregular activity ---
+#         {"fields": {
+#             "reporter": {"displayName": "Dana"},
+#             "assignee": {"displayName": "Grace"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Dana"}},
+#             ]}
+#         }},
+        
+#         # --- Frank bursty issues ---
+#         {"fields": {
+#             "reporter": {"displayName": "Frank"},
+#             "assignee": {"displayName": "Charlie"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Frank"}},
+#             ]}
+#         }},
+#         {"fields": {
+#             "reporter": {"displayName": "Frank"},
+#             "assignee": {"displayName": "Eve"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Frank"}},
+#             ]}
+#         }},
+        
+#         # --- Grace minimal activity ---
+#         {"fields": {
+#             "reporter": {"displayName": "Grace"},
+#             "assignee": {"displayName": "Dana"},
+#             "comment": {"comments": [
+#                 {"author": {"displayName": "Grace"}},
+#             ]}
+#         }},
+#     ]
+
+#     return simulated_issues
+
+
 
 def calculate_jira_activity(issues):
     """
@@ -265,8 +609,8 @@ def generateGraphSet(repo_url, send_progress):
         jira_activity = {}
 
     # Define separate weights
-    jira_weight = 5       # for GitHub contributors that have Jira activity
-    jira_only_weight = 0.2  # for contributors that exist only in Jira
+    jira_weight = 0.2       # for GitHub contributors that have Jira activity
+    jira_only_weight = 0.1  # for contributors that exist only in Jira
 
     # Update centrality for GitHub contributors (nodes already in the graph)
     for contributor in G.nodes():
@@ -286,7 +630,7 @@ def generateGraphSet(repo_url, send_progress):
                 break
         if not exists:
             # Add this jira-only contributor as a new node.
-            # Here, we use the normalized name as the node label; you may adjust as needed.
+            # Here, we use the normalized name as the node label;
             new_node = jira_contrib
             G.add_node(new_node, jira_only=True)
             custom_centrality[new_node] = jira_only_weight * score

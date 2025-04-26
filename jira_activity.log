@@ -906,3 +906,1025 @@ AssertionError: write() before start_response
 2025-04-12 09:49:21,646 [INFO]  * Restarting with stat
 2025-04-12 09:49:22,448 [WARNING]  * Debugger is active!
 2025-04-12 09:49:22,463 [INFO]  * Debugger PIN: 453-818-523
+2025-04-24 13:58:36,750 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 13:58:36,751 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-24 13:58:36,751 [INFO]  * Restarting with stat
+2025-04-24 13:58:37,058 [WARNING]  * Debugger is active!
+2025-04-24 13:58:37,070 [INFO]  * Debugger PIN: 453-818-523
+2025-04-24 14:00:57,849 [INFO] 127.0.0.1 - - [24/Apr/2025 14:00:57] "GET /search?value=reasearch-mvc-equal-contribution HTTP/1.1" 200 -
+2025-04-24 14:00:58,953 [INFO] 127.0.0.1 - - [24/Apr/2025 14:00:58] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:00:58,955 [INFO] GitHub token fetched successfully.
+2025-04-24 14:01:06,481 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 26, 'lwerenlweren': 2, 'chathurindaranasinghe': 4, 'mathanrajsharma': 3, 'jonathanmckinney': 2, 'tloentloen': 1, 'achrafmer': 5, 'marek': 2, 'arnocandel': 6, 'asithamarasekara': 1}
+2025-04-24 14:01:06,482 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:01:06,482 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:01:06,483 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:01:06,483 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:01:06,483 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 26 | Updated Centrality: 131.62
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: lwerenlweren | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: chathurindaranasinghe | Jira Score: 4 | Custom Centrality: 0.80
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: mathanrajsharma | Jira Score: 3 | Custom Centrality: 0.60
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: jonathanmckinney | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: tloentloen | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: achrafmer | Jira Score: 5 | Custom Centrality: 1.00
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: marek | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-24 14:01:06,483 [INFO] Added JIRA-only node: arnocandel | Jira Score: 6 | Custom Centrality: 1.20
+2025-04-24 14:01:06,484 [INFO] Added JIRA-only node: asithamarasekara | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-24 14:01:06,486 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'charlie': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'bob': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'alice': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'pasanmalindu': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py']}
+2025-04-24 14:01:06,487 [INFO] Files per contributor (with percentages): {'Pasan Malindu': {'README.md': 6.67, 'controllers/auth_controller.py': 5.56, 'main.py': 4.76, 'models/user.py': 6.25, 'views/dashboard.py': 6.67}}
+2025-04-24 14:01:06,487 [INFO] All files with sizes: {'controllers/auth_controller.py': 18, 'views/dashboard.py': 15, 'README.md': 15, 'models/user.py': 16, 'main.py': 21}
+2025-04-24 14:01:06,496 [INFO] 127.0.0.1 - - [24/Apr/2025 14:01:06] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:01:06,516 [INFO] 127.0.0.1 - - [24/Apr/2025 14:01:06] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 14:01:06,521 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 14:02:19,158 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:19] "GET /search?value=reasearch-mvc-equal-contribution HTTP/1.1" 200 -
+2025-04-24 14:02:19,939 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:19] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:02:19,943 [INFO] GitHub token fetched successfully.
+2025-04-24 14:02:27,758 [INFO] Calculated Jira Activity Data: {'pasanmalindu': 26, 'lwerenlweren': 2, 'chathurindaranasinghe': 4, 'mathanrajsharma': 3, 'jonathanmckinney': 2, 'tloentloen': 1, 'achrafmer': 5, 'marek': 2, 'arnocandel': 6, 'asithamarasekara': 1}
+2025-04-24 14:02:27,759 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:27,759 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:27,760 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:27,760 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:27,760 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 26 | Updated Centrality: 131.62
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: lwerenlweren | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: chathurindaranasinghe | Jira Score: 4 | Custom Centrality: 0.80
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: mathanrajsharma | Jira Score: 3 | Custom Centrality: 0.60
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: jonathanmckinney | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: tloentloen | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: achrafmer | Jira Score: 5 | Custom Centrality: 1.00
+2025-04-24 14:02:27,760 [INFO] Added JIRA-only node: marek | Jira Score: 2 | Custom Centrality: 0.40
+2025-04-24 14:02:27,761 [INFO] Added JIRA-only node: arnocandel | Jira Score: 6 | Custom Centrality: 1.20
+2025-04-24 14:02:27,761 [INFO] Added JIRA-only node: asithamarasekara | Jira Score: 1 | Custom Centrality: 0.20
+2025-04-24 14:02:27,765 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'charlie': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'bob': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'alice': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py'], 'pasanmalindu': ['models/user.py', 'main.py', 'README.md', 'views/dashboard.py', 'controllers/auth_controller.py']}
+2025-04-24 14:02:27,766 [INFO] Files per contributor (with percentages): {'Pasan Malindu': {'README.md': 6.67, 'controllers/auth_controller.py': 5.56, 'main.py': 4.76, 'models/user.py': 6.25, 'views/dashboard.py': 6.67}}
+2025-04-24 14:02:27,766 [INFO] All files with sizes: {'controllers/auth_controller.py': 18, 'views/dashboard.py': 15, 'README.md': 15, 'models/user.py': 16, 'main.py': 21}
+2025-04-24 14:02:27,837 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:27] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:02:27,894 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 14:02:27,897 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 14:02:30,753 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 14:02:30,753 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-24 14:02:30,753 [INFO]  * Restarting with stat
+2025-04-24 14:02:31,078 [WARNING]  * Debugger is active!
+2025-04-24 14:02:31,086 [INFO]  * Debugger PIN: 453-818-523
+2025-04-24 14:02:36,452 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:36] "GET /search?value=reasearch-mvc-equal-contribution HTTP/1.1" 200 -
+2025-04-24 14:02:37,266 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:37] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:02:37,274 [INFO] GitHub token fetched successfully.
+2025-04-24 14:02:43,616 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 14:02:43,617 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:43,617 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:43,617 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:43,617 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:02:43,618 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.62
+2025-04-24 14:02:43,622 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'charlie': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'bob': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 14:02:43,622 [INFO] Files per contributor (with percentages): {'Dana': {'controllers/auth_controller.py': 38.89, 'views/dashboard.py': 20.0, 'README.md': 20.0, 'models/user.py': 25.0, 'main.py': 14.29}, 'Charlie': {'README.md': 33.33, 'views/dashboard.py': 33.33, 'models/user.py': 12.5, 'main.py': 28.57, 'controllers/auth_controller.py': 11.11}}
+2025-04-24 14:02:43,622 [INFO] All files with sizes: {'controllers/auth_controller.py': 18, 'views/dashboard.py': 15, 'README.md': 15, 'models/user.py': 16, 'main.py': 21}
+2025-04-24 14:02:43,635 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:43] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:02:43,652 [INFO] 127.0.0.1 - - [24/Apr/2025 14:02:43] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 14:02:43,657 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 14:07:33,163 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:33] "GET /search?value=research HTTP/1.1" 200 -
+2025-04-24 14:07:33,752 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:33] "GET /search?value=research-sk HTTP/1.1" 200 -
+2025-04-24 14:07:34,394 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:34] "GET /search?value=research-ske HTTP/1.1" 200 -
+2025-04-24 14:07:35,024 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:35] "GET /search?value=research-skew HTTP/1.1" 200 -
+2025-04-24 14:07:36,608 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:36] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:07:36,611 [INFO] GitHub token fetched successfully.
+2025-04-24 14:07:42,149 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 14:07:42,150 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 1.36
+2025-04-24 14:07:42,150 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 1.46
+2025-04-24 14:07:42,150 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 1.62
+2025-04-24 14:07:42,150 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:07:42,150 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.56
+2025-04-24 14:07:42,153 [INFO] Unique files per contributor: {'dana': ['main.py', 'views/dashboard.py', 'models/user.py'], 'charlie': ['main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'models/user.py'], 'bob': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 14:07:42,153 [INFO] Files per contributor (with percentages): {'Alice': {'views/dashboard.py': 72.22, 'README.md': 75.0, 'main.py': 36.36, 'models/user.py': 60.0, 'controllers/auth_controller.py': 57.14}, 'Bob': {'main.py': 18.18, 'controllers/auth_controller.py': 28.57, 'README.md': 16.67, 'views/dashboard.py': 5.56, 'models/user.py': 10.0}}
+2025-04-24 14:07:42,153 [INFO] All files with sizes: {'views/dashboard.py': 18, 'main.py': 11, 'models/user.py': 10, 'controllers/auth_controller.py': 14, 'README.md': 12}
+2025-04-24 14:07:42,158 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:42] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:07:42,172 [INFO] 127.0.0.1 - - [24/Apr/2025 14:07:42] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 14:07:42,173 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 14:57:41,786 [INFO] 127.0.0.1 - - [24/Apr/2025 14:57:41] "GET /search?value=esearch-skewed-repo-2 HTTP/1.1" 200 -
+2025-04-24 14:57:44,424 [INFO] 127.0.0.1 - - [24/Apr/2025 14:57:44] "GET /search?value=eesearch-skewed-repo-2 HTTP/1.1" 200 -
+2025-04-24 14:57:46,039 [INFO] 127.0.0.1 - - [24/Apr/2025 14:57:46] "GET /search?value=research-skewed-repo-2 HTTP/1.1" 200 -
+2025-04-24 14:57:46,803 [INFO] 127.0.0.1 - - [24/Apr/2025 14:57:46] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:57:46,807 [INFO] GitHub token fetched successfully.
+2025-04-24 14:57:52,336 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 14:57:52,337 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 0.72
+2025-04-24 14:57:52,337 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 0.99
+2025-04-24 14:57:52,337 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 1.10
+2025-04-24 14:57:52,337 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 14:57:52,338 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-24 14:57:52,340 [INFO] Unique files per contributor: {'dana': ['views/dashboard.py', 'README.md'], 'charlie': ['main.py', 'controllers/auth_controller.py'], 'bob': ['main.py', 'controllers/auth_controller.py', 'models/user.py'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 14:57:52,340 [INFO] Files per contributor (with percentages): {'Alice': {'controllers/auth_controller.py': 59.09, 'main.py': 78.89, 'README.md': 85.94, 'models/user.py': 93.85, 'views/dashboard.py': 91.23}}
+2025-04-24 14:57:52,340 [INFO] All files with sizes: {'README.md': 64, 'views/dashboard.py': 114, 'controllers/auth_controller.py': 110, 'main.py': 90, 'models/user.py': 65}
+2025-04-24 14:57:52,347 [INFO] 127.0.0.1 - - [24/Apr/2025 14:57:52] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 14:57:52,363 [INFO] 127.0.0.1 - - [24/Apr/2025 14:57:52] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 14:57:52,366 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 15:16:36,294 [INFO] 127.0.0.1 - - [24/Apr/2025 15:16:36] "GET /search?value=equal-contribution-simulation HTTP/1.1" 200 -
+2025-04-24 15:16:36,914 [INFO] 127.0.0.1 - - [24/Apr/2025 15:16:36] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:16:36,916 [INFO] GitHub token fetched successfully.
+2025-04-24 15:16:43,153 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 15:16:43,154 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 1.99
+2025-04-24 15:16:43,154 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 1.98
+2025-04-24 15:16:43,154 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 1.93
+2025-04-24 15:16:43,154 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:16:43,154 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.52
+2025-04-24 15:16:43,158 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'charlie': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'bob': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 15:16:43,159 [INFO] Files per contributor (with percentages): {'Alice': {'controllers/auth_controller.py': 33.94, 'views/dashboard.py': 19.44, 'models/user.py': 31.82, 'main.py': 9.79, 'README.md': 42.25}, 'Dana': {'views/dashboard.py': 12.5, 'README.md': 16.9, 'main.py': 44.76, 'controllers/auth_controller.py': 20.0, 'models/user.py': 19.7}}
+2025-04-24 15:16:43,159 [INFO] All files with sizes: {'views/dashboard.py': 72, 'README.md': 71, 'main.py': 143, 'controllers/auth_controller.py': 165, 'models/user.py': 66}
+2025-04-24 15:16:43,163 [INFO] 127.0.0.1 - - [24/Apr/2025 15:16:43] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:16:43,177 [INFO] 127.0.0.1 - - [24/Apr/2025 15:16:43] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 15:16:43,179 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 15:25:50,907 [INFO] 127.0.0.1 - - [24/Apr/2025 15:25:50] "GET /search?value=que HTTP/1.1" 200 -
+2025-04-24 15:25:51,291 [INFO] 127.0.0.1 - - [24/Apr/2025 15:25:51] "GET /search?value=qu HTTP/1.1" 200 -
+2025-04-24 15:25:53,861 [INFO] 127.0.0.1 - - [24/Apr/2025 15:25:53] "GET /search?value=equ HTTP/1.1" 200 -
+2025-04-24 15:25:54,841 [INFO] 127.0.0.1 - - [24/Apr/2025 15:25:54] "GET /search?value=equal HTTP/1.1" 200 -
+2025-04-24 15:25:57,024 [INFO] 127.0.0.1 - - [24/Apr/2025 15:25:57] "GET /search?value=equal-str HTTP/1.1" 200 -
+2025-04-24 15:26:00,336 [INFO] 127.0.0.1 - - [24/Apr/2025 15:26:00] "GET /search?value=equal-stri HTTP/1.1" 200 -
+2025-04-24 15:26:02,139 [INFO] 127.0.0.1 - - [24/Apr/2025 15:26:02] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-24 15:26:03,116 [INFO] 127.0.0.1 - - [24/Apr/2025 15:26:03] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:26:03,122 [INFO] GitHub token fetched successfully.
+2025-04-24 15:26:10,211 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 15:26:10,212 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:26:10,213 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:26:10,213 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:26:10,213 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:26:10,214 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-24 15:26:10,217 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'charlie': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'bob': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 15:26:10,218 [INFO] Files per contributor (with percentages): {'Dana': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Charlie': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-24 15:26:10,218 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-24 15:26:10,223 [INFO] 127.0.0.1 - - [24/Apr/2025 15:26:10] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:26:10,240 [INFO] 127.0.0.1 - - [24/Apr/2025 15:26:10] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 15:26:10,241 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 15:32:10,405 [INFO] 127.0.0.1 - - [24/Apr/2025 15:32:10] "GET /search?value=mixed_Activity_sim HTTP/1.1" 200 -
+2025-04-24 15:32:12,074 [INFO] 127.0.0.1 - - [24/Apr/2025 15:32:12] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:32:12,077 [INFO] GitHub token fetched successfully.
+2025-04-24 15:32:17,432 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 15:32:17,432 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 1.75
+2025-04-24 15:32:17,432 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 1.87
+2025-04-24 15:32:17,432 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:32:17,432 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:32:17,432 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-24 15:32:17,435 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'views/dashboard.py', 'README.md'], 'charlie': ['main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'bob': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 15:32:17,436 [INFO] Files per contributor (with percentages): {'Alice': {'views/dashboard.py': 27.56, 'main.py': 24.27, 'controllers/auth_controller.py': 36.7, 'README.md': 24.59, 'models/user.py': 23.26}, 'Bob': {'views/dashboard.py': 25.98, 'main.py': 33.01, 'controllers/auth_controller.py': 25.69, 'models/user.py': 34.88, 'README.md': 17.21}}
+2025-04-24 15:32:17,436 [INFO] All files with sizes: {'views/dashboard.py': 254, 'README.md': 122, 'main.py': 206, 'models/user.py': 43, 'controllers/auth_controller.py': 109}
+2025-04-24 15:32:17,448 [INFO] 127.0.0.1 - - [24/Apr/2025 15:32:17] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:32:17,472 [INFO] 127.0.0.1 - - [24/Apr/2025 15:32:17] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 15:32:17,480 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-24 15:35:02,489 [INFO] 127.0.0.1 - - [24/Apr/2025 15:35:02] "GET /search?value=mixed-activity-2 HTTP/1.1" 200 -
+2025-04-24 15:35:07,649 [INFO] 127.0.0.1 - - [24/Apr/2025 15:35:07] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:35:07,654 [INFO] GitHub token fetched successfully.
+2025-04-24 15:35:14,991 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-24 15:35:14,992 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-24 15:35:14,992 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 1.43
+2025-04-24 15:35:14,992 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 1.63
+2025-04-24 15:35:14,992 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 1.65
+2025-04-24 15:35:14,992 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-24 15:35:14,995 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'charlie': ['main.py', 'views/dashboard.py', 'models/user.py'], 'bob': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'alice': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'main.py', 'controllers/auth_controller.py', 'views/dashboard.py', 'README.md']}
+2025-04-24 15:35:14,995 [INFO] Files per contributor (with percentages): {'Dana': {'README.md': 46.99, 'controllers/auth_controller.py': 64.54, 'main.py': 64.58, 'views/dashboard.py': 36.02, 'models/user.py': 55.09}, 'Alice': {'controllers/auth_controller.py': 19.92, 'models/user.py': 11.98, 'views/dashboard.py': 15.33, 'main.py': 13.62, 'README.md': 21.86}}
+2025-04-24 15:35:14,995 [INFO] All files with sizes: {'README.md': 183, 'controllers/auth_controller.py': 251, 'main.py': 367, 'views/dashboard.py': 261, 'models/user.py': 167}
+2025-04-24 15:35:15,009 [INFO] 127.0.0.1 - - [24/Apr/2025 15:35:15] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-24 15:35:15,036 [INFO] 127.0.0.1 - - [24/Apr/2025 15:35:15] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-24 15:35:15,037 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-25 09:05:28,762 [INFO] 127.0.0.1 - - [25/Apr/2025 09:05:28] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-25 09:05:28,813 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-25 18:32:00,331 [INFO] 127.0.0.1 - - [25/Apr/2025 18:32:00] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-25 18:32:00,375 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 10:57:38,304 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 10:57:39,001 [INFO]  * Restarting with stat
+2025-04-26 10:58:25,753 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-26 10:58:25,753 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-26 10:58:25,753 [INFO]  * Restarting with stat
+2025-04-26 10:58:26,076 [WARNING]  * Debugger is active!
+2025-04-26 10:58:26,093 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 10:58:44,611 [INFO] 127.0.0.1 - - [26/Apr/2025 10:58:44] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 10:58:45,291 [INFO] 127.0.0.1 - - [26/Apr/2025 10:58:45] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 10:58:45,293 [INFO] GitHub token fetched successfully.
+2025-04-26 10:58:53,911 [ERROR] Error fetching Jira data: name 'random' is not defined
+2025-04-26 10:58:53,912 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 10:58:53,912 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 10:58:53,912 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 10:58:53,912 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 10:58:53,913 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 10:58:53,918 [INFO] Unique files per contributor: {'dana': ['main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'charlie': ['main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'bob': ['main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'alice': ['main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'pasanmalindu': ['main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md']}
+2025-04-26 10:58:53,918 [INFO] Files per contributor (with percentages): {'Dana': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Charlie': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-26 10:58:53,918 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 10:58:53,944 [INFO] 127.0.0.1 - - [26/Apr/2025 10:58:53] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 10:58:53,984 [INFO] 127.0.0.1 - - [26/Apr/2025 10:58:53] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 10:58:54,012 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:00:09,254 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:00:09,589 [INFO]  * Restarting with stat
+2025-04-26 11:00:10,394 [WARNING]  * Debugger is active!
+2025-04-26 11:00:10,400 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:00:11,416 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:00:11,483 [INFO]  * Restarting with stat
+2025-04-26 11:00:11,924 [WARNING]  * Debugger is active!
+2025-04-26 11:00:11,930 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:00:12,946 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:00:13,016 [INFO]  * Restarting with stat
+2025-04-26 11:00:13,390 [WARNING]  * Debugger is active!
+2025-04-26 11:00:13,398 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:00:19,194 [INFO] 127.0.0.1 - - [26/Apr/2025 11:00:19] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 11:00:19,856 [INFO] 127.0.0.1 - - [26/Apr/2025 11:00:19] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:00:19,859 [INFO] GitHub token fetched successfully.
+2025-04-26 11:00:28,349 [ERROR] Error fetching Jira data: name 'random' is not defined
+2025-04-26 11:00:28,350 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:00:28,351 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:00:28,351 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:00:28,351 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:00:28,351 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 11:00:28,353 [INFO] Unique files per contributor: {'dana': ['models/user.py', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py', 'README.md'], 'charlie': ['models/user.py', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py', 'README.md'], 'bob': ['models/user.py', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py', 'README.md'], 'alice': ['models/user.py', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py', 'README.md']}
+2025-04-26 11:00:28,355 [INFO] Files per contributor (with percentages): {'Dana': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Charlie': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-26 11:00:28,355 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 11:00:28,361 [INFO] 127.0.0.1 - - [26/Apr/2025 11:00:28] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:00:28,378 [INFO] 127.0.0.1 - - [26/Apr/2025 11:00:28] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 11:00:28,382 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:03:14,262 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:03:14,417 [INFO]  * Restarting with stat
+2025-04-26 11:10:51,885 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-26 11:10:51,886 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-26 11:10:51,886 [INFO]  * Restarting with stat
+2025-04-26 11:10:52,220 [WARNING]  * Debugger is active!
+2025-04-26 11:10:52,238 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:11:08,381 [INFO] 127.0.0.1 - - [26/Apr/2025 11:11:08] "GET /search?value=Use+Pageable+for+all+“list”+endpoints+to+limit+memory+footprint. HTTP/1.1" 200 -
+2025-04-26 11:11:23,202 [INFO] 127.0.0.1 - - [26/Apr/2025 11:11:23] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 11:11:23,956 [INFO] 127.0.0.1 - - [26/Apr/2025 11:11:23] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:11:23,961 [INFO] GitHub token fetched successfully.
+2025-04-26 11:11:30,936 [ERROR] Error fetching Jira data: name 'random' is not defined
+2025-04-26 11:11:30,937 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:11:30,937 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:11:30,937 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:11:30,937 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 2.00
+2025-04-26 11:11:30,938 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 11:11:30,941 [INFO] Unique files per contributor: {'dana': ['views/dashboard.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py'], 'charlie': ['views/dashboard.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py'], 'bob': ['views/dashboard.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py'], 'alice': ['views/dashboard.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py'], 'pasanmalindu': ['views/dashboard.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py']}
+2025-04-26 11:11:30,941 [INFO] Files per contributor (with percentages): {'Dana': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Charlie': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-26 11:11:30,942 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 11:11:30,950 [INFO] 127.0.0.1 - - [26/Apr/2025 11:11:30] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:11:30,966 [INFO] 127.0.0.1 - - [26/Apr/2025 11:11:30] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 11:11:30,969 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:12:36,294 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:12:36,403 [INFO]  * Restarting with stat
+2025-04-26 11:12:37,054 [WARNING]  * Debugger is active!
+2025-04-26 11:12:37,063 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:12:44,820 [INFO] 127.0.0.1 - - [26/Apr/2025 11:12:44] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 11:12:45,362 [INFO] 127.0.0.1 - - [26/Apr/2025 11:12:45] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:12:45,366 [INFO] GitHub token fetched successfully.
+2025-04-26 11:12:52,314 [INFO] Calculated Jira Activity Data: {'alice': 17, 'bob': 24, 'charlie': 16, 'dana': 20, 'osuki': 23}
+2025-04-26 11:12:52,315 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 20 | Updated Centrality: 12.00
+2025-04-26 11:12:52,315 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 16 | Updated Centrality: 10.00
+2025-04-26 11:12:52,315 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 24 | Updated Centrality: 14.00
+2025-04-26 11:12:52,315 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 17 | Updated Centrality: 10.50
+2025-04-26 11:12:52,316 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 11:12:52,316 [INFO] Added JIRA-only node: osuki | Jira Score: 23 | Custom Centrality: 4.60
+2025-04-26 11:12:52,320 [INFO] Unique files per contributor: {'dana': ['README.md', 'main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'charlie': ['README.md', 'main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'bob': ['README.md', 'main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'alice': ['README.md', 'main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'pasanmalindu': ['README.md', 'main.py', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py']}
+2025-04-26 11:12:52,320 [INFO] Files per contributor (with percentages): {'Bob': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Dana': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-26 11:12:52,320 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 11:12:52,337 [INFO] 127.0.0.1 - - [26/Apr/2025 11:12:52] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:12:52,393 [INFO] 127.0.0.1 - - [26/Apr/2025 11:12:52] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 11:12:52,429 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:13:26,538 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:13:26,638 [INFO]  * Restarting with stat
+2025-04-26 11:13:27,172 [WARNING]  * Debugger is active!
+2025-04-26 11:13:27,189 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:13:29,225 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:13:29,324 [INFO]  * Restarting with stat
+2025-04-26 11:13:29,753 [WARNING]  * Debugger is active!
+2025-04-26 11:13:29,782 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:13:30,814 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:13:30,878 [INFO]  * Restarting with stat
+2025-04-26 11:13:31,208 [WARNING]  * Debugger is active!
+2025-04-26 11:13:31,217 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:13:40,298 [INFO] 127.0.0.1 - - [26/Apr/2025 11:13:40] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 11:13:41,053 [INFO] 127.0.0.1 - - [26/Apr/2025 11:13:41] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:13:41,057 [INFO] GitHub token fetched successfully.
+2025-04-26 11:13:48,157 [INFO] Calculated Jira Activity Data: {'alice': 15, 'bob': 26, 'charlie': 21, 'osuki': 19, 'dana': 19}
+2025-04-26 11:13:48,158 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 19 | Updated Centrality: 5.80
+2025-04-26 11:13:48,158 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 21 | Updated Centrality: 6.20
+2025-04-26 11:13:48,158 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 26 | Updated Centrality: 7.20
+2025-04-26 11:13:48,158 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 15 | Updated Centrality: 5.00
+2025-04-26 11:13:48,159 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 11:13:48,159 [INFO] Added JIRA-only node: osuki | Jira Score: 19 | Custom Centrality: 1.90
+2025-04-26 11:13:48,161 [INFO] Unique files per contributor: {'dana': ['README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py', 'models/user.py'], 'charlie': ['README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py', 'models/user.py'], 'bob': ['README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py', 'models/user.py'], 'alice': ['README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py', 'models/user.py'], 'pasanmalindu': ['README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py', 'models/user.py']}
+2025-04-26 11:13:48,162 [INFO] Files per contributor (with percentages): {'Bob': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Charlie': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-26 11:13:48,162 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 11:13:48,169 [INFO] 127.0.0.1 - - [26/Apr/2025 11:13:48] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:13:48,183 [INFO] 127.0.0.1 - - [26/Apr/2025 11:13:48] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 11:13:48,186 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:14:22,711 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:14:22,852 [INFO]  * Restarting with stat
+2025-04-26 11:14:23,427 [WARNING]  * Debugger is active!
+2025-04-26 11:14:23,434 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:14:24,446 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:14:24,520 [INFO]  * Restarting with stat
+2025-04-26 11:14:25,132 [WARNING]  * Debugger is active!
+2025-04-26 11:14:25,137 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:25:52,792 [INFO] 127.0.0.1 - - [26/Apr/2025 11:25:52] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 11:25:55,110 [INFO] 127.0.0.1 - - [26/Apr/2025 11:25:55] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:25:55,128 [INFO] GitHub token fetched successfully.
+2025-04-26 11:26:02,725 [INFO] Calculated Jira Activity Data: {'alice': 19, 'bob': 17, 'dana': 25, 'charlie': 17, 'osuki': 22}
+2025-04-26 11:26:02,727 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 25 | Updated Centrality: 7.00
+2025-04-26 11:26:02,728 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 17 | Updated Centrality: 5.40
+2025-04-26 11:26:02,728 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 17 | Updated Centrality: 5.40
+2025-04-26 11:26:02,728 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 19 | Updated Centrality: 5.80
+2025-04-26 11:26:02,728 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 11:26:02,728 [INFO] Added JIRA-only node: osuki | Jira Score: 22 | Custom Centrality: 440.00
+2025-04-26 11:26:02,728 [INFO] Unique files per contributor: {'dana': ['views/dashboard.py', 'controllers/auth_controller.py', 'main.py', 'README.md', 'models/user.py'], 'charlie': ['views/dashboard.py', 'controllers/auth_controller.py', 'main.py', 'README.md', 'models/user.py'], 'bob': ['views/dashboard.py', 'controllers/auth_controller.py', 'main.py', 'README.md', 'models/user.py'], 'alice': ['views/dashboard.py', 'controllers/auth_controller.py', 'main.py', 'README.md', 'models/user.py'], 'pasanmalindu': ['views/dashboard.py', 'controllers/auth_controller.py', 'main.py', 'README.md', 'models/user.py']}
+2025-04-26 11:26:02,729 [INFO] Files per contributor (with percentages): {}
+2025-04-26 11:26:02,729 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 11:26:02,750 [INFO] 127.0.0.1 - - [26/Apr/2025 11:26:02] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:26:02,766 [INFO] 127.0.0.1 - - [26/Apr/2025 11:26:02] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 11:26:02,769 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:26:11,703 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:26:11,853 [INFO]  * Restarting with stat
+2025-04-26 11:27:48,243 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-26 11:27:48,243 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-26 11:27:48,243 [INFO]  * Restarting with stat
+2025-04-26 11:27:48,561 [WARNING]  * Debugger is active!
+2025-04-26 11:27:48,567 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 11:28:07,277 [INFO] 127.0.0.1 - - [26/Apr/2025 11:28:07] "GET /search?value=equal-strict HTTP/1.1" 200 -
+2025-04-26 11:28:08,138 [INFO] 127.0.0.1 - - [26/Apr/2025 11:28:08] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:28:08,141 [INFO] GitHub token fetched successfully.
+2025-04-26 11:28:15,869 [INFO] Calculated Jira Activity Data: {'alice': 24, 'bob': 17, 'charlie': 21, 'osuki': 17, 'dana': 21}
+2025-04-26 11:28:15,869 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 21 | Updated Centrality: 6.20
+2025-04-26 11:28:15,869 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 21 | Updated Centrality: 6.20
+2025-04-26 11:28:15,869 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 17 | Updated Centrality: 5.40
+2025-04-26 11:28:15,869 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 24 | Updated Centrality: 6.80
+2025-04-26 11:28:15,869 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 11:28:15,869 [INFO] Added JIRA-only node: osuki | Jira Score: 17 | Custom Centrality: 1.70
+2025-04-26 11:28:15,872 [INFO] Unique files per contributor: {'dana': ['controllers/auth_controller.py', 'README.md', 'models/user.py', 'main.py', 'views/dashboard.py'], 'charlie': ['controllers/auth_controller.py', 'README.md', 'models/user.py', 'main.py', 'views/dashboard.py'], 'bob': ['controllers/auth_controller.py', 'README.md', 'models/user.py', 'main.py', 'views/dashboard.py'], 'alice': ['controllers/auth_controller.py', 'README.md', 'models/user.py', 'main.py', 'views/dashboard.py'], 'pasanmalindu': ['controllers/auth_controller.py', 'README.md', 'main.py', 'models/user.py', 'views/dashboard.py']}
+2025-04-26 11:28:15,872 [INFO] Files per contributor (with percentages): {'Alice': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}, 'Dana': {'controllers/auth_controller.py': 24.88, 'views/dashboard.py': 24.88, 'models/user.py': 24.88, 'README.md': 24.88, 'main.py': 24.88}}
+2025-04-26 11:28:15,872 [INFO] All files with sizes: {'controllers/auth_controller.py': 201, 'views/dashboard.py': 201, 'models/user.py': 201, 'README.md': 201, 'main.py': 201}
+2025-04-26 11:28:15,887 [INFO] 127.0.0.1 - - [26/Apr/2025 11:28:15] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 11:28:15,908 [INFO] 127.0.0.1 - - [26/Apr/2025 11:28:15] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 11:28:15,948 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 11:33:38,240 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 11:33:38,368 [INFO]  * Restarting with stat
+2025-04-26 11:33:39,155 [WARNING]  * Debugger is active!
+2025-04-26 11:33:39,164 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:13:12,599 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:13:12,834 [INFO]  * Restarting with stat
+2025-04-26 12:13:13,579 [WARNING]  * Debugger is active!
+2025-04-26 12:13:13,590 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:15:26,226 [INFO] 127.0.0.1 - - [26/Apr/2025 12:15:26] "GET /search?value=equal-sim-final HTTP/1.1" 200 -
+2025-04-26 12:15:26,891 [INFO] 127.0.0.1 - - [26/Apr/2025 12:15:26] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:15:26,894 [INFO] GitHub token fetched successfully.
+2025-04-26 12:15:37,580 [INFO] Calculated Jira Activity Data: {'alice': 27, 'bob': 26, 'grace': 33, 'charlie': 31, 'frank': 27, 'dana': 35, 'eve': 31}
+2025-04-26 12:15:37,581 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 33 | Updated Centrality: 8.60
+2025-04-26 12:15:37,581 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 27 | Updated Centrality: 7.40
+2025-04-26 12:15:37,581 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 31 | Updated Centrality: 8.20
+2025-04-26 12:15:37,581 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 35 | Updated Centrality: 9.00
+2025-04-26 12:15:37,581 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 31 | Updated Centrality: 8.20
+2025-04-26 12:15:37,581 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 26 | Updated Centrality: 7.20
+2025-04-26 12:15:37,581 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 27 | Updated Centrality: 7.40
+2025-04-26 12:15:37,582 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 12:15:37,584 [INFO] Unique files per contributor: {'grace': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'frank': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'eve': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'dana': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'charlie': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'bob': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'alice': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'pasanmalindu': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py']}
+2025-04-26 12:15:37,584 [INFO] Files per contributor (with percentages): {'Dana': {'controllers/auth_controller.py': 14.25, 'views/dashboard.py': 14.25, 'models/user.py': 14.25, 'README.md': 14.25, 'main.py': 14.25}, 'Grace': {'controllers/auth_controller.py': 14.25, 'views/dashboard.py': 14.25, 'models/user.py': 14.25, 'README.md': 14.25, 'main.py': 14.25}}
+2025-04-26 12:15:37,584 [INFO] All files with sizes: {'controllers/auth_controller.py': 351, 'views/dashboard.py': 351, 'models/user.py': 351, 'README.md': 351, 'main.py': 351}
+2025-04-26 12:15:37,590 [INFO] 127.0.0.1 - - [26/Apr/2025 12:15:37] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:15:37,606 [INFO] 127.0.0.1 - - [26/Apr/2025 12:15:37] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 12:15:37,611 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 12:41:39,851 [INFO] 127.0.0.1 - - [26/Apr/2025 12:41:39] "GET /search?value=skewed-sim-final HTTP/1.1" 200 -
+2025-04-26 12:41:40,508 [INFO] 127.0.0.1 - - [26/Apr/2025 12:41:40] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:41:40,511 [INFO] GitHub token fetched successfully.
+2025-04-26 12:41:48,884 [INFO] Calculated Jira Activity Data: {'alice': 34, 'bob': 34, 'eve': 26, 'charlie': 23, 'grace': 38, 'dana': 29, 'frank': 26}
+2025-04-26 12:41:48,885 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 38 | Updated Centrality: 8.80
+2025-04-26 12:41:48,886 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 26 | Updated Centrality: 6.29
+2025-04-26 12:41:48,886 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 26 | Updated Centrality: 6.16
+2025-04-26 12:41:48,886 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 29 | Updated Centrality: 7.14
+2025-04-26 12:41:48,886 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 23 | Updated Centrality: 6.05
+2025-04-26 12:41:48,886 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 34 | Updated Centrality: 8.61
+2025-04-26 12:41:48,887 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 34 | Updated Centrality: 8.80
+2025-04-26 12:41:48,887 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-26 12:41:48,890 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'models/user.py', 'README.md'], 'frank': ['controllers/auth_controller.py', 'README.md'], 'eve': ['main.py', 'views/dashboard.py'], 'dana': ['main.py', 'README.md', 'models/user.py'], 'charlie': ['controllers/auth_controller.py', 'views/dashboard.py', 'main.py', 'README.md'], 'bob': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'alice': ['README.md', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py'], 'pasanmalindu': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py']}
+2025-04-26 12:41:48,890 [INFO] Files per contributor (with percentages): {'Alice': {'main.py': 56.89, 'controllers/auth_controller.py': 47.38, 'views/dashboard.py': 54.68, 'README.md': 61.79, 'models/user.py': 13.07}, 'Grace': {'README.md': 5.0, 'models/user.py': 11.76, 'controllers/auth_controller.py': 4.65}}
+2025-04-26 12:41:48,890 [INFO] All files with sizes: {'README.md': 280, 'models/user.py': 153, 'controllers/auth_controller.py': 344, 'main.py': 167, 'views/dashboard.py': 278}
+2025-04-26 12:41:48,896 [INFO] 127.0.0.1 - - [26/Apr/2025 12:41:48] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:41:48,912 [INFO] 127.0.0.1 - - [26/Apr/2025 12:41:48] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 12:41:48,917 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 12:46:27,785 [INFO] 127.0.0.1 - - [26/Apr/2025 12:46:27] "GET /search?value=https://chatgpt.com/share/680c8754-b844-800a-9370-8ba719ccbd02 HTTP/1.1" 200 -
+2025-04-26 12:46:39,069 [INFO] 127.0.0.1 - - [26/Apr/2025 12:46:39] "GET /search?value=skewed-sim-final HTTP/1.1" 200 -
+2025-04-26 12:46:40,068 [INFO] 127.0.0.1 - - [26/Apr/2025 12:46:40] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:46:40,071 [INFO] GitHub token fetched successfully.
+2025-04-26 12:46:47,500 [INFO] Calculated Jira Activity Data: {'alice': 26, 'bob': 28, 'charlie': 28, 'frank': 27, 'grace': 32, 'dana': 38, 'eve': 31}
+2025-04-26 12:46:47,501 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 32 | Updated Centrality: 7.60
+2025-04-26 12:46:47,501 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 27 | Updated Centrality: 6.49
+2025-04-26 12:46:47,502 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 31 | Updated Centrality: 7.16
+2025-04-26 12:46:47,502 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 38 | Updated Centrality: 8.94
+2025-04-26 12:46:47,502 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 28 | Updated Centrality: 7.05
+2025-04-26 12:46:47,503 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 28 | Updated Centrality: 7.41
+2025-04-26 12:46:47,503 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 26 | Updated Centrality: 7.20
+2025-04-26 12:46:47,504 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-26 12:46:47,507 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'models/user.py', 'README.md'], 'frank': ['controllers/auth_controller.py', 'README.md'], 'eve': ['main.py', 'views/dashboard.py'], 'dana': ['main.py', 'README.md', 'models/user.py'], 'charlie': ['controllers/auth_controller.py', 'views/dashboard.py', 'main.py', 'README.md'], 'bob': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py'], 'alice': ['README.md', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py'], 'pasanmalindu': ['README.md', 'views/dashboard.py', 'main.py', 'models/user.py', 'controllers/auth_controller.py']}
+2025-04-26 12:46:47,507 [INFO] Files per contributor (with percentages): {'Dana': {'models/user.py': 15.69, 'README.md': 2.5, 'main.py': 9.58}, 'Grace': {'README.md': 5.0, 'models/user.py': 11.76, 'controllers/auth_controller.py': 4.65}}
+2025-04-26 12:46:47,507 [INFO] All files with sizes: {'README.md': 280, 'models/user.py': 153, 'controllers/auth_controller.py': 344, 'main.py': 167, 'views/dashboard.py': 278}
+2025-04-26 12:46:47,544 [INFO] 127.0.0.1 - - [26/Apr/2025 12:46:47] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:46:47,636 [INFO] 127.0.0.1 - - [26/Apr/2025 12:46:47] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 12:46:47,637 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 12:47:22,642 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:47:22,915 [INFO]  * Restarting with stat
+2025-04-26 12:47:23,965 [WARNING]  * Debugger is active!
+2025-04-26 12:47:23,987 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:47:25,040 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:47:25,183 [INFO]  * Restarting with stat
+2025-04-26 12:47:25,703 [WARNING]  * Debugger is active!
+2025-04-26 12:47:25,709 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:47:35,229 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:47:35,323 [INFO]  * Restarting with stat
+2025-04-26 12:47:35,948 [WARNING]  * Debugger is active!
+2025-04-26 12:47:35,961 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:47:40,076 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:47:40,247 [INFO]  * Restarting with stat
+2025-04-26 12:47:40,676 [WARNING]  * Debugger is active!
+2025-04-26 12:47:40,682 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:47:42,710 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:47:42,789 [INFO]  * Restarting with stat
+2025-04-26 12:47:43,192 [WARNING]  * Debugger is active!
+2025-04-26 12:47:43,205 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:47:46,285 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 12:47:46,358 [INFO]  * Restarting with stat
+2025-04-26 12:47:46,729 [WARNING]  * Debugger is active!
+2025-04-26 12:47:46,737 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 12:47:57,124 [INFO] 127.0.0.1 - - [26/Apr/2025 12:47:57] "[31m[1mGET /search?value=def+fetch_jira_issues(jira_server,+project_key,+auth):+++++"""+++++Simulated+Jira+Issues+for+Skewed+Contributions+(7+Contributors)+++++"""+++++contributors+%3D+{+++++++++"Alice":+{"issues_reported":+25,+"issues_assigned":+20,+"comments":+40},+++++++++"Bob":+{"issues_reported":+10,+"issues_assigned":+8,+"comments":+15},+++++++++"Charlie":+{"issues_reported":+2,+"issues_assigned":+1,+"comments":+3},+++++++++"Dana":+{"issues_reported":+1,+"issues_assigned":+1,+"comments":+2},+++++++++"Eve":+{"issues_reported":+2,+"issues_assigned":+1,+"comments":+3},+++++++++"Frank":+{"issues_reported":+1,+"issues_assigned":+1,+"comments":+1},+++++++++"Grace":+{"issues_reported":+2,+"issues_assigned":+1,+"comments":+2},+++++}++++++simulated_issues+%3D+[]++++++all_contributor_names+%3D+list(contributors.keys())++++++for+reporter,+activity+in+contributors.items():+++++++++%23+Create+reported+issues+++++++++for+_+in+range(activity["issues_reported"]):+++++++++++++assignee+%3D+random.choice(all_contributor_names)+++++++++++++comments+%3D+[+++++++++++++++++{"author":+{"displayName":+random.choice(all_contributor_names)}}+++++++++++++++++for+_+in+range(random.randint(1,+3))++%23+Random+1-3+comments+per+issue+++++++++++++]+++++++++++++simulated_issues.append({+++++++++++++++++"fields":+{+++++++++++++++++++++"reporter":+{"displayName":+reporter},+++++++++++++++++++++"assignee":+{"displayName":+assignee},+++++++++++++++++++++"comment":+{+++++++++++++++++++++++++"comments":+comments+++++++++++++++++++++}+++++++++++++++++}+++++++++++++})++++++return+simulated_issues HTTP/1.1[0m" 422 -
+2025-04-26 12:48:20,798 [INFO] 127.0.0.1 - - [26/Apr/2025 12:48:20] "GET /search?value=skewed-sim-final+Public HTTP/1.1" 200 -
+2025-04-26 12:48:23,638 [INFO] 127.0.0.1 - - [26/Apr/2025 12:48:23] "GET /search?value=skewed-sim-final+ HTTP/1.1" 200 -
+2025-04-26 12:48:24,908 [INFO] 127.0.0.1 - - [26/Apr/2025 12:48:24] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:48:24,911 [INFO] GitHub token fetched successfully.
+2025-04-26 12:48:33,186 [INFO] Calculated Jira Activity Data: {'alice': 40, 'eve': 29, 'grace': 30, 'charlie': 22, 'frank': 12, 'dana': 17, 'bob': 29}
+2025-04-26 12:48:33,187 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 30 | Updated Centrality: 7.20
+2025-04-26 12:48:33,187 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 12 | Updated Centrality: 3.49
+2025-04-26 12:48:33,187 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 29 | Updated Centrality: 6.76
+2025-04-26 12:48:33,188 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 17 | Updated Centrality: 4.74
+2025-04-26 12:48:33,188 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 22 | Updated Centrality: 5.85
+2025-04-26 12:48:33,189 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 29 | Updated Centrality: 7.61
+2025-04-26 12:48:33,189 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 40 | Updated Centrality: 10.00
+2025-04-26 12:48:33,189 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-26 12:48:33,194 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'models/user.py', 'README.md'], 'frank': ['README.md', 'controllers/auth_controller.py'], 'eve': ['main.py', 'views/dashboard.py'], 'dana': ['main.py', 'models/user.py', 'README.md'], 'charlie': ['main.py', 'controllers/auth_controller.py', 'README.md', 'views/dashboard.py'], 'bob': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'alice': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'pasanmalindu': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py']}
+2025-04-26 12:48:33,194 [INFO] Files per contributor (with percentages): {'Alice': {'main.py': 56.89, 'controllers/auth_controller.py': 47.38, 'views/dashboard.py': 54.68, 'README.md': 61.79, 'models/user.py': 13.07}, 'Bob': {'views/dashboard.py': 37.05, 'models/user.py': 58.82, 'controllers/auth_controller.py': 34.01, 'main.py': 5.99, 'README.md': 18.57}}
+2025-04-26 12:48:33,194 [INFO] All files with sizes: {'README.md': 280, 'models/user.py': 153, 'controllers/auth_controller.py': 344, 'main.py': 167, 'views/dashboard.py': 278}
+2025-04-26 12:48:33,211 [INFO] 127.0.0.1 - - [26/Apr/2025 12:48:33] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 12:48:33,232 [INFO] 127.0.0.1 - - [26/Apr/2025 12:48:33] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 12:48:33,236 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 13:54:43,972 [INFO] 127.0.0.1 - - [26/Apr/2025 13:54:43] "GET /search?value=skewed-simulator-final HTTP/1.1" 200 -
+2025-04-26 13:54:44,545 [INFO] 127.0.0.1 - - [26/Apr/2025 13:54:44] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 13:54:44,548 [INFO] GitHub token fetched successfully.
+2025-04-26 13:54:52,757 [INFO] Calculated Jira Activity Data: {'alice': 48, 'eve': 32, 'grace': 22, 'dana': 14, 'frank': 13, 'bob': 31, 'charlie': 21}
+2025-04-26 13:54:52,758 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 22 | Updated Centrality: 5.73
+2025-04-26 13:54:52,758 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 13 | Updated Centrality: 3.93
+2025-04-26 13:54:52,759 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 32 | Updated Centrality: 7.74
+2025-04-26 13:54:52,759 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 14 | Updated Centrality: 4.14
+2025-04-26 13:54:52,759 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 21 | Updated Centrality: 5.95
+2025-04-26 13:54:52,760 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 31 | Updated Centrality: 8.01
+2025-04-26 13:54:52,760 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 48 | Updated Centrality: 11.60
+2025-04-26 13:54:52,760 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-26 13:54:52,764 [INFO] Unique files per contributor: {'grace': ['main.py', 'models/user.py', 'README.md'], 'frank': ['main.py', 'models/user.py', 'views/dashboard.py'], 'eve': ['main.py', 'models/user.py', 'views/dashboard.py'], 'dana': ['models/user.py', 'README.md', 'controllers/auth_controller.py'], 'charlie': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'bob': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'alice': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'pasanmalindu': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py']}
+2025-04-26 13:54:52,764 [INFO] Files per contributor (with percentages): {'Alice': {'models/user.py': 56.3, 'README.md': 43.2, 'views/dashboard.py': 35.21, 'controllers/auth_controller.py': 44.44, 'main.py': 27.2}, 'Bob': {'README.md': 28.4, 'main.py': 25.5, 'controllers/auth_controller.py': 25.0, 'views/dashboard.py': 43.19, 'models/user.py': 14.4}}
+2025-04-26 13:54:52,764 [INFO] All files with sizes: {'README.md': 331, 'models/user.py': 389, 'main.py': 353, 'views/dashboard.py': 213, 'controllers/auth_controller.py': 216}
+2025-04-26 13:54:52,775 [INFO] 127.0.0.1 - - [26/Apr/2025 13:54:52] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 13:54:52,792 [INFO] 127.0.0.1 - - [26/Apr/2025 13:54:52] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 13:54:52,794 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 13:56:23,549 [INFO] 127.0.0.1 - - [26/Apr/2025 13:56:23] "GET /search?value=skewed-simulator-final HTTP/1.1" 200 -
+2025-04-26 13:56:24,244 [INFO] 127.0.0.1 - - [26/Apr/2025 13:56:24] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 13:56:24,247 [INFO] GitHub token fetched successfully.
+2025-04-26 13:56:35,006 [INFO] Calculated Jira Activity Data: {'alice': 43, 'dana': 23, 'charlie': 16, 'bob': 27, 'frank': 19, 'grace': 17, 'eve': 17}
+2025-04-26 13:56:35,007 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 17 | Updated Centrality: 4.73
+2025-04-26 13:56:35,007 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 19 | Updated Centrality: 5.13
+2025-04-26 13:56:35,007 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 17 | Updated Centrality: 4.74
+2025-04-26 13:56:35,008 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 23 | Updated Centrality: 5.94
+2025-04-26 13:56:35,009 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 16 | Updated Centrality: 4.95
+2025-04-26 13:56:35,011 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 27 | Updated Centrality: 7.21
+2025-04-26 13:56:35,011 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 43 | Updated Centrality: 10.60
+2025-04-26 13:56:35,011 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-26 13:56:35,014 [INFO] Unique files per contributor: {'grace': ['main.py', 'models/user.py', 'README.md'], 'frank': ['main.py', 'models/user.py', 'views/dashboard.py'], 'eve': ['main.py', 'models/user.py', 'views/dashboard.py'], 'dana': ['models/user.py', 'README.md', 'controllers/auth_controller.py'], 'charlie': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'bob': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'alice': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py'], 'pasanmalindu': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'main.py', 'views/dashboard.py']}
+2025-04-26 13:56:35,015 [INFO] Files per contributor (with percentages): {'Alice': {'models/user.py': 56.3, 'README.md': 43.2, 'views/dashboard.py': 35.21, 'controllers/auth_controller.py': 44.44, 'main.py': 27.2}, 'Bob': {'README.md': 28.4, 'main.py': 25.5, 'controllers/auth_controller.py': 25.0, 'views/dashboard.py': 43.19, 'models/user.py': 14.4}}
+2025-04-26 13:56:35,015 [INFO] All files with sizes: {'README.md': 331, 'models/user.py': 389, 'main.py': 353, 'views/dashboard.py': 213, 'controllers/auth_controller.py': 216}
+2025-04-26 13:56:35,031 [INFO] 127.0.0.1 - - [26/Apr/2025 13:56:35] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 13:56:35,049 [INFO] 127.0.0.1 - - [26/Apr/2025 13:56:35] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 13:56:35,051 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 13:59:23,146 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 13:59:23,292 [INFO]  * Restarting with stat
+2025-04-26 13:59:23,927 [WARNING]  * Debugger is active!
+2025-04-26 13:59:23,939 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 13:59:41,009 [INFO] 127.0.0.1 - - [26/Apr/2025 13:59:41] "GET /search?value=skewed-simulator-final HTTP/1.1" 200 -
+2025-04-26 13:59:41,759 [INFO] 127.0.0.1 - - [26/Apr/2025 13:59:41] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 13:59:41,761 [INFO] GitHub token fetched successfully.
+2025-04-26 13:59:49,943 [INFO] Calculated Jira Activity Data: {'alice': 12, 'bob': 8, 'charlie': 20, 'dana': 6, 'eve': 5, 'frank': 6, 'grace': 5}
+2025-04-26 13:59:49,944 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 5 | Updated Centrality: 2.33
+2025-04-26 13:59:49,944 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 6 | Updated Centrality: 2.53
+2025-04-26 13:59:49,944 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 5 | Updated Centrality: 2.34
+2025-04-26 13:59:49,945 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 6 | Updated Centrality: 2.54
+2025-04-26 13:59:49,945 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 20 | Updated Centrality: 5.75
+2025-04-26 13:59:49,945 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 8 | Updated Centrality: 3.41
+2025-04-26 13:59:49,945 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 12 | Updated Centrality: 4.40
+2025-04-26 13:59:49,945 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.50
+2025-04-26 13:59:49,948 [INFO] Unique files per contributor: {'grace': ['main.py', 'README.md', 'models/user.py'], 'frank': ['main.py', 'models/user.py', 'views/dashboard.py'], 'eve': ['main.py', 'models/user.py', 'views/dashboard.py'], 'dana': ['controllers/auth_controller.py', 'README.md', 'models/user.py'], 'charlie': ['main.py', 'models/user.py', 'controllers/auth_controller.py', 'README.md', 'views/dashboard.py'], 'bob': ['main.py', 'models/user.py', 'controllers/auth_controller.py', 'README.md', 'views/dashboard.py'], 'alice': ['main.py', 'models/user.py', 'controllers/auth_controller.py', 'README.md', 'views/dashboard.py'], 'pasanmalindu': ['main.py', 'models/user.py', 'controllers/auth_controller.py', 'README.md', 'views/dashboard.py']}
+2025-04-26 13:59:49,949 [INFO] Files per contributor (with percentages): {'Charlie': {'main.py': 33.99, 'models/user.py': 15.17, 'README.md': 22.05, 'views/dashboard.py': 8.92, 'controllers/auth_controller.py': 20.83}, 'Alice': {'models/user.py': 56.3, 'README.md': 43.2, 'views/dashboard.py': 35.21, 'controllers/auth_controller.py': 44.44, 'main.py': 27.2}}
+2025-04-26 13:59:49,949 [INFO] All files with sizes: {'README.md': 331, 'models/user.py': 389, 'main.py': 353, 'views/dashboard.py': 213, 'controllers/auth_controller.py': 216}
+2025-04-26 13:59:49,955 [INFO] 127.0.0.1 - - [26/Apr/2025 13:59:49] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 13:59:49,969 [INFO] 127.0.0.1 - - [26/Apr/2025 13:59:49] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 13:59:49,971 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:06:27,721 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:06:27,822 [INFO]  * Restarting with stat
+2025-04-26 14:06:28,794 [WARNING]  * Debugger is active!
+2025-04-26 14:06:28,802 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:06:31,844 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:06:31,919 [INFO]  * Restarting with stat
+2025-04-26 14:06:32,360 [WARNING]  * Debugger is active!
+2025-04-26 14:06:32,370 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:06:38,456 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:06:38,605 [INFO]  * Restarting with stat
+2025-04-26 14:06:39,022 [WARNING]  * Debugger is active!
+2025-04-26 14:06:39,029 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:15:05,131 [INFO] 127.0.0.1 - - [26/Apr/2025 14:15:05] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:15:05,820 [INFO] 127.0.0.1 - - [26/Apr/2025 14:15:05] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:15:05,822 [INFO] GitHub token fetched successfully.
+2025-04-26 14:15:13,358 [INFO] Calculated Jira Activity Data: {'alice': 7, 'bob': 11, 'eve': 4, 'charlie': 7, 'dana': 7, 'frank': 6, 'grace': 4}
+2025-04-26 14:15:13,359 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 4 | Updated Centrality: 2.05
+2025-04-26 14:15:13,359 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 6 | Updated Centrality: 2.98
+2025-04-26 14:15:13,360 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 4 | Updated Centrality: 2.59
+2025-04-26 14:15:13,360 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 7 | Updated Centrality: 3.14
+2025-04-26 14:15:13,360 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 7 | Updated Centrality: 3.30
+2025-04-26 14:15:13,360 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 11 | Updated Centrality: 4.08
+2025-04-26 14:15:13,361 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 7 | Updated Centrality: 3.38
+2025-04-26 14:15:13,361 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:15:13,364 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'README.md'], 'frank': ['README.md', 'main.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py'], 'eve': ['README.md', 'main.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py'], 'dana': ['main.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'charlie': ['controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'bob': ['README.md', 'main.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py'], 'alice': ['README.md', 'main.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py'], 'pasanmalindu': ['README.md', 'main.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py']}
+2025-04-26 14:15:13,364 [INFO] Files per contributor (with percentages): {'Bob': {'controllers/auth_controller.py': 25.34, 'views/dashboard.py': 18.18, 'README.md': 9.58, 'main.py': 19.74, 'models/user.py': 13.62}, 'Alice': {'views/dashboard.py': 24.24, 'models/user.py': 27.24, 'controllers/auth_controller.py': 18.1, 'main.py': 17.17, 'README.md': 17.96}}
+2025-04-26 14:15:13,364 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:15:13,369 [INFO] 127.0.0.1 - - [26/Apr/2025 14:15:13] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:15:13,386 [INFO] 127.0.0.1 - - [26/Apr/2025 14:15:13] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:15:13,389 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:16:36,659 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:16:36,791 [INFO]  * Restarting with stat
+2025-04-26 14:16:37,469 [WARNING]  * Debugger is active!
+2025-04-26 14:16:37,478 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:16:48,942 [INFO] 127.0.0.1 - - [26/Apr/2025 14:16:48] "[31m[1mGET /search?value=def+fetch_jira_issues(jira_server,+project_key,+auth):+++++"""+++++Hardcoded+Jira+Simulation+for+Mixed+Activity+(7+Contributors,+Eve+6+issues)+++++"""++++++simulated_issues+%3D+[+++++++++%23+---+Alice+steady+activity+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Alice"},+++++++++++++"assignee":+{"displayName":+"Bob"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Alice"}},+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Alice"},+++++++++++++"assignee":+{"displayName":+"Charlie"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Alice"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Alice"},+++++++++++++"assignee":+{"displayName":+"Dana"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Bob"}},+++++++++++++]}+++++++++}},++++++++++++++++++%23+---+Bob+bursty+activity+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Bob"},+++++++++++++"assignee":+{"displayName":+"Alice"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Bob"}},+++++++++++++++++{"author":+{"displayName":+"Frank"}},+++++++++++++++++{"author":+{"displayName":+"Bob"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Bob"},+++++++++++++"assignee":+{"displayName":+"Grace"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Bob"}},+++++++++++++++++{"author":+{"displayName":+"Charlie"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Bob"},+++++++++++++"assignee":+{"displayName":+"Dana"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Bob"}},+++++++++++++]}+++++++++}},++++++++++++++++++%23+---+Charlie+occasional+large+activity+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Charlie"},+++++++++++++"assignee":+{"displayName":+"Frank"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Charlie"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Charlie"},+++++++++++++"assignee":+{"displayName":+"Bob"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Charlie"}},+++++++++++++]}+++++++++}},++++++++++++++++++%23+---+Dana+irregular+activity+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Dana"},+++++++++++++"assignee":+{"displayName":+"Grace"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Dana"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Dana"},+++++++++++++"assignee":+{"displayName":+"Alice"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Dana"}},+++++++++++++]}+++++++++}},++++++++++++++++++%23+---+Eve+steady+activity+(6+total+issues+now)+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Eve"},+++++++++++++"assignee":+{"displayName":+"Bob"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Eve"},+++++++++++++"assignee":+{"displayName":+"Alice"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Eve"},+++++++++++++"assignee":+{"displayName":+"Charlie"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Eve"},+++++++++++++"assignee":+{"displayName":+"Dana"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Eve"},+++++++++++++"assignee":+{"displayName":+"Frank"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Eve"},+++++++++++++"assignee":+{"displayName":+"Grace"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Eve"}},+++++++++++++]}+++++++++}},++++++++++++++++++%23+---+Frank+bursty+activity+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Frank"},+++++++++++++"assignee":+{"displayName":+"Charlie"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Frank"}},+++++++++++++]}+++++++++}},+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Frank"},+++++++++++++"assignee":+{"displayName":+"Eve"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Frank"}},+++++++++++++]}+++++++++}},++++++++++++++++++%23+---+Grace+minimal+activity+---+++++++++{"fields":+{+++++++++++++"reporter":+{"displayName":+"Grace"},+++++++++++++"assignee":+{"displayName":+"Dana"},+++++++++++++"comment":+{"comments":+[+++++++++++++++++{"author":+{"displayName":+"Grace"}},+++++++++++++]}+++++++++}},+++++]++++++return+simulated_issues HTTP/1.1[0m" 422 -
+2025-04-26 14:16:56,584 [INFO] 127.0.0.1 - - [26/Apr/2025 14:16:56] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:16:58,327 [INFO] 127.0.0.1 - - [26/Apr/2025 14:16:58] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:16:58,330 [INFO] GitHub token fetched successfully.
+2025-04-26 14:17:06,103 [INFO] Calculated Jira Activity Data: {'alice': 8, 'bob': 11, 'eve': 14, 'charlie': 8, 'dana': 8, 'frank': 7, 'grace': 5}
+2025-04-26 14:17:06,105 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 5 | Updated Centrality: 2.25
+2025-04-26 14:17:06,106 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 7 | Updated Centrality: 3.18
+2025-04-26 14:17:06,107 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 14 | Updated Centrality: 4.59
+2025-04-26 14:17:06,108 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 8 | Updated Centrality: 3.34
+2025-04-26 14:17:06,108 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 8 | Updated Centrality: 3.50
+2025-04-26 14:17:06,108 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 11 | Updated Centrality: 4.08
+2025-04-26 14:17:06,109 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 8 | Updated Centrality: 3.58
+2025-04-26 14:17:06,109 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:17:06,112 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'README.md'], 'frank': ['models/user.py', 'README.md', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py'], 'eve': ['models/user.py', 'README.md', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py'], 'dana': ['README.md', 'models/user.py', 'views/dashboard.py', 'main.py'], 'charlie': ['controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'bob': ['models/user.py', 'README.md', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py'], 'alice': ['models/user.py', 'README.md', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py'], 'pasanmalindu': ['models/user.py', 'README.md', 'views/dashboard.py', 'main.py', 'controllers/auth_controller.py']}
+2025-04-26 14:17:06,112 [INFO] Files per contributor (with percentages): {'Eve': {'main.py': 25.75, 'models/user.py': 19.46, 'README.md': 5.99, 'views/dashboard.py': 6.06, 'controllers/auth_controller.py': 4.52}, 'Bob': {'controllers/auth_controller.py': 25.34, 'views/dashboard.py': 18.18, 'README.md': 9.58, 'main.py': 19.74, 'models/user.py': 13.62}}
+2025-04-26 14:17:06,112 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:17:06,118 [INFO] 127.0.0.1 - - [26/Apr/2025 14:17:06] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:17:06,133 [INFO] 127.0.0.1 - - [26/Apr/2025 14:17:06] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:17:06,135 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:22:46,518 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:22:46,722 [INFO]  * Restarting with stat
+2025-04-26 14:22:47,470 [WARNING]  * Debugger is active!
+2025-04-26 14:22:47,477 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:23:03,246 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:03] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:23:04,441 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:04] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:23:04,443 [INFO] GitHub token fetched successfully.
+2025-04-26 14:23:12,095 [INFO] Calculated Jira Activity Data: {'alice': 8, 'bob': 11, 'eve': 14, 'charlie': 8, 'dana': 8, 'frank': 7, 'grace': 5}
+2025-04-26 14:23:12,096 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 5 | Updated Centrality: 2.25
+2025-04-26 14:23:12,096 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 7 | Updated Centrality: 3.18
+2025-04-26 14:23:12,096 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 14 | Updated Centrality: 4.59
+2025-04-26 14:23:12,096 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 8 | Updated Centrality: 3.34
+2025-04-26 14:23:12,097 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 8 | Updated Centrality: 3.50
+2025-04-26 14:23:12,097 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 11 | Updated Centrality: 4.08
+2025-04-26 14:23:12,097 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 8 | Updated Centrality: 3.58
+2025-04-26 14:23:12,097 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:23:12,101 [INFO] Unique files per contributor: {'grace': ['README.md', 'controllers/auth_controller.py'], 'frank': ['main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'eve': ['main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'dana': ['README.md', 'models/user.py', 'main.py', 'views/dashboard.py'], 'charlie': ['README.md', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'bob': ['main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'alice': ['main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py'], 'pasanmalindu': ['main.py', 'README.md', 'controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py']}
+2025-04-26 14:23:12,101 [INFO] Files per contributor (with percentages): {'Eve': {'main.py': 25.75, 'models/user.py': 19.46, 'README.md': 5.99, 'views/dashboard.py': 6.06, 'controllers/auth_controller.py': 4.52}}
+2025-04-26 14:23:12,101 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:23:12,106 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:12] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:23:12,120 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:12] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:23:12,122 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:23:23,812 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:23:23,904 [INFO]  * Restarting with stat
+2025-04-26 14:23:24,350 [WARNING]  * Debugger is active!
+2025-04-26 14:23:24,357 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:23:27,383 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:23:27,443 [INFO]  * Restarting with stat
+2025-04-26 14:23:27,922 [WARNING]  * Debugger is active!
+2025-04-26 14:23:27,928 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:23:40,433 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:40] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:23:41,031 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:41] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:23:41,040 [INFO] GitHub token fetched successfully.
+2025-04-26 14:23:48,664 [INFO] Calculated Jira Activity Data: {'alice': 8, 'bob': 11, 'eve': 14, 'charlie': 8, 'dana': 8, 'frank': 7, 'grace': 5}
+2025-04-26 14:23:48,664 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 5 | Updated Centrality: 2.25
+2025-04-26 14:23:48,664 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 7 | Updated Centrality: 3.18
+2025-04-26 14:23:48,665 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 14 | Updated Centrality: 4.59
+2025-04-26 14:23:48,665 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 8 | Updated Centrality: 3.34
+2025-04-26 14:23:48,665 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 8 | Updated Centrality: 3.50
+2025-04-26 14:23:48,665 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 11 | Updated Centrality: 4.08
+2025-04-26 14:23:48,665 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 8 | Updated Centrality: 3.58
+2025-04-26 14:23:48,666 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:23:48,671 [INFO] Unique files per contributor: {'grace': ['README.md', 'controllers/auth_controller.py'], 'frank': ['models/user.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'README.md', 'main.py'], 'eve': ['models/user.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'README.md', 'main.py'], 'dana': ['models/user.py', 'README.md', 'main.py', 'views/dashboard.py'], 'charlie': ['models/user.py', 'README.md', 'controllers/auth_controller.py', 'views/dashboard.py'], 'bob': ['models/user.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'README.md', 'main.py'], 'alice': ['models/user.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'README.md', 'main.py'], 'pasanmalindu': ['models/user.py', 'views/dashboard.py', 'controllers/auth_controller.py', 'README.md', 'main.py']}
+2025-04-26 14:23:48,671 [INFO] Files per contributor (with percentages): {'Eve': {'main.py': 25.75, 'models/user.py': 19.46, 'README.md': 5.99, 'views/dashboard.py': 6.06, 'controllers/auth_controller.py': 4.52}, 'Bob': {'controllers/auth_controller.py': 25.34, 'views/dashboard.py': 18.18, 'README.md': 9.58, 'main.py': 19.74, 'models/user.py': 13.62}}
+2025-04-26 14:23:48,671 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:23:48,677 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:48] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:23:48,694 [INFO] 127.0.0.1 - - [26/Apr/2025 14:23:48] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:23:48,696 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:23:59,249 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:23:59,332 [INFO]  * Restarting with stat
+2025-04-26 14:23:59,921 [WARNING]  * Debugger is active!
+2025-04-26 14:23:59,930 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:24:00,945 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:24:01,041 [INFO]  * Restarting with stat
+2025-04-26 14:24:01,392 [WARNING]  * Debugger is active!
+2025-04-26 14:24:01,400 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:24:04,895 [INFO] 127.0.0.1 - - [26/Apr/2025 14:24:04] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:24:05,702 [INFO] 127.0.0.1 - - [26/Apr/2025 14:24:05] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:24:05,705 [INFO] GitHub token fetched successfully.
+2025-04-26 14:24:14,737 [INFO] Calculated Jira Activity Data: {'alice': 8, 'bob': 11, 'eve': 14, 'charlie': 8, 'dana': 8, 'frank': 7, 'grace': 5}
+2025-04-26 14:24:14,739 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 5 | Updated Centrality: 2.25
+2025-04-26 14:24:14,739 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 7 | Updated Centrality: 3.18
+2025-04-26 14:24:14,740 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 14 | Updated Centrality: 4.59
+2025-04-26 14:24:14,741 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 8 | Updated Centrality: 3.34
+2025-04-26 14:24:14,742 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 8 | Updated Centrality: 3.50
+2025-04-26 14:24:14,742 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 11 | Updated Centrality: 4.08
+2025-04-26 14:24:14,742 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 8 | Updated Centrality: 3.58
+2025-04-26 14:24:14,742 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:24:14,745 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'README.md'], 'frank': ['README.md', 'views/dashboard.py', 'models/user.py', 'controllers/auth_controller.py', 'main.py'], 'eve': ['README.md', 'views/dashboard.py', 'models/user.py', 'controllers/auth_controller.py', 'main.py'], 'dana': ['views/dashboard.py', 'main.py', 'models/user.py', 'README.md'], 'charlie': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'README.md'], 'bob': ['README.md', 'views/dashboard.py', 'models/user.py', 'controllers/auth_controller.py', 'main.py'], 'alice': ['README.md', 'views/dashboard.py', 'models/user.py', 'controllers/auth_controller.py', 'main.py'], 'pasanmalindu': ['README.md', 'views/dashboard.py', 'models/user.py', 'controllers/auth_controller.py', 'main.py']}
+2025-04-26 14:24:14,745 [INFO] Files per contributor (with percentages): {'Eve': {'main.py': 25.75, 'models/user.py': 19.46, 'README.md': 5.99, 'views/dashboard.py': 6.06, 'controllers/auth_controller.py': 4.52}}
+2025-04-26 14:24:14,745 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:24:14,753 [INFO] 127.0.0.1 - - [26/Apr/2025 14:24:14] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:24:14,771 [INFO] 127.0.0.1 - - [26/Apr/2025 14:24:14] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:24:14,775 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:25:17,210 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:25:17,355 [INFO]  * Restarting with stat
+2025-04-26 14:25:17,991 [WARNING]  * Debugger is active!
+2025-04-26 14:25:18,006 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:25:19,036 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:25:19,103 [INFO]  * Restarting with stat
+2025-04-26 14:25:19,413 [WARNING]  * Debugger is active!
+2025-04-26 14:25:19,418 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:25:21,451 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:25:21,537 [INFO]  * Restarting with stat
+2025-04-26 14:25:21,853 [WARNING]  * Debugger is active!
+2025-04-26 14:25:21,858 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:28:30,009 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:28:30,304 [INFO]  * Restarting with stat
+2025-04-26 14:28:31,042 [WARNING]  * Debugger is active!
+2025-04-26 14:28:31,061 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:28:43,407 [INFO] 127.0.0.1 - - [26/Apr/2025 14:28:43] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:28:44,594 [INFO] 127.0.0.1 - - [26/Apr/2025 14:28:44] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:28:44,597 [INFO] GitHub token fetched successfully.
+2025-04-26 14:28:52,343 [INFO] Calculated Jira Activity Data: {'alice': 8, 'bob': 8, 'eve': 8, 'charlie': 7, 'dana': 4, 'frank': 7, 'grace': 5}
+2025-04-26 14:28:52,343 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 5 | Updated Centrality: 2.25
+2025-04-26 14:28:52,343 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 7 | Updated Centrality: 3.18
+2025-04-26 14:28:52,343 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 8 | Updated Centrality: 3.39
+2025-04-26 14:28:52,343 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 4 | Updated Centrality: 2.54
+2025-04-26 14:28:52,343 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 7 | Updated Centrality: 3.30
+2025-04-26 14:28:52,343 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 8 | Updated Centrality: 3.48
+2025-04-26 14:28:52,343 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 8 | Updated Centrality: 3.58
+2025-04-26 14:28:52,344 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:28:52,346 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'README.md'], 'frank': ['models/user.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'views/dashboard.py'], 'eve': ['models/user.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'views/dashboard.py'], 'dana': ['main.py', 'views/dashboard.py', 'models/user.py', 'README.md'], 'charlie': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'README.md'], 'bob': ['models/user.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'views/dashboard.py'], 'alice': ['models/user.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'views/dashboard.py'], 'pasanmalindu': ['models/user.py', 'main.py', 'README.md', 'controllers/auth_controller.py', 'views/dashboard.py']}
+2025-04-26 14:28:52,346 [INFO] Files per contributor (with percentages): {'Alice': {'views/dashboard.py': 24.24, 'models/user.py': 27.24, 'controllers/auth_controller.py': 18.1, 'main.py': 17.17, 'README.md': 17.96}, 'Bob': {'controllers/auth_controller.py': 25.34, 'views/dashboard.py': 18.18, 'README.md': 9.58, 'main.py': 19.74, 'models/user.py': 13.62}}
+2025-04-26 14:28:52,346 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:28:52,352 [INFO] 127.0.0.1 - - [26/Apr/2025 14:28:52] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:28:52,366 [INFO] 127.0.0.1 - - [26/Apr/2025 14:28:52] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:28:52,368 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:31:34,139 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:31:34,237 [INFO]  * Restarting with stat
+2025-04-26 14:31:34,918 [WARNING]  * Debugger is active!
+2025-04-26 14:31:34,924 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:31:42,896 [INFO] 127.0.0.1 - - [26/Apr/2025 14:31:42] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:31:43,456 [INFO] 127.0.0.1 - - [26/Apr/2025 14:31:43] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:31:43,458 [INFO] GitHub token fetched successfully.
+2025-04-26 14:31:51,176 [INFO] Calculated Jira Activity Data: {'alice': 12, 'bob': 8, 'eve': 12, 'charlie': 8, 'dana': 5, 'frank': 8, 'grace': 6}
+2025-04-26 14:31:51,177 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 6 | Updated Centrality: 2.45
+2025-04-26 14:31:51,177 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 8 | Updated Centrality: 3.38
+2025-04-26 14:31:51,177 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 12 | Updated Centrality: 4.19
+2025-04-26 14:31:51,177 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 5 | Updated Centrality: 2.74
+2025-04-26 14:31:51,177 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 8 | Updated Centrality: 3.50
+2025-04-26 14:31:51,177 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 8 | Updated Centrality: 3.48
+2025-04-26 14:31:51,177 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 12 | Updated Centrality: 4.38
+2025-04-26 14:31:51,177 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:31:51,180 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'README.md'], 'frank': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py', 'README.md'], 'eve': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py', 'README.md'], 'dana': ['models/user.py', 'views/dashboard.py', 'main.py', 'README.md'], 'charlie': ['controllers/auth_controller.py', 'models/user.py', 'views/dashboard.py', 'README.md'], 'bob': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py', 'README.md'], 'alice': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py', 'README.md'], 'pasanmalindu': ['views/dashboard.py', 'controllers/auth_controller.py', 'models/user.py', 'main.py', 'README.md']}
+2025-04-26 14:31:51,180 [INFO] Files per contributor (with percentages): {'Alice': {'views/dashboard.py': 24.24, 'models/user.py': 27.24, 'controllers/auth_controller.py': 18.1, 'main.py': 17.17, 'README.md': 17.96}, 'Eve': {'main.py': 25.75, 'models/user.py': 19.46, 'README.md': 5.99, 'views/dashboard.py': 6.06, 'controllers/auth_controller.py': 4.52}}
+2025-04-26 14:31:51,180 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:31:51,190 [INFO] 127.0.0.1 - - [26/Apr/2025 14:31:51] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:31:51,214 [INFO] 127.0.0.1 - - [26/Apr/2025 14:31:51] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:31:51,218 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:42:04,327 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:42:04,476 [INFO]  * Restarting with stat
+2025-04-26 14:42:44,262 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-26 14:42:44,262 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-26 14:42:44,262 [INFO]  * Restarting with stat
+2025-04-26 14:42:44,580 [WARNING]  * Debugger is active!
+2025-04-26 14:42:44,587 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:42:51,893 [INFO] 127.0.0.1 - - [26/Apr/2025 14:42:51] "GET /search?value=mixed-activity-sim-final HTTP/1.1" 200 -
+2025-04-26 14:42:52,564 [INFO] 127.0.0.1 - - [26/Apr/2025 14:42:52] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:42:52,567 [INFO] GitHub token fetched successfully.
+2025-04-26 14:43:00,319 [ERROR] Error fetching Jira data: Invalid URL 'None/rest/api/2/search': No scheme supplied. Perhaps you meant http://None/rest/api/2/search?
+2025-04-26 14:43:00,320 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 0 | Updated Centrality: 1.25
+2025-04-26 14:43:00,320 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 0 | Updated Centrality: 1.78
+2025-04-26 14:43:00,320 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 0 | Updated Centrality: 1.79
+2025-04-26 14:43:00,320 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 0 | Updated Centrality: 1.74
+2025-04-26 14:43:00,321 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 0 | Updated Centrality: 1.90
+2025-04-26 14:43:00,321 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 0 | Updated Centrality: 1.88
+2025-04-26 14:43:00,321 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 0 | Updated Centrality: 1.98
+2025-04-26 14:43:00,321 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.51
+2025-04-26 14:43:00,324 [INFO] Unique files per contributor: {'grace': ['controllers/auth_controller.py', 'README.md'], 'frank': ['main.py', 'README.md', 'models/user.py', 'controllers/auth_controller.py', 'views/dashboard.py'], 'eve': ['main.py', 'README.md', 'models/user.py', 'controllers/auth_controller.py', 'views/dashboard.py'], 'dana': ['main.py', 'README.md', 'views/dashboard.py', 'models/user.py'], 'charlie': ['controllers/auth_controller.py', 'README.md', 'views/dashboard.py', 'models/user.py'], 'bob': ['main.py', 'README.md', 'models/user.py', 'controllers/auth_controller.py', 'views/dashboard.py'], 'alice': ['main.py', 'README.md', 'models/user.py', 'controllers/auth_controller.py', 'views/dashboard.py'], 'pasanmalindu': ['main.py', 'README.md', 'models/user.py', 'controllers/auth_controller.py', 'views/dashboard.py']}
+2025-04-26 14:43:00,324 [INFO] Files per contributor (with percentages): {'Alice': {'views/dashboard.py': 24.24, 'models/user.py': 27.24, 'controllers/auth_controller.py': 18.1, 'main.py': 17.17, 'README.md': 17.96}, 'Charlie': {'views/dashboard.py': 15.15, 'models/user.py': 13.62, 'controllers/auth_controller.py': 26.24, 'README.md': 42.51}, 'Bob': {'controllers/auth_controller.py': 25.34, 'views/dashboard.py': 18.18, 'README.md': 9.58, 'main.py': 19.74, 'models/user.py': 13.62}}
+2025-04-26 14:43:00,324 [INFO] All files with sizes: {'controllers/auth_controller.py': 221, 'README.md': 334, 'main.py': 233, 'views/dashboard.py': 165, 'models/user.py': 257}
+2025-04-26 14:43:00,329 [INFO] 127.0.0.1 - - [26/Apr/2025 14:43:00] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:43:00,343 [INFO] 127.0.0.1 - - [26/Apr/2025 14:43:00] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:43:00,344 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
+2025-04-26 14:43:30,013 [INFO]  * Detected change in '/Users/malindudesilva/Documents/4th Year/Research/Busfactor-backend/generate_graphs.py', reloading
+2025-04-26 14:43:30,128 [INFO]  * Restarting with stat
+2025-04-26 14:43:45,172 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-26 14:43:45,172 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-26 14:43:45,172 [INFO]  * Restarting with stat
+2025-04-26 14:43:45,595 [WARNING]  * Debugger is active!
+2025-04-26 14:43:45,604 [INFO]  * Debugger PIN: 453-818-523
+2025-04-26 14:43:56,164 [INFO] 127.0.0.1 - - [26/Apr/2025 14:43:56] "GET /search?value=sparse-sim-final HTTP/1.1" 200 -
+2025-04-26 14:43:57,015 [INFO] 127.0.0.1 - - [26/Apr/2025 14:43:57] "OPTIONS /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:43:57,017 [INFO] GitHub token fetched successfully.
+2025-04-26 14:44:01,700 [INFO] Calculated Jira Activity Data: {'alice': 26, 'bob': 34, 'dana': 33, 'frank': 36, 'charlie': 25, 'eve': 27, 'grace': 29}
+2025-04-26 14:44:01,701 [INFO] Contributor: Grace | Normalized: grace | Jira Score: 29 | Updated Centrality: 6.16
+2025-04-26 14:44:01,701 [INFO] Contributor: Frank | Normalized: frank | Jira Score: 36 | Updated Centrality: 7.99
+2025-04-26 14:44:01,701 [INFO] Contributor: Eve | Normalized: eve | Jira Score: 27 | Updated Centrality: 6.26
+2025-04-26 14:44:01,701 [INFO] Contributor: Dana | Normalized: dana | Jira Score: 33 | Updated Centrality: 7.81
+2025-04-26 14:44:01,701 [INFO] Contributor: Charlie | Normalized: charlie | Jira Score: 25 | Updated Centrality: 6.04
+2025-04-26 14:44:01,702 [INFO] Contributor: Bob | Normalized: bob | Jira Score: 34 | Updated Centrality: 8.46
+2025-04-26 14:44:01,702 [INFO] Contributor: Alice | Normalized: alice | Jira Score: 26 | Updated Centrality: 6.39
+2025-04-26 14:44:01,702 [INFO] Contributor: Pasan Malindu | Normalized: pasanmalindu | Jira Score: 0 | Updated Centrality: 1.69
+2025-04-26 14:44:01,703 [INFO] Unique files per contributor: {'grace': ['views/dashboard.py'], 'frank': ['controllers/auth_controller.py'], 'eve': ['main.py'], 'dana': ['controllers/auth_controller.py', 'main.py'], 'charlie': ['main.py', 'models/user.py'], 'bob': ['controllers/auth_controller.py', 'main.py', 'models/user.py'], 'alice': ['controllers/auth_controller.py', 'README.md'], 'pasanmalindu': ['models/user.py', 'controllers/auth_controller.py', 'main.py', 'README.md', 'views/dashboard.py']}
+2025-04-26 14:44:01,703 [INFO] Files per contributor (with percentages): {'Bob': {'controllers/auth_controller.py': 26.67, 'models/user.py': 57.14, 'main.py': 27.78}, 'Frank': {'controllers/auth_controller.py': 20.0}}
+2025-04-26 14:44:01,703 [INFO] All files with sizes: {'views/dashboard.py': 4, 'controllers/auth_controller.py': 15, 'main.py': 18, 'models/user.py': 7, 'README.md': 7}
+2025-04-26 14:44:01,709 [INFO] 127.0.0.1 - - [26/Apr/2025 14:44:01] "POST /generate_graphs HTTP/1.1" 200 -
+2025-04-26 14:44:01,722 [INFO] 127.0.0.1 - - [26/Apr/2025 14:44:01] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-04-26 14:44:01,725 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/Users/malindudesilva/opt/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+AssertionError: write() before start_response
