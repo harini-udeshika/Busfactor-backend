@@ -453,7 +453,10 @@ def calculate_contribution_percentages(all_files_with_sizes, files_per_contribut
                 contribution_percentage = 0
             files_per_contributor_with_sizes[contributor][file_path] = round(contribution_percentage, 2)
 
+
 def generateGraphSet(repo_url, send_progress):
+
+
     # Extract repository name from URL
     repo_name = repo_url.split("/")[-2] + "/" + repo_url.split("/")[-1].replace(".git", "")
     GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")

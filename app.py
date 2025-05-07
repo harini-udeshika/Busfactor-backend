@@ -5,13 +5,15 @@ import requests
 import os
 import time
 from dotenv import load_dotenv
-
+import subprocess
+import shutil
 from flask_socketio import SocketIO, emit  # Don't rename SocketIO
-from generate_graphs import generateGraphSet
-# from optimised_app import generateGraphSet
+from generate_graphs import generate_graph_set
+
 from rapidfuzz import fuzz
-
-
+from generate_repomix_output import generate_repomix_output
+from get_documentation_from_deepseek import get_documentation_from_deepseek
+import json
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -140,7 +142,7 @@ def generate_graphs():
 
     try:
         send_progress("Starting graph generation...")
-        graphs = generateGraphSet(repo_url, send_progress)
+        graphs = generate_graph_set(repo_url, send_progress)
         send_progress("Graph generation complete!")
         #print('graphs')
         print(graphs)
@@ -149,5 +151,38 @@ def generate_graphs():
         send_progress(f"Error: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
+@app.route('/process_repo', methods=['POST'])
+def process_repo():
+    data = request.get_json()
+    repo_url = data.get("repo_url")
+
+    if not repo_url:
+        return jsonify({"error": "Repository URL is required"}), 400
+    
+    def send_progress(message):
+        print(f"Emitting progress: {message}")
+        socketio.emit('progress', {'message': message}, namespace='/progress')
+        socketio.sleep(0)  # Allow event loop to process
+        
+    try:
+        repo_data, token_count = generate_repomix_output(repo_url,send_progress)
+    except subprocess.CalledProcessError as e:
+        return jsonify({"error": f"Repository processing failed: {str(e)}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Unexpected error: {str(e)}"}), 500
+
+    if token_count > 120_000:
+        print(f"Token count exceeded: {token_count}")
+        return jsonify({"error": f"Token count exceeded: {token_count}"}), 413  # 413 Payload Too Large
+
+    try:
+        documentation = get_documentation_from_deepseek(repo_data,send_progress)
+        print(documentation)
+        return jsonify(documentation)
+    except subprocess.CalledProcessError as e:
+        return jsonify({"error": f"Documentation generation failed: {str(e)}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Unexpected error during documentation: {str(e)}"}), 500
+        
 if __name__ == "__main__":
     socketio.run(app, debug=True)
